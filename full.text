@@ -3,37 +3,6 @@ Keith F. Prussing
 
 >   If only I had a big enough computer and time to play with it.
 
-Education
----------
-
-2014-12
-:   **Georgia Institute of Technology** _Atlanta, GA_
-
-    *   Candidate for Doctor of Philosophy in Physics with a minor in
-        Chemistry
-    *   Thesis title: _An investigation of surface shape effects on 
-        near-field radiative transfer_
-    *   Secret level security clearance, common access card
-
-2009-05
-:   **Georgia Institute of Technology** _Atlanta, GA_
-
-    *   Bachelor of Science in Physics
-    *   Graduated _summa cum laude_
-    *   Overall GPA: 3.95
-
-2005-2007
-:   **Kennesaw State University** _Kennesaw, GA_
-
-    *   Accumulating transfer credits
-    *   Member of the National Scholars Honor Society
-    *   Member of the National Society of Collegiate Scholars
-
-2001-2004
-:   **Georgia Perimeter College** _Atlanta, GA_
-
-    *   Candidate for a Bachelor of Arts in Music
-
 Work Experience
 ---------------
 
@@ -42,18 +11,21 @@ Work Experience
 
     Graduate Research Assistant
 
-    *   Investigating surface shape effects on near-field radiative
-        transfer to direct energy
-    *   Lead developer of a framework to process hyper-spectral imagery
-        overnight and _in situ_ for spot checking
+    *   Currently investigating surface shape effects on near-field 
+        radiative transfer to direct energy
+    *   Currently lead developer of a framework to process
+        hyper-spectral imagery overnight and _in situ_ for spot checking
     *   Studied electromagnetic wave scattering from non-spherical 
         particles
     *   Studied performance parameters of counter flow cooling towers to
-        understand energy emission under normal load
+        understand energy emission under normal load to monitor power
+        plate efficiency
     *   Implemented five degree of freedom rigid body model for
         untracked, four wheel land vehicles under normal conditions
     *   Interfaced vehicle model with MySQL database for simulation of
         complex urban environments
+    *   Implemented routine to incorporate motion capture data into
+        simulation of complex urban environments
 
 2007-2009
 :   **Georgia Tech Research Institute**, _Atlanta, GA_
@@ -62,10 +34,12 @@ Work Experience
 
     *   Aided in attempt to develop a framework to simulate visible
         and infrared signatures in complex environments
-    *   Developed a rudimentary vehicle dynamics model
+    *   Developed a rudimentary vehicle dynamics model for incorporation
+        into complex urban environment simulations
     *   Implemented a finite difference algorithm to solve Fourier's
         heat equation
-    *   Connected finite difference method to MySQL database
+    *   Connected finite difference method to MySQL database to extract
+        simulation parameters for complex scenes
     *   Investigated lattice Boltzmann method as a means to couple
         radiative and conductive energy transport
 
@@ -136,7 +110,7 @@ Work Experience
 Skills and Interests
 --------------------
 
-Software
+**Software**
 :   Apache Subversion,
     C/C++,
     Fortran,
@@ -155,7 +129,7 @@ Software
     SUM/IT point of sale system,
     Tri-Tech point of sale system
 
-Computational methods
+**Computational methods**
 :   Boundary element method,
     Euler method,
     Finite difference method, 
@@ -164,7 +138,7 @@ Computational methods
     Runge-Kutta method,
     T-matrix scattering
 
-Physics
+**Physics**
 :   Carnot engine,
     Coordinate transformation,
     Electrodynamics,
@@ -176,17 +150,17 @@ Physics
     Statistical mechanics,
     Thermodynamics
 
-Mathematics
+**Mathematics**
 :   Differential equations,
     Dyadic algebra,
     Fourier transform,
     Green functions,
     Laplace transform,
-    Linear algebra,  
+    Linear algebra,
     Separation of variables,
     Vector algebra
 
-Interests
+**Interests**
 :   Electromagnetic wave scattering, 
     Fetch, 
     Fourier heat equation, 
@@ -196,7 +170,7 @@ Interests
     Radiative transfer,
     Rock climbing
 
-Sales
+**Sales**
 :   Cash handling,
     Credit handling,
     Customer relations,
@@ -210,7 +184,7 @@ Sales
     Time management,
     Yamaha Certified Sales Professional
 
-Communications
+**Communications**
 :   Email,
     German (basic),
     Journal articles,
@@ -219,13 +193,44 @@ Communications
     Public speaking,
     Technical reports
 
-Musical Instruments
+**Musical Instruments**
 :   Clarinet (Bass, Contra-Alto, Soprano),
     Euphonium, 
     Guitar, 
     Mandolin,
     Trombone, 
     Trumpet
+
+Education
+---------
+
+2014-12
+:   **Georgia Institute of Technology** _Atlanta, GA_
+
+    *   Candidate for Doctor of Philosophy in Physics with a minor in
+        Chemistry
+    *   Thesis title: _An investigation of surface shape effects on 
+        near-field radiative transfer_
+    *   Secret level security clearance, common access card
+
+2009-05
+:   **Georgia Institute of Technology** _Atlanta, GA_
+
+    *   Bachelor of Science in Physics
+    *   Graduated _summa cum laude_
+    *   Overall GPA: 3.95
+
+2005-2007
+:   **Kennesaw State University** _Kennesaw, GA_
+
+    *   Accumulating transfer credits
+    *   Member of the National Scholars Honor Society
+    *   Member of the National Society of Collegiate Scholars
+
+2001-2004
+:   **Georgia Perimeter College** _Atlanta, GA_
+
+    *   Candidate for a Bachelor of Arts in Music
 
 Authorships
 -----------
