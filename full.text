@@ -117,7 +117,7 @@ Skills and Interests
     Git,
     HTML,
     LaTeX,
-    Mac OSX,
+    Apple OS X,
     Markdown,
     MATLAB,
     Microsoft Office,
@@ -133,22 +133,28 @@ Skills and Interests
 :   Boundary element method,
     Euler method,
     Finite difference method, 
+    Gauss-Seidel algoritm,
+    Jacobi method,
     Lattice Boltzmann method,
     Method of moments,
     Runge-Kutta method,
+    Simultaneous over-relaxation,
     T-matrix scattering
 
 **Physics**
 :   Carnot engine,
     Coordinate transformation,
     Electrodynamics,
+    Heat transfer,
     Kinematics, 
     Optics,
     Otto engine,
     Quantum mechanics,
+    Radiative transfer,
     Rigid body dynamics,
     Statistical mechanics,
-    Thermodynamics
+    Thermodynamics,
+    Vehicle dynamics
 
 **Mathematics**
 :   Differential equations,
@@ -166,9 +172,11 @@ Skills and Interests
     Fourier heat equation, 
     Heat transfer, 
     High performance computing,
+    Modeling,
     Parallel programming,
     Radiative transfer,
-    Rock climbing
+    Rock climbing,
+    Simulation
 
 **Sales**
 :   Cash handling,
