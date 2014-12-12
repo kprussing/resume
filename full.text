@@ -13,6 +13,8 @@ Work Experience
 
     *   Currently investigating surface shape effects on near-field 
         radiative transfer to direct energy
+    *   Developed Python package to interface with a boundary element
+        method library written in C
     *   Currently lead developer of a framework to process
         hyper-spectral imagery overnight and _in situ_ for spot checking
     *   Studied electromagnetic wave scattering from non-spherical 
