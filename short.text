@@ -3,25 +3,6 @@ Keith F. Prussing
 
 >   If only I had a big enough computer and time to play with it.
 
-Education
----------
-
-
-12/2014
-:   **Georgia Institute of Technology**, _Atlanta, GA_
-
-*   Candidate for Doctor of Philosophy in Physics with a minor in
-    Chemistry
-*   Thesis title: _An investigation of surface shape effects on 
-    near-field radiative transfer_
-*   Secret level security clearance, common access card
-
-05/2009
-:   **Georgia Institute of Technology**, _Atlanta, GA_
-
-*   Bachelor of Science in Physics
-*   Graduated _summa cum laude_.  GPA: 3.95
-
 Work Experience
 ---------------
 
@@ -29,17 +10,16 @@ Work Experience
 :   Graduate Research Assistant at **Georgia Tech Research Institute**, 
     _Atlanta, GA_
 
-*   Currently investigating surface shape effects on near-field 
+*   Currently investigating surface shape effects on nearfield 
     radiative transfer to direct energy
 *   Currently lead developer of a framework to process
     hyper-spectral imagery overnight and _in situ_ checking
-*   Studied electromagnetic wave scattering from non-spherical 
+*   Studied electromagnetic wave scattering from nonspherical
     particles
 *   Studied performance parameters of counter flow cooling towers to
-    understand energy emission under normal load to monitor power
-    plant efficiency
+    understand energy emission
 *   Implemented five degree of freedom rigid body model for
-    untracked, four wheel land vehicles under normal conditions
+    untracked, four wheel land vehicles
 *   Interfaced vehicle model with MySQL database for simulation of
     complex urban environments
 *   Implemented routine to incorporate motion capture data into
@@ -49,16 +29,34 @@ Work Experience
 :   Student Research Assistant at **Georgia Tech Research Institute**, 
     _Atlanta, GA_
 
-*   Aided in attempt to develop a framework to simulate visible
+*   Aided development of a framework to simulate visible
     and infrared signatures in complex environments
-*   Developed a rudimentary vehicle dynamics model for incorporation
+*   Developed a vehicle dynamics model for incorporation
     into complex urban environment simulations
 *   Implemented a finite difference algorithm to solve Fourier's
     heat equation
-*   Connected finite difference method to MySQL database to extract
-    simulation parameters for complex scenes
+*   Connected finite difference method to MySQL database to get
+    simulation parameters
 *   Investigated lattice Boltzmann method as a means to couple
     radiative and conductive energy transport
+
+Education
+---------
+
+May 2015
+:   **Georgia Institute of Technology**, _Atlanta, GA_
+
+*   Candidate for Doctor of Philosophy in Physics with a minor in
+    Chemistry
+*   Thesis title: _An investigation of surface shape effects on
+    near-field radiative transfer_
+*   Secret level security clearance, common access card
+
+May 2009
+:   **Georgia Institute of Technology**, _Atlanta, GA_
+
+*   Bachelor of Science in Physics
+*   Graduated _summa cum laude_.  GPA: 3.95
 
 Skills and Interests
 --------------------
