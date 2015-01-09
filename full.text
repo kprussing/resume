@@ -17,7 +17,7 @@ Work Experience
         method library written in C
     *   Currently lead developer of a framework to process
         hyper-spectral imagery overnight and _in situ_ for spot checking
-    *   Studied electromagnetic wave scattering from non-spherical 
+    *   Studied electromagnetic wave scattering from nonspherical 
         particles
     *   Studied performance parameters of counter flow cooling towers to
         understand energy emission under normal load to monitor power
@@ -34,7 +34,7 @@ Work Experience
 
     Student Research Assistant 
 
-    *   Aided in attempt to develop a framework to simulate visible
+    *   Aided development of a framework to simulate visible
         and infrared signatures in complex environments
     *   Developed a rudimentary vehicle dynamics model for incorporation
         into complex urban environment simulations
@@ -43,7 +43,8 @@ Work Experience
     *   Connected finite difference method to MySQL database to extract
         simulation parameters for complex scenes
     *   Investigated lattice Boltzmann method as a means to couple
-        radiative and conductive energy transport
+        radiative and conductive energy transport for predicting thermal
+        signature
 
 2007-2008
 :   **Mori Luggage & Gifts**, _Atlanta, GA_
@@ -135,10 +136,12 @@ Skills and Interests
 :   Boundary element method,
     Euler method,
     Finite difference method, 
-    Gauss-Seidel algoritm,
+    Gauss-Seidel algorithm,
+    Hartree-Fock method,
     Jacobi method,
     Lattice Boltzmann method,
     Method of moments,
+    Molecular dynamics,
     Runge-Kutta method,
     Simultaneous over-relaxation,
     T-matrix scattering
@@ -189,6 +192,8 @@ Skills and Interests
     Friedman Retail Sales Training,
     Freight handling,
     Inventory control,
+    Macroeconomics,
+    Microeconomics,
     PMSA Relationship Selling Program,
     Shipping/Receiving,
     Time management,
