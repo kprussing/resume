@@ -6,12 +6,16 @@ Keith F. Prussing
 Work Experience
 ---------------
 
-2009-Present
+2007-Present
 :   **Georgia Tech Research Institute**, _Atlanta, GA_
 
-    Graduate Research Assistant
+    Tech Temp (2015-Present)
 
-    *   Currently investigating surface shape effects on nearfield 
+    Graduate Research Assistant (2009-2015)
+
+    Student Research Assistant (2007-2009)
+
+    *   Currently investigating surface shape effects on near-field 
         radiative transfer to direct energy
     *   Developed Python package to interface with a boundary element
         method library written in C
@@ -28,16 +32,8 @@ Work Experience
         complex urban environments
     *   Implemented routine to incorporate motion capture data into
         simulation of complex urban environments
-
-2007-2009
-:   **Georgia Tech Research Institute**, _Atlanta, GA_
-
-    Student Research Assistant 
-
     *   Aided development of a framework to simulate visible
         and infrared signatures in complex environments
-    *   Developed a rudimentary vehicle dynamics model for incorporation
-        into complex urban environment simulations
     *   Implemented a finite difference algorithm to solve Fourier's
         heat equation
     *   Connected finite difference method to MySQL database to extract
@@ -115,12 +111,13 @@ Skills and Interests
 
 **Software**
 :   Apache Subversion,
+    Apple OS X,
     C/C++,
     Fortran,
     Git,
     HTML,
+    Java,
     LaTeX,
-    Apple OS X,
     Markdown,
     MATLAB,
     Microsoft Office,
@@ -128,7 +125,8 @@ Skills and Interests
     MySQL,
     Python,
     Red Hat Enterprise Linux,
-    Shell,
+    reStructuredText,
+    Bourne Shell,
     SUM/IT point of sale system,
     Tri-Tech point of sale system
 
@@ -222,8 +220,7 @@ Education
 August 2015
 :   **Georgia Institute of Technology** _Atlanta, GA_
 
-    *   Candidate for Doctor of Philosophy in Physics with a minor in
-        Chemistry
+    *   Doctor of Philosophy in Physics with a minor in Chemistry
     *   Thesis title: _An investigation of surface shape effects on 
         near-field radiative transfer_
     *   Secret level security clearance, common access card
@@ -253,10 +250,12 @@ May 2009
 Authorships
 -----------
 
+<!-- 
 ### Papers ###
 #.  K. F. Prussing and J. M. Cathcart, "Spatial distribution of
     near-field electromagnetic flux: a numerical study of particle shape
     effect," _Journal of nanophotonics_, (under review).
+-->
 
 ### Presentations ###
 #.  "Numerical investigation of particle shape effects on the spatial
