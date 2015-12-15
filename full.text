@@ -6,22 +6,22 @@ Keith F. Prussing
 Work Experience
 ---------------
 
-2007-Present
+2007-2015
 :   **Georgia Tech Research Institute**, _Atlanta, GA_
 
-    Tech Temp (2015-Present)
+    Tech Temp (2015-2015)
 
     Graduate Research Assistant (2009-2015)
 
     Student Research Assistant (2007-2009)
 
-    *   Currently investigating surface shape effects on near-field 
-        radiative transfer to direct energy
+    *   Investigated surface shape effects on near-field radiative
+        transfer to direct energy
     *   Developed Python package to interface with a boundary element
         method library written in C
-    *   Currently lead developer of a framework to process
-        hyper-spectral imagery overnight and _in situ_ for spot checking
-    *   Studied electromagnetic wave scattering from nonspherical 
+    *   Lead development of a framework to process hyper-spectral
+        imagery overnight and _in situ_ for spot checking
+    *   Studied electromagnetic wave scattering from nonspherical
         particles
     *   Studied performance parameters of counter flow cooling towers to
         understand energy emission under normal load to monitor power
@@ -136,7 +136,7 @@ Skills and Interests
 **Computational methods**
 :   Boundary element method,
     Euler method,
-    Finite difference method, 
+    Finite difference method,
     Gauss-Seidel algorithm,
     Hartree-Fock method,
     Jacobi method,
@@ -152,7 +152,7 @@ Skills and Interests
     Coordinate transformation,
     Electrodynamics,
     Heat transfer,
-    Kinematics, 
+    Kinematics,
     Optics,
     Otto engine,
     Quantum mechanics,
@@ -173,10 +173,10 @@ Skills and Interests
     Vector algebra
 
 **Interests**
-:   Electromagnetic wave scattering, 
-    Fetch, 
-    Fourier heat equation, 
-    Heat transfer, 
+:   Electromagnetic wave scattering,
+    Fetch,
+    Fourier heat equation,
+    Heat transfer,
     High performance computing,
     Modeling,
     Parallel programming,
@@ -211,20 +211,20 @@ Skills and Interests
 
 **Musical Instruments**
 :   Clarinet (Bass, Contra-Alto, Soprano),
-    Euphonium, 
-    Guitar, 
+    Euphonium,
+    Guitar,
     Mandolin,
-    Trombone, 
+    Trombone,
     Trumpet
 
 Education
 ---------
 
-August 2015
+December 2015
 :   **Georgia Institute of Technology** _Atlanta, GA_
 
     *   Doctor of Philosophy in Physics with a minor in Chemistry
-    *   Thesis title: _An investigation of surface shape effects on 
+    *   Thesis title: _An investigation of surface shape effects on
         near-field radiative transfer_
     *   Secret level security clearance, common access card
     *   Overall GPA: 3.71
@@ -253,7 +253,7 @@ May 2009
 Authorships
 -----------
 
-<!-- 
+<!--
 ### Papers ###
 #.  K. F. Prussing and J. M. Cathcart, "Spatial distribution of
     near-field electromagnetic flux: a numerical study of particle shape
@@ -279,7 +279,7 @@ Authorships
     and modeling," in Proc. SPIE 8019, 2011,
     <http://dx.doi.org/10.1117/12.884480>.
 #.  J. M. Cathcart, K. Prussing, and B. Kocher, "Human motion analysis
-    and characterization," in Proc. SPIE 8019, 2011, 
+    and characterization," in Proc. SPIE 8019, 2011,
     <http://dx.doi.org/10.1117/12.884481>.
 #.  J. M. Cathcart, B. Kocher, K. Prussing, S. Lane, and A. Thomas,
     "Multimodal signature modeling of humans," Proc. 7687, 2010,
@@ -287,5 +287,5 @@ Authorships
 
 -----
 
->   <kprussing74@gmail.com> 
+>   <kprussing74@gmail.com>
 
