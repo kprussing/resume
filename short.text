@@ -1,125 +1,131 @@
-Keith F. Prussing
-=================
+Keith F. Prussing, Ph.D.
+========================
 
 >   If only I had a big enough computer and time to play with it.
 
-Work Experience
----------------
+### Work Experience
 
-2009-Present
-:   Graduate Research Assistant at **Georgia Tech Research Institute**, 
-    _Atlanta, GA_
+2007-Present
+:   **Georgia Tech Research Institute**, _Atlanta, GA_
 
-*   Currently investigating surface shape effects on nearfield 
-    radiative transfer to direct energy
-*   Currently lead developer of a framework to process
-    hyper-spectral imagery overnight and _in situ_ checking
-*   Studied electromagnetic wave scattering from nonspherical
-    particles
-*   Studied performance parameters of counter flow cooling towers to
-    understand energy emission
-*   Implemented five degree of freedom rigid body model for
-    untracked, four wheel land vehicles
-*   Interfaced vehicle model with MySQL database for simulation of
-    complex urban environments
-*   Implemented routine to incorporate motion capture data into
-    simulation of complex urban environments
+    Research Engineer II (2016-Present)
 
-2007-2009
-:   Student Research Assistant at **Georgia Tech Research Institute**, 
-    _Atlanta, GA_
+    Tech Temp (2015-2016)
 
-*   Aided development of a framework to simulate visible
-    and infrared signatures in complex environments
-*   Developed a vehicle dynamics model for incorporation
-    into complex urban environment simulations
-*   Implemented a finite difference algorithm to solve Fourier's
-    heat equation
-*   Connected finite difference method to MySQL database to get
-    simulation parameters
-*   Investigated lattice Boltzmann method as a means to couple
-    radiative and conductive energy transport
+    Graduate Research Assistant (2009-2015)
 
-Education
----------
+    Student Research Assistant (2007-2009)
 
-May 2015
-:   **Georgia Institute of Technology**, _Atlanta, GA_
+    *   Investigated surface shape effects on near-field radiative
+        transfer to direct thermal energy through an array of objects in
+        an effort to tailor the thermal gradient.
+    *   Implemented a finite difference algorithm to solve Fourier's
+        heat equation including conduction, convection, and radiative
+        transport.
+    *   Investigated lattice Boltzmann method as a means to couple
+        radiative and conductive energy transport for predicting thermal
+        signature.
+    *   Incorporated background orientation to incorporate solar
+        radiative loading into physically based conduction model for
+        thermal signature prediction.
+    *   Developed Python package to interface with a boundary element
+        method library written in C to evaluate scattering off
+        non-spherical particles.
+    *   Lead development of a framework to process hyper-spectral
+        imagery overnight and _in situ_ for spot checking.
+    *   Developed a visualization tool for high dimensional data sets.
+    *   Aided in development of a framework to simulate visible
+        and infrared signatures in complex environments.
+    *   Developed a five degree of freedom rigid body model for
+        untracked, four wheel land vehicles under normal conditions.
+    *   Implemented a method to incorporate human motion capture data
+        into simulations of complex urban environments.
+    *   Connected finite difference solution to Fourier's heat equation
+        to MySQL database to extract simulation parameters for complex
+        scenes.
 
-*   Candidate for Doctor of Philosophy in Physics with a minor in
-    Chemistry
-*   Thesis title: _An investigation of surface shape effects on
-    near-field radiative transfer_
-*   Secret level security clearance, common access card
+### Skills and Interests
+
+Apache Subversion,
+C/C++,
+Electromagnetic wave scattering,
+Fortran,
+Fourier heat equation,
+Git,
+GNU Compiler Collection,
+GNU Tool Chain,
+Heat transfer,
+High performance computing,
+HTML,
+Java,
+LaTeX,
+Markdown,
+MATLAB,
+Modeling,
+Microsoft Visual Studio,
+MySQL,
+Parallel programming,
+Python,
+Radiative transfer,
+reStructuredText,
+Simulation
+
+### Education
+
+December 2015
+:   **Georgia Institute of Technology** _Atlanta, GA_
+
+    *   Doctor of Philosophy in Physics with a minor in Chemistry
+    *   Thesis title: _An investigation of surface shape effects on
+        near-field radiative transfer_
+<!--    *   Secret level security clearance, common access card -->
+<!-- *   Overall GPA: 3.71 -->
+
+<!--    *   Major GPA: 3.81 -->
 
 May 2009
-:   **Georgia Institute of Technology**, _Atlanta, GA_
+:   **Georgia Institute of Technology** _Atlanta, GA_
 
-*   Bachelor of Science in Physics
-*   Graduated _summa cum laude_.  GPA: 3.95
+    *   Bachelor of Science in Physics
+    *   Graduated _summa cum laude_
+<!--    *   Overall GPA: 3.95 -->
 
-Skills and Interests
---------------------
+Authorships
+-----------
 
-**Software**
-:   Apache Subversion,
-    C/C++,
-    Fortran,
-    Git,
-    HTML,
-    LaTeX,
-    Mac OSX,
-    Markdown,
-    MATLAB,
-    Microsoft Office,
-    Microsoft Windows XP/Vista/7,
-    MySQL,
-    Python,
-    Red Hat Enterprise Linux
+<!--
+### Papers ###
+#.  K. F. Prussing and J. M. Cathcart, "Spatial distribution of
+    near-field electromagnetic flux: a numerical study of particle shape
+    effect," _Journal of nanophotonics_, (under review).
+-->
 
-**Computational methods**
-:   Boundary element method,
-    Euler method,
-    Finite difference method, 
-    Lattice Boltzmann method,
-    Method of moments,
-    Runge-Kutta method,
-    T-matrix scattering
+### Presentations ###
+#.  "Numerical investigation of particle shape effects on the spatial
+    distribution of near-field electromagnetic flux," K. Prussing.
+    _Presentation to the 80th annual meeting of the APS southeastern
+    section_, Bowling Green, KY, 2013.  _Mary Ellen Zvanut_.
 
-**Physics**
-:   Classical Mechanics, 
-    Electrodynamics,
-    Optics,
-    Statistical mechanics,
-    Thermodynamics
+### Posters ###
+#.  "Numerical investigation of particle shape effects on near-field
+    electromagnetic flux," K. Prussing.  _Poster for the 16th annual
+    directed energy symposium_, Hutsville, AL, 2014.
 
-**Mathematics**
-:   Differential equations,
-    Green functions,
-    Linear algebra,
-    Vector-Dyadic algebra
-
-**Interests**
-:   Fetch, 
-    High performance computing,
-    Parallel programming,
-    Rock climbing
-
-**Sales**
-:   Cash/Credit handling,
-    Customer relations,
-    Freight handling,
-    Inventory control
-
-**Communications**
-:   German (basic),
-    Journal articles,
-    Meetings,
-    Presentations,
-    Public speaking,
-    Technical reports
+### Conference Proceedings ###
+#.  E. M. Burdette, C. S. Nichols, S. E. Lane, K. F. Prussing, and J. M.
+    Cathcart, "Imaging FTIR emissivity measurement method," Proc. 8870,
+    2013, <http://dx.doi.org/10.117/12.2023415>.
+#.  K. Prussing, J. M. Cathcart, and B. Kocher, "Human motion analysis
+    and modeling," in Proc. SPIE 8019, 2011,
+    <http://dx.doi.org/10.1117/12.884480>.
+#.  J. M. Cathcart, K. Prussing, and B. Kocher, "Human motion analysis
+    and characterization," in Proc. SPIE 8019, 2011,
+    <http://dx.doi.org/10.1117/12.884481>.
+#.  J. M. Cathcart, B. Kocher, K. Prussing, S. Lane, and A. Thomas,
+    "Multimodal signature modeling of humans," Proc. 7687, 2010,
+    <http://dx.doi.org/10.1117/12.850688>.
 
 -----
 
->   <kprussing74@gmail.com> 
+>   <kprussing74@gmail.com>
 

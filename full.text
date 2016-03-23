@@ -6,15 +6,21 @@ Keith F. Prussing, Ph.D.
 Work Experience
 ---------------
 
-2007-2015
+2007-Present
 :   **Georgia Tech Research Institute**, _Atlanta, GA_
 
-    Tech Temp (2015-2015)
+    Research Engineer II (2016-Present)
+
+    Tech Temp (2015-2016)
 
     Graduate Research Assistant (2009-2015)
 
     Student Research Assistant (2007-2009)
 
+    *   Incorporated background orientation into fundamental model for
+        thermal signature prediction software.
+    *   Assisted implementing a multi-hypothesis tracking algorithm for
+        radar simulation in Fortran.
     *   Investigated surface shape effects on near-field radiative
         transfer to direct energy
     *   Developed Python package to interface with a boundary element
