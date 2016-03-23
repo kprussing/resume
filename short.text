@@ -25,15 +25,15 @@ Keith F. Prussing, Ph.D.
     *   Investigated lattice Boltzmann method as a means to couple
         radiative and conductive energy transport for predicting thermal
         signature.
-    *   Incorporated background orientation to incorporate solar
-        radiative loading into physically based conduction model for
-        thermal signature prediction.
+    *   Modified existing software to incorporate background orientation
+        to include solar radiative loading into physically based
+        model for thermal signature prediction.
     *   Developed Python package to interface with a boundary element
-        method library written in C to evaluate scattering off
-        non-spherical particles.
+        method library written in C to evaluate electromagnetic wave
+        scattering off non-spherical particles.
     *   Lead development of a framework to process hyper-spectral
         imagery overnight and _in situ_ for spot checking.
-    *   Developed a visualization tool for high dimensional data sets.
+    *   Developed a visualization tool for high dimensional image sets.
     *   Aided in development of a framework to simulate visible
         and infrared signatures in complex environments.
     *   Developed a five degree of freedom rigid body model for
@@ -41,8 +41,8 @@ Keith F. Prussing, Ph.D.
     *   Implemented a method to incorporate human motion capture data
         into simulations of complex urban environments.
     *   Connected finite difference solution to Fourier's heat equation
-        to MySQL database to extract simulation parameters for complex
-        scenes.
+        to MySQL database to extract simulation parameters at runtime
+        for complex scenes.
 
 ### Skills and Interests
 
