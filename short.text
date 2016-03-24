@@ -8,26 +8,30 @@ Keith F. Prussing, Ph.D.
 2007-Present
 :   **Georgia Tech Research Institute**, _Atlanta, GA_
 
-    Research Engineer II (2016-Present)
-
-    Tech Temp (2015-2016)
-
-    Graduate Research Assistant (2009-2015)
-
+    Research Engineer II (2016-Present),
+    Tech Temp (2015-2016),
+    Graduate Research Assistant (2009-2015),
     Student Research Assistant (2007-2009)
 
     *   Investigated surface shape effects on near-field radiative
         transfer to direct thermal energy through an array of objects in
         an effort to tailor the thermal gradient.
+    *   Demonstrated that the flux through a surface can be increased
+        through a small region on a disk by 50% by decreasing the
+        projected area of the focusing surface.
     *   Implemented a finite difference algorithm to solve Fourier's
         heat equation including conduction, convection, and radiative
         transport.
+    *   Extended existing software to incorporate background orientation
+        to include solar radiative loading into physically based
+        model for IR signature prediction.
+    *   Demonstrated that the orientation of the background alters the 
+        terrain signature throughout the diurnal cycle by 60% or more.
     *   Investigated lattice Boltzmann method as a means to couple
         radiative and conductive energy transport for predicting thermal
         signature.
-    *   Modified existing software to incorporate background orientation
-        to include solar radiative loading into physically based
-        model for thermal signature prediction.
+    *   Developed Python package to model radiative transfer through a
+        cloud bank.
     *   Developed Python package to interface with a boundary element
         method library written in C to evaluate electromagnetic wave
         scattering off non-spherical particles.
@@ -40,35 +44,32 @@ Keith F. Prussing, Ph.D.
         untracked, four wheel land vehicles under normal conditions.
     *   Implemented a method to incorporate human motion capture data
         into simulations of complex urban environments.
-    *   Connected finite difference solution to Fourier's heat equation
-        to MySQL database to extract simulation parameters at runtime
-        for complex scenes.
 
 ### Skills and Interests
 
-Apache Subversion,
-C/C++,
+Heat transfer,
+Radiative transfer,
 Electromagnetic wave scattering,
-Fortran,
 Fourier heat equation,
+Modeling,
+Simulation,
+MATLAB,
+Python,
+Fortran,
+C/C++,
+Java,
+MySQL,
 Git,
+Apache Subversion,
 GNU Compiler Collection,
 GNU Tool Chain,
-Heat transfer,
+Microsoft Visual Studio,
 High performance computing,
+Parallel programming,
 HTML,
-Java,
 LaTeX,
 Markdown,
-MATLAB,
-Modeling,
-Microsoft Visual Studio,
-MySQL,
-Parallel programming,
-Python,
-Radiative transfer,
-reStructuredText,
-Simulation
+reStructuredText
 
 ### Education
 
