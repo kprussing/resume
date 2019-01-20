@@ -1,18 +1,9 @@
 #!/usr/bin/env python 
 """The script to build my resumes."""
-import subprocess
 
-def pandoc(target, source, env):
-    """Call ``pandoc``"""
-    cmd = [
-            "pandoc", "--self-contained", "--css", str(source[1]),
-            "--from", "markdown", "--to", "html",
-            "--output", str(target[0]), str(source[0])
-        ]
-    #print(cmd)
-    return subprocess.call(cmd)
-
-env = Environment(BUILDERS={"Pandoc" : Builder(action=pandoc)})
-env.Pandoc("full.html", ["full.text", "style.css"])
-env.Pandoc("short.html", ["short.text", "short.css"])
+env = Environment(tools=["pandoc"])
+env.Pandoc("full.html", "full.text",
+           PANDOCFLAGS="--self-contained --css=style.css")
+env.Pandoc("short.html", "short.text",
+           PANDOCFLAGS="--self-contained --css=short.css")
 
