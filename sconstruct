@@ -13,3 +13,6 @@ env.Pandoc("full.html", ["full.text"] + pubs + ["education.md"],
 env.Pandoc("short.html", "short.text",
            PANDOCFLAGS="--self-contained --css=short.css")
 
+if not GetOption("clean"):
+    Default("full.html")
+
