@@ -8,7 +8,8 @@ env = Environment(ENV=os.environ, tools=["default", "pandoc"])
 Export("env")
 pubs = SConscript(os.path.join("publications", "SConscript"))
 
-env.Pandoc("full.html", ["full.text"] + pubs + ["education.md"],
+srcs = ["full.text"] + pubs + ["skills.md", "education.md"]
+env.Pandoc("full.html", srcs,
            PANDOCFLAGS="--self-contained --css=style.css")
 env.Pandoc("short.html", "short.text",
            PANDOCFLAGS="--self-contained --css=short.css")
