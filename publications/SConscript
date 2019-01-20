@@ -1,0 +1,114 @@
+#!/usr/bin/env python
+from __future__ import print_function
+
+import os
+import re
+import yaml
+
+Import("env")
+
+sections = (
+        ("Publications",
+            {"level" : 1,},
+        ),
+        ("Conference papers",
+            {"level" : 2,
+             "publication-keys" : [{"type" : "paper-conference"}]}
+        ),
+        ("Reports",
+            {"level" : 2,
+             "publication-keys" : [{"type" : "report"}]},
+        ),
+        ("Thesis",
+            {"level" : 2,
+             "publication-keys" : [{"type" : "thesis"}]},
+        ),
+        ("Presentations",
+            {"level" : 2,
+             "publication-keys" : [{"type" : "speech",
+                                    "genre" : ""}]},
+        ),
+        ("Posters",
+            {"level" : 2,
+             "publication-keys" : [{"type" : "speech",
+                                    "genre" : "Poster"}]},
+        ),
+    )
+
+bib = "publications.yaml"
+
+def missed(target, source, env):
+    """Generate the list of missed papers
+
+    In an ideal world, this is empty.  However, I may not have updated
+    the mappings after an update to the format or adding a new
+    publication.
+
+    """
+    with open(source[0].path, "r") as src:
+        doc = yaml.load(src)
+
+    try:
+        bib = doc["references"]
+    except KeyError:
+        import sys
+        msg = "{0} is missing the 'references' block"
+        print(msg.format(target[0].path), file=sys.stdout)
+        raise
+
+    for keys in [x[1].get("publication-keys", []) for x in sections]:
+        if not keys:
+            continue
+
+        for item in reversed(bib):
+            if all([item.get(k, "") == v
+                    for x in keys
+                    for k, v in x.items()]):
+                bib.remove(item)
+
+    with open(target[0].path, "w") as tgt:
+        if bib:
+            doc["references"] = bib
+            tgt.write("---\n")
+            yaml.dump(doc, stream=tgt, default_flow_style=False)
+            tgt.write("...\n")
+            head = "{0} {1}\n".format("#" * env.get("level", 2),
+                                      env.get("section", "Unsorted"))
+            tgt.write(head)
+
+
+def header(target, source, env):
+    """Generate a section header"""
+    key = "publication-keys"
+    block = env.get(key, {})
+    with open(target[0].path, "w") as tgt:
+        if block:
+            tgt.write("---\n")
+            yaml.dump({key : block}, stream=tgt,
+                      default_flow_style=False)
+            tgt.write("...\n")
+
+        head = "{0} {1}\n".format("#" * env.get("level", 1),
+                                  env.get("section", "Publications"))
+        tgt.write(head)
+
+secs = []
+flags = ["--filter", File("publications.py").path,
+         "--filter=pandoc-citeproc",
+         "--csl", File("ieee-with-url.csl").path
+         ]
+for section, kwargs in sections:
+    root = re.sub(r"\s", "-", section)
+    md = env.Command(root + ".md", None,
+                     header, section=section, **kwargs)
+    env.AlwaysBuild(md)
+    secs.extend(env.Pandoc(root + ".html", md + [bib],
+                           PANDOCFLAGS=" ".join(flags)))
+
+unsorted = env.Command("unsorted.md", bib, missed)
+env.AlwaysBuild(unsorted)
+secs.extend(env.Pandoc("unsorted.html", unsorted,
+                       PANDOCFLAGS=" ".join(flags[2:])))
+
+html = env.Pandoc("index.html", secs, PANDOCFLAGS="")
+Return("html")

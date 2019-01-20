@@ -1,0 +1,348 @@
+---
+nocite: '@*'
+#csl: https://www.zotero.org/styles/ieee-with-url
+references:
+- id: cathcart_model_2011
+  type: speech
+  author:
+  - family: Cathcart
+    given: J. Michael
+  - family: Otolorin
+    given: S.
+  - family: Kocher
+    given: B.
+  - family: Prussing
+    given: K.
+  - family: Garrett
+    given: A.
+  issued:
+  - year: 2011
+    month: 2
+  title: Model Based Approach for Thermal Target Sharpening
+  publisher-place: Berkley
+  event-place: Berkley
+  genre: Poster
+
+- id: prussing_urban_2010
+  type: speech
+  author:
+  - family: Cathcart
+    given: J. Michael
+  - family: Prussing
+    given: K.
+  - family: Lane
+    given: Sarah
+  - family: Otolorin
+    given: Shayla
+  - family: Kocher
+    given: Brian R.
+  issued:
+  - year: 2010
+    month: 4
+  title: Urban Scene Simulation for Multimodal Sensing Applications
+  event: SPIE Defense and Security Symposium
+
+- id: prussing_investigation_2015
+  type: thesis
+  author:
+  - family: Prussing
+    given: Keith F.
+  issued:
+  - year: 2015
+    month: 5
+  title: An Investigation of Surface Shape Effects on Near-field Radiative Transfer
+  publisher: Georgia Institute of Technology
+  publisher-place: Atlanta, GA
+  event-place: Atlanta, GA
+  number-of-pages: '170'
+  genre: Thesis
+  language: English
+
+- id: prussing_numerical_2014
+  type: speech
+  author:
+  - family: Prussing
+    given: Keith F.
+  - family: Cathcart
+    given: J. Michael
+  issued:
+  - year: 2014
+    month: 3
+    day: 11
+  title: Numerical Investigation of Particle Shape Effects on Near-field Electromagnetic
+    Flux
+  publisher-place: Hutsville, AL
+  event: Sixteenth Anual Directed Energy Symposium
+  event-place: Hutsville, AL
+  genre: Poster
+  abstract: It is well known that the radiative transport between particles, particularly
+    the case of nano-sized particles, can exceed the black body limit when the separation
+    between the particles less than the thermal wavelength λ\_T∼hc\\/(k\_B T). This
+    energy exchange can drastically affect the temperature profile of a system. The
+    ability to influence the temperature profile of a system has applications in microprocessor
+    design and thermophotovoltaic cell efficiency. Recent work has shown that the
+    temperature dependence of a system of dipoles is influenced by the configuration.
+    Other work has demonstrated a methodology to investigate the total flux into closely
+    separated bodies using the boundary element method. This computational method
+    permits the insertion of test surfaces into the two-body system to readily assess
+    the directionality of the electromagnetic flux at additional points in space.
+    By studying the effect of particle shape and orientation of the flux through such
+    a test surface, it will be possible to establish geometric configurations to directionally
+    channel the electromagnetic flux through a system of particles. In this poster,
+    we outline the methodology to compute the flux distribution and consider the flux
+    in the initial case between a sphere and a spheroid as a function of eccentricity.
+
+- id: prussing_numerical_2014-2
+  type: paper-conference
+  author:
+  - family: Prussing
+    given: Keith
+  - family: Cathcart
+    given: Michael
+  issued:
+  - year: 2013
+    month: 11
+    day: 23
+  accessed:
+  - year: 2014
+    month: 3
+    day: 18
+  title: Numerical Investigation of Particle Shape Effects on the Spatial Distribution
+    of Near-field Electromagnetic Flux
+  container-title: Bulletin of the American Physical Society
+  publisher: American Physical Society
+  event: 80th Annual Meeting of the APS Southeastern Section
+  volume: Volume 58, Number 17
+  source: meetings.aps.org
+  URL: http://meetings.aps.org/link/BAPS.2013.SES.HA.6
+
+- id: burdette_imaging_2013
+  type: paper-conference
+  author:
+  - family: Burdette
+    given: Edward M.
+  - family: Nichols
+    given: C. Spencer
+  - family: Lane
+    given: Sarah E.
+  - family: Prussing
+    given: Keith F.
+  - family: Cathcart
+    given: J. Michael
+  issued:
+  - year: 2013
+  accessed:
+  - year: 2014
+    month: 3
+    day: 18
+  title: Imaging FTIR Emissivity Measurement Method
+  page: 88700B-88700B-7
+  volume: '8870'
+  source: Silverchair
+  abstract: Though many materials behave approximately as greybodies across the long-wave
+    infrared (LWIR) waveband, certain important infrared (IR) scene modeling materials
+    such as brick and galvanized steel exhibit more complex optical properties1. Accurately
+    describing how non-greybody materials interact relies critically on the accurate
+    incorporation of the emissive and reflective properties of the in-scene materials.
+    Typically, measured values are obtained and used. When measured using a non-imaging
+    spectrometer, a given material’s spectral emissivity requires more than one collection
+    episode, as both the sample under test and a standard must be measured separately.
+    In the interval between episodes changes in environment degrade emissivity measurement
+    accuracy. While repeating and averaging measurements of the standard and sample
+    helps mitigate such effects, a simultaneous measurement of both can ensure identical
+    environmental conditions during the measurement process, thus reducing inaccuracies
+    and delivering a temporally accurate determination of background or ‘down-welling’
+    radiation. We report on a method for minimizing temporal inaccuracies in sample
+    emissivity measurements. Using a LWIR hyperspectral imager, a Telops Hyper-Cam2,
+    an approach permitting hundreds of simultaneous, calibrated spectral radiance
+    measurements of the sample under test as well as a diffuse gold standard is described.
+    In addition, we describe the data reduction technique to exploit these measurements.
+    Following development of the reported method, spectral reflectance data from 10
+    samples of various materials of interest were collected. These data are presented
+    along with comments on how such data will enhance the fidelity of computer models
+    of IR scenes.
+  URL: http://dx.doi.org/10.1117/12.2023415
+  DOI: 10.1117/12.2023415
+
+- id: prussing_terrain_2017
+  type: report
+  author:
+  - family: Prussing
+    given: Keith F
+    suffix: ', Ph.D.'
+  - family: Stewart
+    given: John
+  - family: Pierson
+    given: Oliver
+  - family: Sheffer
+    given: Albert
+  issued:
+  - year: 2017
+    month: 6
+  title: Terrain Signature Generation with Full BRDF Support
+  publisher: Georgia Tech Research Institute
+  publisher-place: Atlanta, GA
+  event-place: Atlanta, GA
+  genre: IRAD 2017 Journal Paper
+
+- id: prussing_human_2011
+  type: paper-conference
+  author:
+  - family: Prussing
+    given: Keith
+  - family: Cathcart
+    given: J. Michael
+  - family: Kocher
+    given: Brian
+  issued:
+  - year: 2011
+  accessed:
+  - year: 2011
+    month: 11
+    day: 5
+  title: Human Motion Analysis and Modeling
+  page: 80190L-80190L-8
+  source: CrossRef
+  URL: https://doi.org/10.1117/12.884480
+  DOI: 10.1117/12.884480
+
+- id: cathcart_human_2011
+  type: paper-conference
+  author:
+  - family: Cathcart
+    given: J. Michael
+  - family: Prussing
+    given: Keith
+  - family: Kocher
+    given: Brian
+  issued:
+  - year: 2011
+  accessed:
+  - year: 2011
+    month: 11
+    day: 5
+  title: Human Motion Analysis and Characterization
+  page: 80190M-80190M-9
+  source: CrossRef
+  URL: https://doi.org/10.1117/12.884481
+  DOI: 10.1117/12.884481
+
+- id: cathcart_multimodal_2010
+  type: paper-conference
+  author:
+  - family: Cathcart
+    given: J. Michael
+  - family: Kocher
+    given: Brian
+  - family: Prussing
+    given: Keith
+  - family: Lane
+    given: Sarah
+  - family: Thomas
+    given: Alan
+  issued:
+  - year: 2010
+  accessed:
+  - year: 2011
+    month: 1
+    day: 30
+  title: Multimodal Signature Modeling of Humans
+  publisher-place: Orlando, Florida, USA
+  event: Active and Passive Signatures
+  event-place: Orlando, Florida, USA
+  page: 76870D-76870D-7
+  source: COinS
+  URL: https://doi.org/10.1117/12.850688
+  DOI: 10.1117/12.850688
+
+- id: stewart_gtsims_2016
+  type: speech
+  author:
+  - family: Stewart
+    given: John
+  - family: Cordell
+    given: Chris
+  - family: Prussing
+    given: Keith F.
+    suffix: ', Ph.D.'
+  - family: Webber
+    given: Drew
+  - family: Nielson
+    given: Kevin
+  - family: Price
+    given: Miles
+  - family: Sheffer
+    given: Albert
+  issued:
+  - year: 2016
+    month: 6
+    day: 17
+  title: GTSIMS Terrain Background Signature Generation
+  publisher-place: Atlanta, GA
+  event: 2016 IRAD Extravaganza
+  event-place: Atlanta, GA
+  genre: Poster
+
+- id: prussing_enhanced_2018
+  type: paper-conference
+  author:
+  - family: Prussing
+    given: Keith F.
+    suffix: ', Ph.D.'
+  - family: Pierson
+    given: Oliver
+  - family: Cordell
+    given: Chris
+  - family: Stewart
+    given: John
+  - family: Nielson
+    given: Kevin
+  issued:
+  - year: 2018
+    month: 5
+    day: 14
+  accessed:
+  - year: 2019
+    month: 1
+    day: 19
+  title: Enhanced Backgrounds in Scene Rendering with GTSIMS
+  container-title: 'Infrared Imaging Systems: Design, Analysis, Modeling, and Testing
+    XXIX'
+  publisher: International Society for Optics and Photonics
+  event: 'Infrared Imaging Systems: Design, Analysis, Modeling, and Testing XXIX'
+  page: 106250O
+  volume: '10625'
+  source: www.spiedigitallibrary.org
+  abstract: A core component to modeling visible and infrared sensor responses is
+    the ability to faithfully recreate background noise and clutter in a synthetic
+    image. Most tracking and detection algorithms use a combination of signal to noise
+    or clutter to noise ratios to determine if a signature is of interest. A primary
+    source of clutter is the background that defines the environment in which a target
+    is placed. Over the past few years, the Electro-Optical Systems Laboratory (EOSL)
+    at the Georgia Tech Research Institute has made significant improvements to its
+    in house simulation framework GTSIMS. First, we have expanded our terrain models
+    to include the effects of terrain orientation on emission and reflection. Second,
+    we have included the ability to model dynamic reflections with full BRDF support.
+    Third, we have added the ability to render physically accurate cirrus clouds.
+    And finally, we have updated the overall rendering procedure to reduce the time
+    necessary to generate a single frame by taking advantage of hardware acceleration.
+    Here, we present the updates to GTSIMS to better predict clutter and noise doe
+    to non-uniform backgrounds. Specifically, we show how the addition of clouds,
+    terrain, and improved non-uniform sky rendering improve our ability to represent
+    clutter during scene generation.
+  URL: https://doi.org/10.1117/12.2304864
+  DOI: 10.1117/12.2304864
+
+- id: prussing_stellar_2019
+  type: paper-conference
+  author:
+  - family: Prussing
+    given: Keith F.
+    suffix: ', Ph.D.'
+  issued:
+  - year: 2019
+    month: 4
+  title: Stellar Background Rendering for Space Situational Awareness Algorithm Development
+  event: SPIE Defense and Comercial Sensing
+  note: In preperation
+...

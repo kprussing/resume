@@ -1,8 +1,14 @@
 #!/usr/bin/env python 
 """The script to build my resumes."""
 
-env = Environment(tools=["pandoc"])
-env.Pandoc("full.html", "full.text",
+import os
+
+env = Environment(ENV=os.environ, tools=["default", "pandoc"])
+
+Export("env")
+pubs = SConscript(os.path.join("publications", "SConscript"))
+
+env.Pandoc("full.html", ["full.text"] + pubs,
            PANDOCFLAGS="--self-contained --css=style.css")
 env.Pandoc("short.html", "short.text",
            PANDOCFLAGS="--self-contained --css=short.css")
