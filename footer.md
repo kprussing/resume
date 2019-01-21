@@ -1,3 +1,5 @@
 -----
 
->   <kprussing74@gmail.com>
+::: {.contact}
+<kprussing74@gmail.com>
+:::
