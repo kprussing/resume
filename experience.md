@@ -1,7 +1,7 @@
 ## Work Experience
 
 2007-Present
-:   **Georgia Tech Research Institute**, _Atlanta, GA_
+:   [Georgia Tech Research Institute]{.institute}, [Atlanta, GA]{.location}
 
     Research Engineer II (2016-Present)
 

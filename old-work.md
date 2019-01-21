@@ -5,14 +5,14 @@ from my past.  I highly doubt anything below will be a make or break,
 but you may find something of interest to talk about.
 
 2007-2008
-:   **Mori Luggage & Gifts**, _Atlanta, GA_
+:   [Mori Luggage & Gifts]{.institute}, [Atlanta, GA]{.location}
 
     Sales Associate
 
     -   Applied sales training to work through school
 
 2004-2007
-:   **Ken Stanton Music**, _Marietta, GA_
+:   [Ken Stanton Music]{.institute}, [Marietta, GA]{.location}
 
     Assistant Manager
 
@@ -31,7 +31,7 @@ but you may find something of interest to talk about.
 <!-- my immediate supervisor.  That says a lot about him.            -->
 
 2002-2004
-:   **School Box**, _Tucker, GA_
+:   [School Box]{.institute}, [Tucker, GA]{.location}
 
     Stock Assistant
 
@@ -42,7 +42,7 @@ but you may find something of interest to talk about.
     -   Assisted customers with locating products
 
 2002-2002
-:   **Waffle House**, _Norcross, GA_
+:   [Waffle House]{.institute}, [Norcross, GA]{.location}
 
     Grill Operator
 
@@ -50,7 +50,7 @@ but you may find something of interest to talk about.
     -   Prepared _mise en place_ for the store
 
 2000-2001
-:   **Music & Arts Center**, _Lawrenceville, GA_
+:   [Music & Arts Center]{.institute}, [Lawrenceville, GA]{.location}
 
     Sales Associate
 
@@ -59,11 +59,11 @@ but you may find something of interest to talk about.
     -   Completed Friedman retail sales training
 
 1998-2000
-:   **Panera Bread** _Duluth, GA_
+:   [Panera Bread]{.institute} [Duluth, GA]{.location}
 
     Shift Supervisor
 
-    -   Included so that **everything** is listed
+    -   Included so that [everything]{.institute} is listed
     -   Most generally efficient employee
     -   Nominated for employee of the year twice
     -   Appointed to train associates in local region

@@ -77,3 +77,11 @@ a:hover, a:active {
 hr {
     color: #A6A6A6;
 }
+
+/* Institute and location properties. */
+span.institute {
+    font-weight: bolder;
+}
+span.location {
+    font-style: oblique;
+}
