@@ -9,7 +9,8 @@ Export("env")
 pubs = SConscript(os.path.join("publications", "SConscript"))
 
 srcs = ["index.md", "experience.md", "awards.md"] + pubs \
-    + [x + ".md" for x in ("skills", "education", "old-work", "footer")]
+    + [x + ".md" for x in
+       ("projects", "skills", "education", "old-work", "footer")]
 
 css = " ".join(["--css={0}.css".format(x)
                 for x in ("website-colors", "style")])
