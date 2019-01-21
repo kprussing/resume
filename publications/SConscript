@@ -9,27 +9,27 @@ Import("env")
 
 sections = (
         ("Publications",
-            {"level" : 1,},
+            {"level" : 2,},
         ),
         ("Conference papers",
-            {"level" : 2,
+            {"level" : 3,
              "publication-keys" : [{"type" : "paper-conference"}]}
         ),
         ("Reports",
-            {"level" : 2,
+            {"level" : 3,
              "publication-keys" : [{"type" : "report"}]},
         ),
         ("Thesis",
-            {"level" : 2,
+            {"level" : 3,
              "publication-keys" : [{"type" : "thesis"}]},
         ),
         ("Presentations",
-            {"level" : 2,
+            {"level" : 3,
              "publication-keys" : [{"type" : "speech",
                                     "genre" : ""}]},
         ),
         ("Posters",
-            {"level" : 2,
+            {"level" : 3,
              "publication-keys" : [{"type" : "speech",
                                     "genre" : "Poster"}]},
         ),
@@ -72,7 +72,7 @@ def missed(target, source, env):
             tgt.write("---\n")
             yaml.dump(doc, stream=tgt, default_flow_style=False)
             tgt.write("...\n")
-            head = "{0} {1}\n".format("#" * env.get("level", 2),
+            head = "{0} {1}\n".format("#" * env.get("level", 3),
                                       env.get("section", "Unsorted"))
             tgt.write(head)
 
@@ -108,7 +108,7 @@ for section, kwargs in sections:
 unsorted = env.Command("unsorted.md", bib, missed)
 env.AlwaysBuild(unsorted)
 secs.extend(env.Pandoc("unsorted.html", unsorted,
-                       PANDOCFLAGS=" ".join(flags[2:])))
+                       level=3, PANDOCFLAGS=" ".join(flags[2:])))
 
 html = env.Pandoc("index.html", secs, PANDOCFLAGS="")
 Return("html")

@@ -1,4 +1,4 @@
-# Education
+## Education
 
 December 2015
 :   **Georgia Institute of Technology** _Atlanta, GA_
