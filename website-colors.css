@@ -1,0 +1,10 @@
+/* Colors for deploying on the website
+ */
+
+:root {
+    --background:       #dcdccc; /* Zenburn foreground */
+    --foreground:       #3f3f3f; /* Zenburn background */
+    --title:            #7f9f7f; /* Zenburn comment */
+    --delimiter:        #8f8f8f; /* Zenburn delimiter */
+    --section-head:     #82a282; /* Zenburn special comment */
+}

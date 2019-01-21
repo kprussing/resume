@@ -82,7 +82,7 @@ Interests
     Rock climbing,
     Simulation
 
-Communications
+Communication
 :   Email,
     German (basic),
     Journal articles,
