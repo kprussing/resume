@@ -1,4 +1,4 @@
-## Skills and Interests
+## Skills and interests
 <!-- Obligatory list of skills to get a hit on a search -->
 
 Software

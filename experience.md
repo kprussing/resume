@@ -1,4 +1,4 @@
-## Work Experience
+## Work experience
 
 2007-Present
 :   [Georgia Tech Research Institute]{.institute}, [Atlanta, GA]{.location}
