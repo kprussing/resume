@@ -3,13 +3,13 @@
 2007-Present
 :   [Georgia Tech Research Institute]{.institute}, [Atlanta, GA]{.location}
 
-    Research Engineer II (2016-Present)
+    [Research Engineer II]{.position} (2016-Present)
 
-    Tech Temp (2015-2016)
+    [Tech Temp]{.position} (2015-2016)
 
-    Graduate Research Assistant (2009-2015)
+    [Graduate Research Assistant]{.position} (2009-2015)
 
-    Student Research Assistant (2007-2009)
+    [Student Research Assistant]{.position} (2007-2009)
 
     -   Unified and updated atmospheric model in engagement simulation
         framework.

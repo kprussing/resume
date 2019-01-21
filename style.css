@@ -91,6 +91,9 @@ div.summary {
     font-size: large;
     text-align: center;
 }
+span.position {
+    font-style: oblique;
+}
 span.institute {
     font-weight: bolder;
 }
