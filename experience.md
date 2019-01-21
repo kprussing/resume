@@ -11,15 +11,32 @@
 
     [Student Research Assistant]{.position} (2007-2009)
 
+    -   Enhancing OpenGL rendering engine to handle large scale terrains
+        for infrared search and track algorithm development.
+    -   [Co-lead developer]{.position} on improved simulation framework
+        for predicting infrared and visible signatures in complex
+        environments.
+    -   Integrating physically accurate star field background into
+        OpenGL simulation engine for simulating night time engagements
+        and resident space objects.
+    -   [Course administrator]{.position} for the [Infrared and Visible
+        Signature Suppression][IRVSS] course through Georgia Tech
+        Professional Education.
     -   Unified and updated atmospheric model in engagement simulation
-        framework.
-    -   Consulted on calibrating infrared sensors for measuring
+        framework to correctly compute path radiance and atmospheric
+        transmittance.
+    -   Consulted on calibrating infrared sensors for remotely measuring
         temperature during high energy laser testing.
-    -   Implemented full Bidirectional Reflection Distribution Function
-        (BRDF) into terrain rendering for engagement simulation
+    -   Implemented full dynamic Bidirectional Reflection Distribution
+        Function (BRDF) into terrain rendering for engagement simulation
         framework.
+    -   Integrated high cirrus cloud model into engagement simulations.
     -   Incorporated background orientation into fundamental model for
         thermal signature prediction software.
+    -   Build and analyze thermal networks for predicting infrared
+        signatures.
+    -   Assist missile model developers with integrating their missile
+        models into an overall simulation framework.
     -   Assisted implementing a multi-hypothesis tracking algorithm for
         radar simulation in Fortran.
     -   Investigated surface shape effects on near-field radiative
@@ -50,3 +67,4 @@
         signature
     -   Security clearance: Secret
 
+[IRVSS]: https://pe.gatech.edu/courses/infraredvisible-signature-suppression
