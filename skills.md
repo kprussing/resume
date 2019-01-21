@@ -1,7 +1,7 @@
 ## Skills and Interests
 <!-- Obligatory list of skills to get a hit on a search -->
 
-**Software**
+Software
 :   Apache Subversion,
     Apple OS X,
     Bourne Shell,
@@ -30,7 +30,7 @@
     SCons,
     Vim
 
-**Computational methods**
+Computational methods
 :   Boundary element method,
     Euler method,
     Finite difference method,
@@ -44,7 +44,7 @@
     Simultaneous over-relaxation,
     T-matrix scattering
 
-**Physics**
+Physics
 :   Carnot engine,
     Coordinate transformation,
     Electrodynamics,
@@ -59,7 +59,7 @@
     Thermodynamics,
     Vehicle dynamics
 
-**Mathematics**
+Mathematics
 :   Differential equations,
     Dyadic algebra,
     Fourier transform,
@@ -69,7 +69,7 @@
     Separation of variables,
     Vector algebra
 
-**Interests**
+Interests
 :   Electromagnetic wave scattering,
     Fetch,
     Fourier heat equation,
@@ -82,7 +82,7 @@
     Rock climbing,
     Simulation
 
-**Communications**
+Communications
 :   Email,
     German (basic),
     Journal articles,
@@ -91,7 +91,7 @@
     Public speaking,
     Technical reports
 
-**Sales**
+Sales
 :   Cash handling,
     Credit handling,
     Customer relations,
@@ -109,7 +109,7 @@
     Tri-Tech point of sale system,
     Yamaha Certified Sales Professional
 
-**Musical Instruments**
+Musical Instruments
 :   Clarinet (Bass, Contra-Alto, Soprano),
     Euphonium,
     Guitar,
