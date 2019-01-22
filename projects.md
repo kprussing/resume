@@ -8,7 +8,7 @@
     First principles based thermal network solfer for infrared signature
     prediction written in FORTRAN 77.
 
--   Georgia Tech Simulation Integrated Modeling System (GTSIMS): [Core
+-   Georgia Tech Simulations Integrated Modeling System (GTSIMS): [Core
     developer]{.position}
 
     Engagement simulation framework for visible and infrared image
