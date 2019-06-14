@@ -339,10 +339,50 @@ references:
   - family: Prussing
     given: Keith F.
     suffix: ', Ph.D.'
+  - family: Valenta
+    given: Christopher R.
+  - family: Cordell
+    given: Christopher E.
+  - family: Zacharias
+    given: Anissa
+  - family: Churchill
+    given: Layne R.
   issued:
   - year: 2019
-    month: 4
+    month: 5
+    day: 14
+  accessed:
+  - year: 2019
+    month: 5
+    day: 29
   title: Stellar Background Rendering for Space Situational Awareness Algorithm Development
-  event: SPIE Defense and Comercial Sensing
-  note: In preperation
+  container-title: Algorithms, technologies, and applications for multispectral and
+    hyperspectral imagery XXV
+  publisher: International Society for Optics; Photonics
+  event: Algorithms, technologies, and applications for multispectral and hyperspectral
+    imagery XXV
+  page: 109860Z
+  volume: '10986'
+  abstract: 'A key component of a night scene background on a clear moonless night
+    is the stellar background. Celestial objects affected by atmospheric distortions
+    and optical system noise become the primary contribution of clutter for detection
+    and tracking algorithms while at the same time providing a solid geolocation or
+    time reference due to their highly predictable motion. Any detection algorithm
+    that needs to operate on a clear night must take into account the stellar background
+    and remove it via background subtraction methods. As with any scenario, the ability
+    to develop detection algorithms depends on the availability of representative
+    data to evaluate the difficulty of the task. Further, the acquisition of measured
+    field data under arbitrary atmospheric conditions is difficult if not impossible.
+    For this reason, a radiometrically accurate simulation of the stellar background
+    is a boon to algorithm developers. To aid in simulating the night sky, we have
+    incorporated a star-field rendering model into the Georgia Tech Simulations Integrated
+    Modeling System (GTSIMS). Rendering a radiometrically accurate star-field requires
+    three major components: positioning the stars as a function of time and observer
+    location, determining the in-band radiance of each star, and simulating the apparent
+    size of each star. We present the models we have incorporated into GTSIMS and
+    provide a representative sample of the images generated with the new model. We
+    then demonstrate how the clutter in the neighborhood of a pixels change by including
+    a radiometrically accurate rendering of a star-field.'
+  URL: http://dx.doi.org/10.1117/12.2519009
+  DOI: 10.1117/12.2519009
 ...
