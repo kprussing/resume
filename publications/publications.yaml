@@ -22,6 +22,7 @@ references:
   publisher-place: Berkley
   event-place: Berkley
   genre: Poster
+  note: Performed data reduction and analysis.
 
 - id: prussing_urban_2010
   type: speech
@@ -41,6 +42,7 @@ references:
     month: 4
   title: Urban Scene Simulation for Multimodal Sensing Applications
   event: SPIE Defense and Security Symposium
+  note: Developed untracked vehicle dynamics model and contributed section on model development.
 
 - id: prussing_investigation_2015
   type: thesis
@@ -57,6 +59,8 @@ references:
   number-of-pages: '170'
   genre: Thesis
   language: English
+  genre: PhD Dissertation
+  URL: https://smartech.gatech.edu/handle/1853/54321
 
 - id: prussing_numerical_2014
   type: speech
@@ -91,9 +95,10 @@ references:
     channel the electromagnetic flux through a system of particles. In this poster,
     we outline the methodology to compute the flux distribution and consider the flux
     in the initial case between a sphere and a spheroid as a function of eccentricity.
+  note: Lead author and presenter.
 
 - id: prussing_numerical_2014-2
-  type: paper-conference
+  type: speech
   author:
   - family: Prussing
     given: Keith
@@ -114,6 +119,7 @@ references:
   event: 80th Annual Meeting of the APS Southeastern Section
   volume: Volume 58, Number 17
   source: meetings.aps.org
+  note: Presenter and lead author.
   URL: http://meetings.aps.org/link/BAPS.2013.SES.HA.6
 
 - id: burdette_imaging_2013
@@ -139,6 +145,7 @@ references:
   page: 88700B-88700B-7
   volume: '8870'
   source: Silverchair
+  note: Performed data reduction and analysis.
   abstract: Though many materials behave approximately as greybodies across the long-wave
     infrared (LWIR) waveband, certain important infrared (IR) scene modeling materials
     such as brick and galvanized steel exhibit more complex optical properties1. Accurately
@@ -163,6 +170,7 @@ references:
     of IR scenes.
   URL: http://dx.doi.org/10.1117/12.2023415
   DOI: 10.1117/12.2023415
+  refereed: true
 
 - id: prussing_terrain_2017
   type: report
@@ -184,6 +192,8 @@ references:
   publisher-place: Atlanta, GA
   event-place: Atlanta, GA
   genre: IRAD 2017 Journal Paper
+  note: Developed methodology for computing reflections off terrains and lead author.
+  irad: true
 
 - id: prussing_human_2011
   type: paper-conference
@@ -203,8 +213,10 @@ references:
   title: Human Motion Analysis and Modeling
   page: 80190L-80190L-8
   source: CrossRef
+  note: Lead author and analyst for human motion analysis.
   URL: https://doi.org/10.1117/12.884480
   DOI: 10.1117/12.884480
+  refereed: true
 
 - id: cathcart_human_2011
   type: paper-conference
@@ -222,10 +234,32 @@ references:
     month: 11
     day: 5
   title: Human Motion Analysis and Characterization
+  container-title: Sensors, and command, control, communications, and intelligence
+    (c3i) technologies for homeland security and homeland defense x
+  publisher: International Society for Optics; Photonics
+  event: Sensors, and command, control, communications, and intelligence (c3i) technologies
+    for homeland security and homeland defense x
   page: 80190M-80190M-9
   source: CrossRef
+  abstract: Georgia Tech has investigated methods for the detection and tracking of
+    personnel in a variety of acquisition environments. This research effort focused
+    on a detailed phenomenological analysis of human physiology and signatures with
+    the subsequent identification and characterization of potential observables. Both
+    aspects are needed to support the development of personnel detection and tracking
+    algorithms. As a fundamental part of this research effort, Georgia Tech collected
+    motion capture data on an individual for a variety of walking speeds, carrying
+    loads, and load distributions. These data formed the basis for deriving fundamental
+    properties of the individual’s motion and the derivation of motionbased observables,
+    and changes in these fundamental properties arising from load variations. Analyses
+    were conducted to characterize the motion properties of various body components
+    such as leg swing, arm swing, head motion, and full body motion. This paper will
+    describe the data acquisition process, extraction of motion characteristics, and
+    analysis of these data. Video sequences illustrating the motion data and analysis
+    results will also be presented.
+  note: Aided in signature model for human body and performed data reduction and analysis.
   URL: https://doi.org/10.1117/12.884481
   DOI: 10.1117/12.884481
+  refereed: true
 
 - id: cathcart_multimodal_2010
   type: paper-conference
@@ -252,8 +286,10 @@ references:
   event-place: Orlando, Florida, USA
   page: 76870D-76870D-7
   source: COinS
+  note: Performed data reduction and analysis.
   URL: https://doi.org/10.1117/12.850688
   DOI: 10.1117/12.850688
+  refereed: true
 
 - id: stewart_gtsims_2016
   type: speech
@@ -282,6 +318,8 @@ references:
   event: 2016 IRAD Extravaganza
   event-place: Atlanta, GA
   genre: Poster
+  note: Developed methodology for incorporating terrain orientation into signature prediction pipeline.
+  irad: true
 
 - id: prussing_enhanced_2018
   type: paper-conference
@@ -330,8 +368,34 @@ references:
     to non-uniform backgrounds. Specifically, we show how the addition of clouds,
     terrain, and improved non-uniform sky rendering improve our ability to represent
     clutter during scene generation.
+  note: Lead author and developer for enhancements to GTSIMS.
   URL: https://doi.org/10.1117/12.2304864
   DOI: 10.1117/12.2304864
+  refereed: true
+
+- id: prussing_night_2019
+  type: paper-conference
+  author:
+  - family: Prussing
+    given: Keith F.
+    suffix: ', Ph.D.'
+  - family: Valenta
+    given: Christopher R.
+  - family: Cordell
+    given: Christopher E.
+    suffix: Jr.
+  - family: Churchill
+    given: Layne R.
+  issued:
+  - year: 2019
+    month: 2
+    day: 25
+  title: Night sky rendering for satellite tracking simulation
+  container-title: 2019 MSS parallel conference
+  publisher-place: Orlando, Florida, USA
+  event: Passive
+  note: Lead author and primary developer of star rendering.
+  refereed: true
 
 - id: prussing_stellar_2019
   type: paper-conference
@@ -383,6 +447,8 @@ references:
     provide a representative sample of the images generated with the new model. We
     then demonstrate how the clutter in the neighborhood of a pixels change by including
     a radiometrically accurate rendering of a star-field.'
+  note: Lead author and primary developer and analyst for star rendering.
   URL: http://dx.doi.org/10.1117/12.2519009
   DOI: 10.1117/12.2519009
+  refereed: true
 ...
