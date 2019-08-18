@@ -1,0 +1,32 @@
+---
+short-courses: # Continuing Education Courses Taught
+  - name: Infrared/Visible Signature Suppression
+    short: IRVSS
+    URL: https://pe.gatech.edu/courses/infraredvisible-signature-suppression
+    sessions:
+    - year: 2017
+      month: 9
+      day: 13
+      role: Course administrator
+    - year: 2019
+      month: 12
+      day: 10
+      role: Course administrator
+
+  - name: Target Tracking in Sensor Systems
+    short: TTSS-IRST
+    URL: https://pe.gatech.edu/courses/target-tracking-sensor-systems
+    sessions:
+    - year: 2018
+      month: 8
+      day: 28
+      role: Course lecturer
+      lectures:
+      - Infrared Search and Track
+    - year: 2019
+      month: 8
+      day: 29
+      role: Course lecturer
+      lectures:
+      - Infrared Search and Track
+...
