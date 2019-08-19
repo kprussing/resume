@@ -42,12 +42,23 @@ def short_courses_tex2md(target, source, env):
 
 short_courses.extend(env.Command("short-courses.md", short_courses,
                                  action=short_courses_tex2md))
+prof_activities = []
+for ext, fmt in ((".md", "markdown"), (".tex", "latex")):
+    pa = env.Command("professional-activities" + ext,
+                     ["professional-activities.py", data],
+                     action="python3 ${SOURCES[0]} $FLAGS "
+                            "-o ${TARGET} ${SOURCES[1]}",
+                     FLAGS="--to " + fmt
+                          + " --title 'Professional Activities'")
+    prof_activities.extend(pa)
 
 srcs = ["index.md", "experience.md", "awards.md"] \
     + pubs \
     + ["projects.md"] \
-    + [sc for sc in short_courses if re.match(".*[.]md$", str(sc))] \
-    + [x + ".md" for x in ("skills", "education", "old-work", "footer")]
+    + [sc for sc in short_courses if re.search("[.]md$", str(sc))] \
+    + [x + ".md" for x in ("skills", "education",)] \
+    + [pa for pa in prof_activities if re.search("[.]md$", str(pa))] \
+    + [x + ".md" for x in ("old-work", "footer")]
 
 css = " ".join(["--css={0}.css".format(File(x).path)
                 for x in ("website-colors", "style")])

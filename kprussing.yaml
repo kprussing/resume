@@ -29,4 +29,14 @@ short-courses: # Continuing Education Courses Taught
       role: Course lecturer
       lectures:
       - Infrared Search and Track
+
+outreach-and-service:
+  professional-activities:
+  - name: International Society for Optics and Photonics
+    URL: http://spie.org
+    positions:
+    - status: Member
+      years:
+      - 2018
+      - present
 ...
