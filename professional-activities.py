@@ -10,8 +10,11 @@ then by decreasing end date with `present' being the newest.  If a URL
 is present, the society name is typeset as a hyperlink.  The default
 output is LaTeX, but native Markdown is also supported.  The title, if
 provided on the command line, is typeset as a `\subsection` for LaTeX
-output and a level 2 header for Markdown.  All keys not used are simply
-ignored.  See the `example' flag for a reference input file.
+output and a level 2 header for Markdown.  The optional key can be used
+to change the top level key for which the script searches.  The
+structure of the contents and output if the new key must be the same as
+the `professional-activities'.  All keys not used are simply ignored.
+See the `example' flag for a reference input file.
 """
 
 import argparse
@@ -84,6 +87,8 @@ if __name__ == "__main__":
                         help="Target output file")
     parser.add_argument("-t", "--to", choices=formats.keys(),
                         default="latex", help="Output format")
+    parser.add_argument("--key", default="professional-activities",
+                        help="The field containing the activities")
     parser.add_argument("--title", type=str,
                         help="Title to place in the subsection macro")
     parser.add_argument("--no-url", action="store_false", dest="url",
@@ -122,8 +127,7 @@ if __name__ == "__main__":
 
         return None
 
-    activities = sorted(find(yaml.safe_load(args.input),
-                             "professional-activities"),
+    activities = sorted(find(yaml.safe_load(args.input), args.key),
                         key=lambda a: a["name"])
     args.output.write(format_["start"])
     def years(p):

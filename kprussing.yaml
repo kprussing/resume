@@ -33,10 +33,24 @@ short-courses: # Continuing Education Courses Taught
 outreach-and-service:
   professional-activities:
   - name: International Society for Optics and Photonics
+    short: SPIE
     URL: http://spie.org
     positions:
     - status: Member
       years:
       - 2018
       - present
+  on-campus-committees:
+  - name: Center for Space Technology and Research
+    short: C-STAR
+    URL: http://cstar.gatech.edu
+    positions:
+    - status: Fellow
+      years:
+      - 2019
+      - 2020
+      notes: 'Title: Object in Space Plume Rendering (OSPRE)'
+    - status: Member
+      years:
+      - 2019
 ...
