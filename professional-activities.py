@@ -19,6 +19,7 @@ See the `example' flag for a reference input file.
 
 import argparse
 import datetime
+import re
 import sys
 
 import yaml
@@ -64,16 +65,16 @@ formats = {
             "header" : r"\subsection{{{0}}}",
             "name" : lambda c, url: r"\href{{{URL}}}{{{name}}}" \
                                     if url and "URL" in c else "{name}",
-            "start" : "\\begin{itemize}[nosep]\n",
+            "start" : "\\begin{enumerate}[nosep]\n",
             "leader" : r"\item ",
-            "end" : r"\end{itemize}",
+            "end" : r"\end{enumerate}",
         },
         "markdown" : {
             "header" : "## {0}",
             "name" : lambda c, url: r"[{name}]({URL})" \
                                     if url and "URL" in c else "{name}",
             "start" : "",
-            "leader" : "-   ",
+            "leader" : "1.  ",
             "end" : "",
         },
     }
@@ -89,6 +90,8 @@ if __name__ == "__main__":
                         default="latex", help="Output format")
     parser.add_argument("--key", default="professional-activities",
                         help="The field containing the activities")
+    parser.add_argument("--itemize", action="store_true",
+                        help="Generate a bulleted list")
     parser.add_argument("--title", type=str,
                         help="Title to place in the subsection macro")
     parser.add_argument("--no-url", action="store_false", dest="url",
@@ -106,6 +109,15 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     format_ = formats[args.to]
+    if args.itemize:
+        if args.to == "latex":
+            format_["start"] = re.sub("enumerate", "itemize",
+                                      format_["start"])
+            format_["end"] = re.sub("enumerate", "itemize",
+                                    format_["end"])
+        elif args.to == "markdown":
+            format_["leader"] = "-   "
+
     args.output.write(format_["header"].format(args.title) + "\n\n"
                       if args.title else "")
     def find(data, key):
