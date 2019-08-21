@@ -45,18 +45,24 @@ short_courses.extend(env.Command("short-courses.md", short_courses,
 
 activities = {
         "professional-activities" : {
-            "title" : "'Professional Activities'",
-            "files" : [],
+            "title"  : "'Professional Activities'",
+            "files"  : [],
+            "script" : "professional-activities.py",
         },
         "on-campus-committees" : {
             "title" : "'On Campus Committees'",
             "files" : [],
+            "script" : "professional-activities.py",
+        },
+        "key-delivered-products" : {
+            "title" : "'Key Delivered Products'",
+            "files" : [],
+            "script" : "delivered-products.py",
         },
     }
 for key, vals in activities.items():
     for ext, fmt in ((".md", "markdown"), (".tex", "latex")):
-        pa = env.Command(key + ext,
-                         ["professional-activities.py", data],
+        pa = env.Command(key + ext, [vals["script"], data],
                          action="python3 ${SOURCES[0]} $FLAGS "
                                 "-o ${TARGET} ${SOURCES[1]}",
                          FLAGS="--to " + fmt + " --key " + key
@@ -65,6 +71,8 @@ for key, vals in activities.items():
 
 srcs = ["index.md", "experience.md", "awards.md"] \
     + pubs \
+    + [dp for dp in activities["key-delivered-products"]["files"]
+          if re.search("[.]md$", str(dp))] \
     + ["projects.md"] \
     + [sc for sc in short_courses if re.search("[.]md$", str(sc))] \
     + [x + ".md" for x in ("skills", "education",)] \

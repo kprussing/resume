@@ -1,4 +1,49 @@
 ---
+
+key-delivered-products:
+# Products are tangible things delivered to the sponsor community which
+# then provide utility to the external community for an extended period.
+# Identify the key products or systems delivered to which the candidate
+# made substantial contributions, including hardware, software code,
+# contributions to public works, etc.  This should not simply be a
+# repeat of the projects performed by the candidate.  Attach copies of
+# sponsor testimonials where possible to document the impacts achieved.
+# NOTE: IRAD efforts do not go here unless they are a special case with
+# significant external dissemination and received some type of
+# recognition/award for the effort from an organization external to
+# Georgia Tech.
+  - name: Title for the delivered product
+    URL: https://example.com
+    sponsor: Sponsor or to whom the product was delivered
+    date: # The date range for work performed by the candidate
+    - year: 2015
+      month: 1
+    - year: 2017
+      month: 3
+    product: >
+        Description of the product (Ex: What is it for the educated
+        person not in your field?  Why was this important?  What is it
+        used for, how does it fit into a larger effort, how widely is it
+        used, is it well vetted/well distributed, etc.?)
+    contribution: >
+        What did you contribute?  (Ex: Smith developed the XYZ algorithm
+        that…
+  - name: Title for the delivered product 2
+    sponsor: Sponsor or to whom the product was delivered
+    date: # The date range for work performed by the candidate
+    - year: 2016
+      month: 1
+    - year: 2019
+      month: 3
+    product: >
+        Description of the product (Ex: What is it for the educated
+        person not in your field?  Why was this important?  What is it
+        used for, how does it fit into a larger effort, how widely is it
+        used, is it well vetted/well distributed, etc.?)
+    contribution: >
+        What did you contribute?  (Ex: Smith developed the XYZ algorithm
+        that…
+
 short-courses: # Continuing Education Courses Taught
   - name: Infrared/Visible Signature Suppression
     short: IRVSS
