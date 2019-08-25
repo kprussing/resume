@@ -1,4 +1,30 @@
 ---
+position:
+  research-engineer-2:
+  - year: 2016
+    month: 2
+    day: 8
+  tech-temp:
+  - year: 2015
+    month: 6
+    day: 12
+  - year: 2016
+    month: 2
+    day: 7
+  graduate-research-assistant:
+  - year: 2015
+    month: 6
+    day: 11
+  - year: 2009
+    month: 8
+    day: 13
+  student-assistant:
+  - year: 2009
+    month: 8
+    day: 12
+  - year: 2007
+    month: 9
+    day: 10
 
 key-delivered-products:
 # Products are tangible things delivered to the sponsor community which
