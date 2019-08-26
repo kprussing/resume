@@ -101,12 +101,10 @@ for section, kwargs in sections:
     root = re.sub(r"\s", "-", section)
     md = env.Command(root + ".md", None,
                      header, section=section, **kwargs)
-    env.AlwaysBuild(md)
     secs.extend(env.Pandoc(root + ".html", md + [bib],
                            PANDOCFLAGS=" ".join(flags)))
 
 unsorted = env.Command("unsorted.md", bib, missed)
-env.AlwaysBuild(unsorted)
 secs.extend(env.Pandoc("unsorted.html", unsorted,
                        level=3, PANDOCFLAGS=" ".join(flags[2:])))
 
