@@ -26,6 +26,54 @@ position:
     month: 9
     day: 10
 
+interests:
+  - Keith F Prussing is at heart, a computational physicist.  Generally
+    speaking, he is interested in using computers to solve complex
+    physical problems.
+  - His current primary field of research is simulating rendered images
+    in the visible and infrared regions of the electromagnetic spectrum.
+  - Keith also has an interest in large scale simulations of dynamic
+    systems including simulating untracked land vehicle, aircraft, and
+    sea vessel motion.
+  - He also has a pet interest in radiative exchange in open
+    environments.  This is relevant for predicting the temperature of a
+    surface in the wider world.  Closed solutions are possible in closed
+    systems where all energy is conserved, but open systems add a
+    complexity because energy is allowed to escape the system.
+  - Keith is also interested in methods to solve sparse, symmetric,
+    block systems of equations.  His interest stems from solving heat
+    equation where the energy flow is predominantly local but the
+    radiative exchange couples disparate objects.  However, these types
+    of systems arise from many physical systems where the dominant
+    interaction is local but long range interactions influence the
+    evolution of the system.
+  - Essentially, he really likes figuring out how to teach computers to
+    solve complex problems.
+  - A side effect of his interest in complex simulations, Keith has
+    developed an interest in integrating Open Source development
+    practices with traditional academic pursuits.  This includes an
+    interest in building and distributing software with tools such as
+    autotools, CMake, SCons, latexmk, and Python's setuptools.
+  - Keith takes a strong interest in teaching any and all who will
+    listen about the practices of Open Source development, including
+    reproducible builds and execution, version control, and
+    documentation, and how to implement them in computation science and
+    engineering.
+  - Keith really enjoys figuring out how to make computers “do the right
+    thing.”  He really enjoys writing code or documentation, running a
+    “compile” command, watching text scroll across his terminal, and
+    then reveling in final product.
+  - Keith really enjoys exploring document typesetting using LaTeX and
+    its affiliated tools like TikZ.
+  - Keith is a strong supporter of Open Source practices and actively
+    participates in discussions on a number of different Open Source
+    tools and tries to contribute changes to the projects when able.
+  - Keith is an educator who likes to promulgate how and why infrared is
+    a viable band in which to do detection.  As such he administers the
+    Infrared and Visible Signature Suppression short course and teaches
+    the Infrared Search and Track session of the Target Tracking Systems
+    short course for the Georgia Tech Professional Education division.
+
 key-delivered-products:
 # Products are tangible things delivered to the sponsor community which
 # then provide utility to the external community for an extended period.

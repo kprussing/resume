@@ -69,7 +69,21 @@ for key, vals in activities.items():
                               + " --title " + vals["title"])
         vals["files"].extend(pa)
 
-srcs = ["index.md", "experience.md", "awards.md"] \
+for key in ("interests",):
+    activities[key] = {"files" : []}
+    for ext, fmt in ((".md", "markdown"), (".tex", "latex")):
+        pa = env.Command(key + ext, [File("resume.py"), data],
+                         action="python3 ${SOURCES[0]} $FLAGS $key "
+                                "-o ${TARGET} ${SOURCES[1]}",
+                         FLAGS="--to " + fmt,
+                         key=key,
+                         )
+        activities[key]["files"].extend(pa)
+
+srcs = ["index.md"] \
+    + [fi for fi in activities["interests"]["files"]
+          if re.search("[.]md$", str(fi))] \
+    + ["experience.md", "awards.md"] \
     + pubs \
     + [dp for dp in activities["key-delivered-products"]["files"]
           if re.search("[.]md$", str(dp))] \
