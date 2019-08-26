@@ -85,13 +85,13 @@ srcs = ["index.md", "experience.md", "awards.md"] \
 css = " ".join(["--css={0}.css".format(File(x).path)
                 for x in ("website-colors", "style")])
 
-env.Pandoc(os.path.join("doc", "full.html"), srcs,
-           PANDOCFLAGS="--self-contained " + css)
-env.Pandoc(os.path.join("doc", "short.html"), "short.text",
+index = env.Pandoc(os.path.join("docs", "index.html"), srcs,
+                   PANDOCFLAGS="--self-contained " + css)
+env.Pandoc(os.path.join("docs", "short.html"), "short.text",
            PANDOCFLAGS="--self-contained --css=short.css")
 
 try:
     Export("pubs tex")
 except:
-    pass
+   Default(index)
 
