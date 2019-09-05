@@ -1,4 +1,4 @@
-#!/usr/bin/env python 
+#!/usr/bin/env python
 """The script to build my resumes."""
 
 import os
@@ -55,7 +55,7 @@ activities = {
         "on-campus-committees" : {
             "title" : "'On Campus Committees'",
             "files" : [],
-            "script" : "professional-activities.py",
+            "action" : "professional-activities",
         },
         "key-delivered-products" : {
             "title" : "'Key Delivered Products'",
@@ -63,26 +63,18 @@ activities = {
             "key" : "delivered-products"
         },
     }
-for key in ("professional-activities", "on-campus-committees"):
-    vals = activities[key]
-    for ext, fmt in ((".md", "markdown"), (".tex", "latex")):
-        pa = env.Command(key + ext, [vals["script"], data],
-                         action="python3 ${SOURCES[0]} $FLAGS "
-                                "-o ${TARGET} ${SOURCES[1]}",
-                         FLAGS="--to " + fmt + " --key " + key
-                              + " --title " + vals["title"])
-        vals["files"].extend(pa)
 
 action = "python3 ${SOURCES[0]} --to $fmt $OPTS $key $FLAGS " \
          "--output ${TARGET} ${SOURCES[1]}"
-for key in ("interests", "key-delivered-products"):
-    vals = activities[key]
+for key, vals in activities.items():
     for ext, fmt in ((".md", "markdown"), (".tex", "latex")):
         pa = env.Command(key + ext, [File("resume.py"), data],
                          action=action, fmt=fmt,
                          FLAGS=("--title " + vals["title"]
-                                if "title" in vals else ""),
-                         key=vals["key"] if "key" in vals else key,
+                                if "title" in vals else "") \
+                              +(" --key " + key
+                                if "action" in vals else""),
+                         key=vals["action"] if "action" in vals else key,
                          )
         vals["files"].extend(pa)
 

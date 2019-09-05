@@ -8,7 +8,9 @@ The LaTeX output is tailored to the formatting details of the gtpromote_
 class for the CV while the Markdown attempts to replicate portions of
 the formatting.  In general, this attempts to get the formatting for the
 LaTeX right and hope the Markdown generates a reasonable simulation when
-passed through Pandoc.
+passed through Pandoc.  The key search described by the subcommands is
+done recursively.  Meaning keys may be nested under higher level keys if
+so desired.
 
 _gtpromote: https://github.gatech.edu/kprussing3/gtpromote
 _Pandoc: https://pandoc.org
@@ -54,7 +56,7 @@ def sanitize(struct, format="latex"):
 
 def find(data, key):
     """Walk a YAML dictionary and locate the given key"""
-    if data is None and isinstance(data, (str, bytes)):
+    if data is None or isinstance(data, (str, bytes)):
         return None
 
     if key in data:
@@ -70,6 +72,21 @@ def find(data, key):
         pass
 
     return None
+
+
+def years(p):
+    """Format the duration replacing a missing end year with 'present'
+    and collapsing single years
+    """
+    if len(p["years"]) > 1:
+        if p["years"][0] == p["years"][1]:
+            second = ""
+        else:
+            second = "--{years[1]}"
+    else:
+        second = "--present"
+
+    return ("{years[0]}" + second).format(**p)
 
 
 date = lambda x: datetime.date(year=x["year"],
@@ -97,6 +114,14 @@ formats = {
                 "end" : "\\end{description}\n",
                 "closer" : "\\end{enumerate}\n",
             },
+            "professional-activities" : {
+                "header" : r"\subsection{{{0}}}",
+                "name" : lambda c, url: r"\href{{{URL}}}{{{name}}}" \
+                                        if url and "URL" in c else "{name}",
+                "start" : "\\begin{enumerate}[nosep]\n",
+                "leader" : r"\item ",
+                "end" : r"\end{enumerate}",
+            }
         },
         "markdown" : {
             "interests" : {
@@ -115,9 +140,20 @@ formats = {
                 "end" : "",
                 "closer" : "",
             },
+            "professional-activities" : {
+                "header" : "## {0}",
+                "name" : lambda c, url: r"[{name}]({URL})" \
+                                        if url and "URL" in c else "{name}",
+                "start" : "",
+                "leader" : "1.  ",
+                "end" : "",
+            }
         },
     }
 
+for src, tgt in (("professional-activities", "on-campus-activities"),):
+    for k in formats:
+        formats[k][tgt] = formats[k][src].copy()
 
 ## Examples
 
@@ -143,6 +179,38 @@ key-delivered-products:
 ...
 """,
         "professional-activities" : """---
+outreach-and-service:
+  professional-activities:
+  - name: International Society for Optics and Photonics
+    URL: http://spie.org/
+    positions:
+    - status: Member
+      years:
+      - 2018
+      - present
+  - name: American Association for the Advancement of Science
+    positions:
+    - status: Member
+      years:
+      - 1990
+  - name: Atlanta Section of IEEE
+    positions:
+    - status: Treasurer
+      years:
+      - 1984
+      - 1985
+      notes: Elected position
+    - status: Program Chairman
+      years:
+      - 1983
+      - 1984
+      notes: Appointed position.
+  - name: Joint Group Chapter
+    positions:
+    - status: Chairman of Houston IEEE
+      years:
+      - 1982
+      - 1982
 ...
 """,
     }
@@ -166,9 +234,30 @@ _subparsers = (
           ("--title", dict(type=str,
                            help="Title to place in the subsection macro"))),
          ),
+        ("professional-activities",
+         "Format the professional activities",
+         """Extract the professional activities from the YAML file and
+         format them for the CV.  The default top level key is
+         'professional-activities'; however, the format is the same for
+         the 'on-campus-activities'.  Each entry in the list should
+         contain a 'name' and 'positions'.  The 'positions is an array
+         listing the 'status' and 'years' (start and end) for the given
+         position.  If a membership or position is current, 'present'
+         is allowed in the end date.  The items are sorted first based
+         on 'name' and then by decreasing date with 'present' being
+         newest.  If a 'URL' is present, the society name is typeset
+         with a hyperlink.  The 'title', if given, is typeset as a level
+         two header.
+         """,
+         (("--key", dict(default="professional-activities",
+                         help="The field containing the target data")),
+          ("--title", dict(type=str,
+                           help="Title to place in the subsection macro")),
+          ("--itemize", dict(action="store_true",
+                             help="Generate a bulleted list"))),
+        ),
         ("test", "A dummy second parser", "A do nothing parser", ()),
     )
-
 
 if __name__ == "__main__":
     prog = os.path.basename(os.path.dirname(os.path.abspath(__file__)))
@@ -279,6 +368,38 @@ if __name__ == "__main__":
             args.output.write(fmt["end"])
 
         args.output.write(fmt["closer"])
+
+    elif args.action  == "professional-activities":
+        # Update the details if we want an itemized list.
+        if args.itemize:
+            if args.to == "latex":
+                fmt["start"] = re.sub("enumerate", "itemize",
+                                          fmt["start"])
+                fmt["end"] = re.sub("enumerate", "itemize",
+                                        fmt["end"])
+            elif args.to == "markdown":
+                fmt["leader"] = "-   "
+
+        data = sanitize(find(yaml.safe_load(args.input), args.key))
+        products = sorted(data,
+                          key=lambda p: p["name"])
+        args.output.write(fmt["header"].format(args.title) + "\n\n"
+                          if args.title else "")
+        args.output.write(fmt["start"])
+        formatter = lambda a, p, url: (
+                "{status}, {name}, " + years(p) \
+                + (", {notes}" if "notes" in p else "")
+            ).format(name=fmt["name"](a, url).format(**a), **p)
+        lines = [fmt["leader"] + formatter(a, p, args.url)
+                 for a in data
+                 for p in sorted(a.get("positions", []),
+                                 key=lambda p: str(p["years"][1])
+                                               if len(p["years"]) > 1
+                                               else "present",
+                                 reverse=True)]
+        args.output.write("\n".join([l + ("" if l[-1] == "." else ".")
+                                     for l in lines]))
+        args.output.write("\n" + fmt["end"] + "\n")
 
     elif args.action == "test":
         logger.info("Received %s action", args.action)
