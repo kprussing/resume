@@ -60,7 +60,7 @@ activities = {
         "key-delivered-products" : {
             "title" : "'Key Delivered Products'",
             "files" : [],
-            "key" : "delivered-products"
+            "action" : "delivered-products"
         },
     }
 
