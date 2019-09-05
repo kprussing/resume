@@ -44,6 +44,9 @@ short_courses.extend(env.Command("short-courses.md", short_courses,
                                  action=short_courses_tex2md))
 
 activities = {
+        "interests" : {
+            "files" : [],
+        },
         "professional-activities" : {
             "title"  : "'Professional Activities'",
             "files"  : [],
@@ -57,10 +60,11 @@ activities = {
         "key-delivered-products" : {
             "title" : "'Key Delivered Products'",
             "files" : [],
-            "script" : "delivered-products.py",
+            "key" : "delivered-products"
         },
     }
-for key, vals in activities.items():
+for key in ("professional-activities", "on-campus-committees"):
+    vals = activities[key]
     for ext, fmt in ((".md", "markdown"), (".tex", "latex")):
         pa = env.Command(key + ext, [vals["script"], data],
                          action="python3 ${SOURCES[0]} $FLAGS "
@@ -69,16 +73,18 @@ for key, vals in activities.items():
                               + " --title " + vals["title"])
         vals["files"].extend(pa)
 
-for key in ("interests",):
-    activities[key] = {"files" : []}
+action = "python3 ${SOURCES[0]} --to $fmt $OPTS $key $FLAGS " \
+         "--output ${TARGET} ${SOURCES[1]}"
+for key in ("interests", "key-delivered-products"):
+    vals = activities[key]
     for ext, fmt in ((".md", "markdown"), (".tex", "latex")):
         pa = env.Command(key + ext, [File("resume.py"), data],
-                         action="python3 ${SOURCES[0]} $FLAGS $key "
-                                "-o ${TARGET} ${SOURCES[1]}",
-                         FLAGS="--to " + fmt,
-                         key=key,
+                         action=action, fmt=fmt,
+                         FLAGS=("--title " + vals["title"]
+                                if "title" in vals else ""),
+                         key=vals["key"] if "key" in vals else key,
                          )
-        activities[key]["files"].extend(pa)
+        vals["files"].extend(pa)
 
 srcs = ["index.md"] \
     + [fi for fi in activities["interests"]["files"]
