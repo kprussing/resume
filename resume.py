@@ -368,6 +368,13 @@ if __name__ == "__main__":
                      args.to, args.action)
         sys.exit(1)
 
+    # Set the format to ISO if requested by the user.  Mind, this only
+    # works for some of the outputs.
+    if args.iso:
+        strftime = "{date:%Y}-{date:%m}-{date.day:02d}"
+    else:
+        strftime = "{date.day} {date:%b} {date:%Y}"
+
     if args.action == "interests":
         data = sanitize(find(yaml.safe_load(args.input), "interests"))
         args.output.write(fmt["start"] + "\n")
@@ -447,8 +454,9 @@ if __name__ == "__main__":
         args.output.write("\n" + fmt["end"] + "\n")
 
     elif args.action == "projects":
-        _date = ["{{{{performance[{{0}}][{{1}}][{0}]:0{1}d}}}}".format(*x)
-                 for x in zip(("year", "month", "day"), (4, 2, 2))]
+        # Now correct the date formatter for the nesting.
+        _date = re.sub("{date", "{{performance[{0}][{1}]",
+                       re.sub("}", "}}", strftime))
         table_format = """{num} {sep} Title: {sep} {title} {eol}
  {sep} Contract Number: {sep} {contract} {eol}
  {sep} Spnsor: {sep} {sponsor} {eol}
@@ -460,11 +468,11 @@ if __name__ == "__main__":
  {sep} Amount Funded for Project {sep} {amount-funded[project]} {eol}
  {sep} Number and Rank of{nl} Persons Supervised: {sep} {number-supervised} {eol}
  {sep} Period of Performance{nl} (Project): {sep} """ \
-         + "-".join(_date).format("project", 0) + " -- " \
-         + "-".join(_date).format("project", 1) + """ {eol}
+         + _date.format("project", 0) + " -- " \
+         + _date.format("project", 1) + """ {eol}
  {sep} Period of Performance{nl} (Candidate): {sep} """ \
-         + "-".join(_date).format("candidate", 0) + " -- " \
-         + "-".join(_date).format("candidate", 1) + """ {eol}
+         + _date.format("candidate", 0) + " -- " \
+         + _date.format("candidate", 1) + """ {eol}
  {sep} Contributions: {sep} {contributions} {eol}
 """
 
@@ -496,13 +504,19 @@ if __name__ == "__main__":
         # by start) followed by the project date.  The priority allows us to
         # force a sort; larger numbers indicate a higher priority.
         _key = lambda p: (-p.get("priority", 50),
-                          datetime.date(**p["performance"]["candidate"][1]),
-                          datetime.date(**p["performance"]["candidate"][0]),
-                          datetime.date(**p["performance"]["project"][1]),
-                          datetime.date(**p["performance"]["project"][0]))
+                          p["performance"]["candidate"][1],
+                          p["performance"]["candidate"][0],
+                          p["performance"]["project"][1],
+                          p["performance"]["project"][0])
 
-        # Pull and sort the data
+        # Pull and sort the data.  But first, convert dates.
         data = sanitize(find(yaml.safe_load(args.input), "projects"))
+        for d in data:
+            for p in ("candidate", "project"):
+                for i in range(2):
+                    d["performance"][p][i] = \
+                            datetime.date(**d["performance"][p][i])
+
         projects = sorted(data, key=_key, reverse=True)
 
         for table in (args.table,) if args.table \
