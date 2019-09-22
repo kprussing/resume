@@ -471,7 +471,8 @@ if __name__ == "__main__":
         # Define the parameters for filtering the projects.  Each table
         # has a separate title, and needs a method to identify the
         # appropriate projects.
-        _me = ("Prussing,? Keith F[.]?", "Keith F[.]? Prussing")
+        _me = ("Prussing,? K(eith|[.])?( F[.]?)?",
+               "K(eith|[.])? (F[.]? )?Prussing")
         _leader = lambda p: any(re.match(m, e) for m in _me
                                                for e in p["PD"].values()) \
                             or any(re.match(r, p["role"])
@@ -507,6 +508,9 @@ if __name__ == "__main__":
         for table in (args.table,) if args.table \
                                    else project_tables.keys():
             info = project_tables[table]
+            if not any(map(info["filter"], projects)):
+                continue
+
             args.output.write(fmt["header"].format(info["title"]) + "\n")
             for p, proj in enumerate(p for p in projects
                                              if info["filter"](p)):
