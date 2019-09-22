@@ -172,4 +172,37 @@ outreach-and-service:
     - status: Member
       years:
       - 2019
+
+professional-development:
+  - name: Introduction to GTRI Project Director Core Training
+    year: 2019
+    month: 6
+    day: 13
+  - name: 'GTRI Project Director Certificate Online: Introduction to GT
+          and GTRI Support Units'
+    year: 2019
+    month: 7
+    day: 3
+  - name: 'GTRI Project Director Certificate Online: Contracting'
+    year: 2019
+    month: 7
+    day: 3
+  - name: 'GTRI Project Director Certificate: Project Director Core
+          Training'
+    year: 2019
+    month: 7
+    day: 16
+  - name: 'GTRI Project Director Certificate: How to Write a Proposal'
+    year: 2018
+    month: 2
+    day: 22
+  - name: 'GTRI Project Director Certificate: Excellence in Government
+          Contracting'
+    year: 2019
+    month: 11
+    day: 12
+  - name: Capture and Proposal Management System (CPMS) -- Webinar
+    year: 2019
+    month: 12
+    day: 1
 ...

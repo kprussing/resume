@@ -131,6 +131,11 @@ formats = {
                 "rowsep" : "\\hiderowcolors\n&&\\\\\n\\showrowcolors",
                 "end" : "\end{program table}",
             },
+            "name-date" : {
+                "start" : "\\begin{itemize}[nosep]\n",
+                "leader" : r"\item ",
+                "end" : r"\end{itemize}",
+            },
         },
         "markdown" : {
             "interests" : {
@@ -163,6 +168,11 @@ formats = {
                 "nl" : " ",
                 "eol" : "",
                 "rowsep" : "",
+                "end" : "",
+            },
+            "name-date" : {
+                "start" : "",
+                "leader" : r"-   ",
                 "end" : "",
             },
         },
@@ -301,6 +311,12 @@ _subparsers = (
          """,
          (("--table", dict(choices=project_tables.keys(),
                            help="The specific table to generate")),)
+        ),
+        ("name-date", "Format a name and date into a list",
+         """Extract a list that has a name and a date and format it into
+         a list.
+         """,
+         (("--key", dict(help="The key from which to get the list")),)
         ),
     )
 
@@ -535,6 +551,17 @@ if __name__ == "__main__":
 
             args.output.write(fmt["end"] + "\n\n")
 
+    elif args.action == "name-date":
+        data = sanitize(find(yaml.safe_load(args.input), args.key))
+        if not data:
+            sys.exit(0)
+
+        args.output.write(fmt["start"])
+        formatter = fmt["leader"] + "{name}, " + strftime
+        lines = [formatter.format(name=p["name"], date=date(p))
+                 for p in sorted(data, key=date, reverse=True)]
+        args.output.write("\n".join(lines))
+        args.output.write("\n" + fmt["end"] + "\n")
     else:
         logger.error("Unknown action %s", args.action)
         sys.exit(1)

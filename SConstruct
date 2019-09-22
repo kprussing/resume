@@ -50,7 +50,6 @@ activities = {
         "professional-activities" : {
             "title"  : "'Professional Activities'",
             "files"  : [],
-            "script" : "professional-activities.py",
         },
         "on-campus-committees" : {
             "title" : "'On Campus Committees'",
@@ -61,6 +60,10 @@ activities = {
             "title" : "'Key Delivered Products'",
             "files" : [],
             "action" : "delivered-products"
+        },
+        "professional-development" : {
+            "files" : [],
+            "action" : "name-date"
         },
     }
 
