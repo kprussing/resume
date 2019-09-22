@@ -31,7 +31,7 @@ import yaml
 def sanitize(struct, format="latex"):
     """Sanitize a YAML object by escaping relevant characters
 
-    This walks down the object 
+    This walks down the object
     """
     func = {
             "latex" : lambda x: re.sub(r"([$\%&_])", r"\\\1", x),
@@ -178,6 +178,12 @@ formats = {
         },
     }
 
+# Now copy over the duplicates.
+for f in formats.keys():
+    for t, s in (("proposals", "projects"),
+                ):
+        formats[f][t] = formats[f][s]
+
 ## Examples
 
 _examples = {
@@ -236,6 +242,37 @@ outreach-and-service:
       - 1982
 ...
 """,
+        "proposals" : """---
+proposals:
+  - title:
+    sponsor:
+    PI:
+    role: '[As listed in the proposal: Program Manager, Project
+           Director/Principal Investigator, Co-Project
+           Director/Principal Investigator, Task Leader, Contributor]'
+    submitted:
+      - year: 2015
+        month: 1
+        day: 1
+    requested:
+    result: '[Funded, Not Funded, Pending]'
+    level:
+    performance:
+      - year: 2015
+        month: 7
+        day: 1
+      - year: 2020
+        month: 6
+        day: 30
+    contributions: '[Briefly describe your contribution to this effort
+                    in 2--3 sentences.  Focus on your specific role in
+                    helping to lead and/or develop the proposal and its
+                    content as per this section (e.g., stating
+                    "technical contributions" is not sufficient; explain
+                    them)]'
+    external: true
+...
+""",
     }
 
 project_tables =  collections.OrderedDict({
@@ -259,6 +296,19 @@ project_tables =  collections.OrderedDict({
             "title" : "Other Internally Funded Programs to which the"
                       " the Candidate Contributed",
             "filter" : lambda p: _internal(p) and not _leader(p),
+        },
+    })
+
+proposal_tables = collections.OrderedDict({
+        "external" : {
+            "title" : "External Proposals to Sponsors",
+            "filter" : lambda p: p["external"] \
+                                 and not p.get("omit", False),
+        },
+        "internal" : {
+            "title" : "External Proposals to Sponsors",
+            "filter" : lambda p: not p["external"] \
+                                 and not p.get("omit", False),
         },
     })
 
@@ -317,6 +367,16 @@ _subparsers = (
          a list.
          """,
          (("--key", dict(help="The key from which to get the list")),)
+        ),
+        ("proposals", "Format the proposals into a table",
+         """Extract the proposals and format them into the appropriate
+         table.  These must be stored under the key 'proposals'.  The
+         proposals tables follow a similar format to the projects table,
+         but each one must have the 'external' flag which is used to
+         filter the proposals based on the command line argument.
+         """,
+         (("--internal", dict(action="store_true",
+                              help="Format the internal proposals")),)
         ),
     )
 
@@ -534,7 +594,7 @@ if __name__ == "__main__":
             for p in ("candidate", "project"):
                 for i in range(2):
                     d["performance"][p][i] = \
-                            datetime.date(**d["performance"][p][i])
+                            date(d["performance"][p][i])
 
         projects = sorted(data, key=_key, reverse=True)
 
@@ -565,6 +625,55 @@ if __name__ == "__main__":
                  for p in sorted(data, key=date, reverse=True)]
         args.output.write("\n".join(lines))
         args.output.write("\n" + fmt["end"] + "\n")
+
+    elif args.action == "proposals":
+        # Now correct the date formatter for the nesting.
+        _date = re.sub("{date", "{{performance[{0}]",
+                       re.sub("}", "}}", strftime))
+        strftime = re.sub("date", "submitted", strftime)
+        table_format = """{num} {sep} Title: {sep} {title} {eol}
+ {sep} Spnsor: {sep} {sponsor} {eol}
+ {sep} P.I.: {sep} {PI} {eol}
+ {sep} Candidate's Role: {sep} {role} {eol}
+ {sep} Date Submitted: {sep} """ + strftime + """ {eol}
+ {sep} Amount Requested: {sep} {requested} {eol}
+ {sep} Result: {sep} {result} {eol}
+ {sep} Funding Level: {sep} {level} {eol}
+ {sep} Period of Performance: {sep} """ \
+         + _date.format(0) + " -- " \
+         + _date.format(1) + """ {eol}
+ {sep} Contributions: {sep} {contributions} {eol}
+"""
+
+        # Pull and sort the data.  But first, convert dates.
+        data = sanitize(find(yaml.safe_load(args.input), "proposals"))
+        if not data:
+            sys.exit(0)
+
+        for d in data:
+            d["submitted"] = date(d["submitted"])
+            for i in range(2):
+                d["performance"][i] = date(d["performance"][i])
+
+        proposals = sorted(data,
+                           key=lambda p: p["submitted"],
+                           reverse=True)
+        info = proposal_tables["internal" if args.internal
+                                          else "external"]
+        if not any(map(info["filter"], proposals)):
+            # Quit if we have none
+            sys.exit(0)
+
+        args.output.write(fmt["header"].format(info["title"]) + "\n")
+        for p, proj in enumerate(p for p in proposals
+                                         if info["filter"](p)):
+            if p > 0:
+                args.output.write(fmt["rowsep"] + "\n")
+
+            args.output.write(table_format.format(num=p+1, **fmt, **proj))
+
+        args.output.write(fmt["end"] + "\n\n")
+
     else:
         logger.error("Unknown action %s", args.action)
         sys.exit(1)
