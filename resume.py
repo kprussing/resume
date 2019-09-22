@@ -338,12 +338,15 @@ if __name__ == "__main__":
     group.add_argument("-d", "--debug", action="store_true",
                        help="Enable debug output mode")
 
-    class ShortCircuit(argparse.Action):
-        def __call__(self, parser, namespace, values, option_string=None):
-            output = namespace.output
-            out = output if output != "-" else sys.stdout
-            out.write(_examples[namespace.key])
-            sys.exit(0)
+    def _example(key):
+        class ShortCircuit(argparse.Action):
+            def __call__(self, parser, namespace, values, option_string=None):
+                output = namespace.output
+                out = output if output != "-" else sys.stdout
+                out.write(_examples[key])
+                sys.exit(0)
+
+        return ShortCircuit
 
     subparsers = parser.add_subparsers(dest="action",
                                        help="Action to take")
@@ -355,7 +358,7 @@ if __name__ == "__main__":
                        type=argparse.FileType("w"),
                        help="Output file")
         if name in _examples:
-            s.add_argument("--example", nargs=0, action=ShortCircuit,
+            s.add_argument("--example", nargs=0, action=_example(name),
                            help="Dump an example YAML input")
 
         for flag, kwargs in extra:
