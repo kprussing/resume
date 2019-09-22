@@ -65,18 +65,27 @@ activities = {
             "files" : [],
             "action" : "name-date"
         },
+        "proposals-external" : {
+            "files" : [],
+            "action" : "proposals",
+        },
+        "proposals-internal" : {
+            "files" : [],
+            "action" : "proposals",
+            "flags" : "--internal",
+        },
     }
 
 action = "python3 ${SOURCES[0]} --to $fmt $OPTS $key $FLAGS " \
          "--output ${TARGET} ${SOURCES[1]}"
 for key, vals in activities.items():
     for ext, fmt in ((".md", "markdown"), (".tex", "latex")):
+        FLAGS = ("--title " + vals["title"] if "title" in vals else "") \
+              + ((" --key " + key if vals.get("key", "") else "")
+                                  if "action" in vals else"") \
+              + " " + vals.get("flags", "")
         pa = env.Command(key + ext, [File("resume.py"), data],
-                         action=action, fmt=fmt,
-                         FLAGS=("--title " + vals["title"]
-                                if "title" in vals else "") \
-                              +(" --key " + key
-                                if "action" in vals else""),
+                         action=action, fmt=fmt, FLAGS=FLAGS,
                          key=vals["action"] if "action" in vals else key,
                          )
         vals["files"].extend(pa)
