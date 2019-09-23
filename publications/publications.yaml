@@ -187,13 +187,20 @@ references:
   issued:
   - year: 2017
     month: 6
+    day: 23
   title: Terrain Signature Generation with Full BRDF Support
   publisher: Georgia Tech Research Institute
   publisher-place: Atlanta, GA
   event-place: Atlanta, GA
   genre: IRAD 2017 Journal Paper
-  note: Developed methodology for computing reflections off terrains and lead author.
+  contributions: >-
+      Developed methodology for computing reflections off terrains and
+      lead author of the final report
   irad: true
+  #contract:
+  sponsor: Georgia Tech Research Institute
+  project: I484L.00.00.03.0001
+  report-type: Final Report
 
 - id: prussing_human_2011
   type: paper-conference
