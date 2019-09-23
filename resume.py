@@ -95,6 +95,10 @@ date = lambda x: datetime.date(year=x["year"],
                                day=x.get("day", 1))
 """Convert the YAML date to a :class:`datetime.date`"""
 
+_me = ("Prussing,? K(eith|[.])?( F[.]?)?",
+       "K(eith|[.])? (F[.]? )?Prussing")
+"""The regular expression identifying me"""
+
 ## Format mappings
 
 formats = {
@@ -136,6 +140,14 @@ formats = {
                 "leader" : r"\item ",
                 "end" : r"\end{itemize}",
             },
+            "reports" : {
+                "header" : "\\subsection{{{0}}}",
+                "start" : "\\begin{enumerate}[nosep]\n",
+                "leader" : r"\item ",
+                "end" : r"\end{enumerate}",
+                "me" : r"\textbf{{{0}}}",
+                "missing" : r"\textbf{{{0} is missing}}",
+            },
         },
         "markdown" : {
             "interests" : {
@@ -174,6 +186,14 @@ formats = {
                 "start" : "",
                 "leader" : r"-   ",
                 "end" : "",
+            },
+            "reports" : {
+                "header" : "## {0}",
+                "start" : "\n",
+                "leader" : r"1.  ",
+                "end" : "",
+                "me" : "**{0}**",
+                "missing" : "**{0} is missing**",
             },
         },
     }
@@ -273,6 +293,46 @@ proposals:
     external: true
 ...
 """,
+    "reports" : """---
+references:
+  - type: report
+    author:
+    - family: Burdell
+      given: G. P.
+    - family: Duwhat
+      given: J. P.
+    title: New Method of Painting Golden Gate Bridge
+    report-type: Final
+    sponsor: Sponsor Name
+    project: Project Number
+    contract: Contract Number
+    issued:
+    - year: 2018
+      month: 1
+      day: 1
+    pages: 1
+    contributions: >-
+      Describe your contribution to the report contents.
+  - type: report
+    author:
+    - family: Burdell
+      given: G. P.
+    - family: Duwhat
+      given: J. P.
+    title: Another New Method of Painting Golden Gate Bridge
+    report-type: IRAD
+    sponsor: Sponsor Name
+    project: Project Number
+    contract: Contract Number
+    issued:
+    - year: 2019
+      month: 1
+      day: 1
+    pages: 1
+    contributions: >-
+      Describe your contribution to the report contents.
+...
+""",
     }
 
 project_tables =  collections.OrderedDict({
@@ -311,7 +371,6 @@ proposal_tables = collections.OrderedDict({
                                  and not p.get("omit", False),
         },
     })
-
 
 _subparsers = (
         ("interests", "Process interests",
@@ -377,6 +436,17 @@ _subparsers = (
          """,
          (("--internal", dict(action="store_true",
                               help="Format the internal proposals")),)
+        ),
+        ("reports", "Format the reports list",
+         """Extract the reports from the bibliography and format them
+         for the CV.  These come in two flavors: research and IRAD.  We
+         use command line flag to toggle between the two and set the
+         title.
+         """,
+         (("--key", dict(default="references",
+                         help="The key from which to get the reports")),
+          ("--todo", dict(action="store_true",
+                          help=r"Use '\todo' in LaTeX output")),)
         ),
     )
 
@@ -558,8 +628,6 @@ if __name__ == "__main__":
         # Define the parameters for filtering the projects.  Each table
         # has a separate title, and needs a method to identify the
         # appropriate projects.
-        _me = ("Prussing,? K(eith|[.])?( F[.]?)?",
-               "K(eith|[.])? (F[.]? )?Prussing")
         _leader = lambda p: any(re.match(m, e) for m in _me
                                                for e in p["PD"].values()) \
                             or any(re.match(r, p["role"])
@@ -673,6 +741,82 @@ if __name__ == "__main__":
             args.output.write(table_format.format(num=p+1, **fmt, **proj))
 
         args.output.write(fmt["end"] + "\n\n")
+
+    elif args.action == "reports":
+        data = sanitize(yaml.safe_load(args.input))
+        if args.key:
+            data = find(data, args.key)
+
+        filt = lambda p: p["type"] == "report" \
+                         and not p.get("omit", False)
+        reports = sorted(filter(filt, data),
+                         key=lambda p: date(p["issued"][0]),
+                         reverse=True)
+        if not reports:
+            sys.exit(0)
+
+        def authors(item):
+            """Format the author list"""
+            auth = lambda a: "{family}, {given}".format(**a)
+            auths = [auth(a) for a in item["author"]]
+            for i, a in enumerate(auths):
+                if any(re.match(m, a) for m in _me):
+                    auths[i] = fmt["me"].format(a)
+
+            if len(auths) == 1:
+                ret = auths[0]
+            elif len(auths) == 2:
+                ret = " and ".join(auths)
+            else:
+                ret =  ", ".join(auths[:-1]) + ", and " + auths[-1]
+
+            return ret + ","
+
+        append = lambda s, p: s + (p if s[-1] != p else "")
+        missing = re.sub("textbf", "todo", fmt["missing"]) \
+                if args.todo else fmt["missing"]
+        funcs = [
+                authors,
+                lambda r: '"{0},"'.format(
+                        r.get("title",
+                              missing.format("Title"))
+                    ),
+                lambda r: "{0},".format(
+                        r.get("report-type",
+                              missing.format("Report type"))
+                    ),
+                lambda r: "{0},".format(
+                        r.get("sponsor",
+                              missing.format("Sponsor Name"))
+                    ),
+                lambda r: "{0},".format(
+                        r.get("project",
+                              missing.format("Project Number"))
+                    ),
+                lambda r: "{0},".format(
+                        r.get("contract",
+                              missing.format("Contract Number"))
+                    ),
+                lambda r: (strftime.format(date=date(r["issued"][0]))
+                            if "issued" in r else "Date") + ",",
+                lambda r: "pages {0},".format(
+                        r.get("pages",
+                              missing.format("Number of pages"))
+                    ),
+                lambda r: "{0}".format(
+                        append(r.get("contributions",
+                                     missing.format("Contributions")),
+                               ".")
+                    ),
+            ]
+        args.output.write(fmt["header"].format("Research Reports")+"\n")
+        args.output.write(fmt["start"])
+        for r in reports:
+            args.output.write(fmt["leader"]
+                             + " ".join(f(r) for f in funcs)
+                             + "\n")
+
+        args.output.write(fmt["end"] + "\n")
 
     else:
         logger.error("Unknown action %s", args.action)
