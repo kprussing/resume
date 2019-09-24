@@ -63,7 +63,8 @@ activities = {
         },
         "professional-development" : {
             "files" : [],
-            "action" : "name-date"
+            "action" : "name-date",
+            "key" : "professional-development",
         },
         "proposals-external" : {
             "files" : [],
