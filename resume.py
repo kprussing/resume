@@ -777,7 +777,7 @@ if __name__ == "__main__":
                 if args.todo else fmt["missing"]
         funcs = [
                 authors,
-                lambda r: '"{0},"'.format(
+                lambda r: "“{0},”".format(
                         r.get("title",
                               missing.format("Title"))
                     ),
