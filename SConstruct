@@ -55,11 +55,18 @@ activities = {
             "title" : "'On Campus Committees'",
             "files" : [],
             "action" : "professional-activities",
+            "key" : "on-campus-committees",
         },
         "key-delivered-products" : {
             "title" : "'Key Delivered Products'",
             "files" : [],
             "action" : "delivered-products"
+        },
+        "irad-efforts" : {
+            "title" : "'Independent Research and Development Efforts/Other Significant Technical Innovation'",
+            "files" : [],
+            "action" : "delivered-products",
+            "key" : "irad-efforts",
         },
         "professional-development" : {
             "files" : [],
