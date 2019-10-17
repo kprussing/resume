@@ -197,7 +197,7 @@ references:
       Developed methodology for computing reflections off terrains and
       lead author of the final report
   irad: true
-  #contract:
+  contract: Internal Research and Development
   sponsor: Georgia Tech Research Institute
   project: I484L.00.00.03.0001
   report-type: Final Report
@@ -458,4 +458,102 @@ references:
   URL: http://dx.doi.org/10.1117/12.2519009
   DOI: 10.1117/12.2519009
   refereed: true
+
+- id: prussing_combined_2018
+  type: report
+  author:
+  - family: Prussing
+    given: Keith F.
+    suffix: ', Ph.D.'
+  title: >-
+      Combined Software Requirements Specification and Software Design
+      Document for Task 3: MODTRAN 5 Atmospheric Modeling
+  sponsor: AIR FORCE/OFFUTT/ NE
+  project: D8016.03.02.0B.0000
+  contract: FA807514D0018-0023
+  issued:
+  - year: 2018
+    month: 6
+    day: 21
+  pages: 42
+  report-type: >-
+      Software Requirement Specification/Software Design Document
+  contributions: >-
+      Upgraded and unified the usage of MODTRAN within GTSIMS from
+      various version 5.2 and below to 5.3 and unified the interface to
+      the atmospheric correction library.  Defined the software
+      requirements and authored the entire Software Requirement
+      Specification and Software Design Document.
+  irad: false
+
+- id: prussing_calibration_2017
+  type: report
+  author:
+  - family: Prussing
+    given: Keith F.
+    suffix: ', Ph.D.'
+  title: Calibration Procedure for High Temperature Measurement
+  sponsor: RADIANCE TECHNOLOGIES
+  project: D7919.00.00.00.000L
+  contract: 16S-3074
+  issued:
+  - year: 2017
+    month: 1
+    day: 31
+  pages: 14
+  report-type: Final Report
+  contributions: >-
+      Provided detailed description of how to perform high temperature
+      measurement using multiple infrared cameras including theoretical
+      background on radiative transfer with regard to heat transfer.
+      Included 2,000 lines of MATLAB code to generate calibration files
+      for use with customer's processing software and process
+      measurements to determine temperature during measurements.
+  irad: false
+
+- id: prussing_modtran_2019
+  type: report
+  author:
+  - family: Prussing
+    given: Keith F.
+    suffix: ', Ph.D.'
+  title: >-
+      Something Related to Verification and Validation of MODTRAN within
+      the LIMWS DSM
+  project: D8405.00.06.0L.000E
+  contract: W31P4Q18D00020005
+  sponsor: ARMY/AMCOM
+  issued:
+  - year: 2019
+    month: 9
+    day: 20
+  report-type: Verification and Validation Report
+  contributions: >-
+      Verified the use of MODTRAN within the LIMWS DSM, validated the
+      results used by the DSM, and provided recommendations on how to
+      better utilize MODTRAN to get more accurate atmospheric
+      transmittance values for the simulation.
+  irad: false
+
+- id: prussing_object_2019
+  type: report
+  author:
+  - family: Prussing
+    given: Keith F.
+    suffix: ', Ph.D.'
+  title: Object in Space Plume Rendering Evaluation (OSPRE)
+  project: W4846.02.06.01.0008
+  contract: Internal Research and Development
+  sponsor: GA TECH RSCH INSTITUTE
+  issued:
+  - year: 2019
+    month: 6
+    day: 30
+  pages: 16
+  report-type: Final Report
+  contributions: >-
+      Research current status of resident space object plume
+      measurements from observational data and began developing model
+      for predicting rendered plumes for image modeling.
+  irad: true
 ...
