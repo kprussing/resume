@@ -101,37 +101,105 @@ key-delivered-products:
 # significant external dissemination and received some type of
 # recognition/award for the effort from an organization external to
 # Georgia Tech.
-  - name: Title for the delivered product
-    URL: https://example.com
-    sponsor: Sponsor or to whom the product was delivered
+  - name: TRIAM
+    sponsor: BOOZ, ALLEN, & HAMILTON
+    date:
+    - year: 2016
+      month: 5
+    - year: 2016
+      month: 7
+    product: >-
+        The Fortran implementation of GTRI's multihypothesis tracking
+        algorithm.  \todo{Check out Rick's description for more details}
+    contribution: >-
+        Prussing ported the MATLAB implementation of the multihypothesis
+        tracking algorithm into Fortran so it would work natively with
+        Suppressor instead of running on side products.
+  - name: GTSIMS Atmospheric Transmittance Library
+    sponsor: AIR FORCE/OFFUTT/ NE
     date: # The date range for work performed by the candidate
-    - year: 2015
+    - year: 2018
       month: 1
-    - year: 2017
-      month: 3
-    product: >
-        Description of the product (Ex: What is it for the educated
-        person not in your field?  Why was this important?  What is it
-        used for, how does it fit into a larger effort, how widely is it
-        used, is it well vetted/well distributed, etc.?)
-    contribution: >
-        What did you contribute?  (Ex: Smith developed the XYZ algorithm
-        that…
-  - name: Title for the delivered product 2
-    sponsor: Sponsor or to whom the product was delivered
+    - year: 2018
+      month: 7
+    product: >-
+        A library for computing atmospheric transmittance and path
+        radiance for use within the Georgia Tech Simulation Integrated
+        Modeling System.  The core methods in the library wrap calls
+        to MODTRAN, the DoD standard utility for calculating atmospheric
+        corrections, to perform the calculations and extract the
+        relevant results.
+    contribution: >-
+        Prussing upgraded the MODTRAN version used by the GTSIMS
+        atmospheric library and unified all usage by the components of
+        GTSIMS.  This included updating the internals to call the
+        MODTRAN executable using the standard Fortran 2008 methods
+        instead of modifying the provided source increasing the fidelity
+        of the model.  He also updated all portions of the GTSIMS suite
+        that used various older versions of MODTRAN that had been
+        partially updated with code from newer versions of MODTRAN.
+  - name: LHEL MATLAB Toolbox
+    sponsor: RADIANCE TECHNOLOGIES
     date: # The date range for work performed by the candidate
     - year: 2016
       month: 1
+    - year: 2017
+      month: 1
+    product: >-
+        A suite of tools for working with measurements from high energy
+        laser lethality testing to extract temperature and emissivity
+        values for the materials under consideration.
+    contribution: >-
+        Developed all 2000 lines of the toolbox.
+  - name: Ignition3D Beam Profile Plugin
+    sponsor: RADIANCE TECHNOLOGIES
+    date: # The date range for work performed by the candidate
+    - year: 2016
+      month: 6
+    - year: 2017
+      month: 1
+    product: >-
+        A Fortran module to load an arbitrary beam profile into
+        Ignition3D, a custom 3D heat transfer program for high energy
+        laser lethality modeling.  The module provides a means to model
+        an arbitrary beam profile derived from measured data to
+        correctly simulate the heat transfer during high energy laser
+        lethality testing.
+    contribution: >-
+        Prussing developed the full module and defined the interface.
+
+irad-efforts:
+  - name: Digital Integrated Simulation Architecture (DISA)
+    URL: https://example.com
+    sponsor: GEORGIA TECH RESEARCH INST
+    date: # The date range for work performed by the candidate
+    - year: 2018
+      month: 7
+    - year: 2020
+      month: 6
+    product: >-
+    contribution: >-
+  - name: secretx
+    URL: https://github.com/kprussing/secretx
+    sponsor: Personal effort
+    date:
     - year: 2019
-      month: 3
-    product: >
-        Description of the product (Ex: What is it for the educated
-        person not in your field?  Why was this important?  What is it
-        used for, how does it fit into a larger effort, how widely is it
-        used, is it well vetted/well distributed, etc.?)
-    contribution: >
-        What did you contribute?  (Ex: Smith developed the XYZ algorithm
-        that…
+      month: 4
+      day: 27
+    - year: 2020
+      month: 6
+    product: >-
+        A package for aiding in marking classified documents in LaTeX.
+        The goal of the project is to allow the user to mark regions of
+        their document with syntactic macros and allow LaTeX to handle
+        determine the correct markings for each page and the overall
+        classification of the document.
+    contribution: >-
+        Prussing devised and implemented the entire package and is the
+        current maintainer of the package.  This includes devising the
+        methodology for tracking the current classification level of the
+        current block of text and the highest level of classification
+        noted on the current page.
 
 short-courses: # Continuing Education Courses Taught
   - name: Infrared/Visible Signature Suppression
