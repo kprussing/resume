@@ -775,6 +775,21 @@ if __name__ == "__main__":
         append = lambda s, p: s + (p if s[-1] != p else "")
         missing = re.sub("textbf", "todo", fmt["missing"]) \
                 if args.todo else fmt["missing"]
+        def fix_project_number(r):
+            r"""Fix the project numbers to allow line breaks
+
+            The project numbers in running text need to be able to break
+            when the line gets long.  To do this, we need to replace [.]
+            in the project number with '.\linebreak[0]' based on [this
+            answer](https://tex.stackexchange.com/a/179339/61112)
+            """
+            val = r.get("project", missing.format("Project Number"))
+            pattern = r"\w{5}[.](\w{2}[.]){3}\w{4}"
+            if args.to != "latex" or not re.match(pattern, val):
+                return val
+
+            return re.sub("[.]", r".\\linebreak[0]", val)
+
         funcs = [
                 authors,
                 lambda r: "“{0},”".format(
@@ -789,9 +804,7 @@ if __name__ == "__main__":
                         r.get("sponsor",
                               missing.format("Sponsor Name"))
                     ),
-                lambda r: "{0},".format(
-                        r.get("project",
-                              missing.format("Project Number"))
+                lambda r: "{0},".format(fix_project_number(r)
                     ),
                 lambda r: "{0},".format(
                         r.get("contract",
