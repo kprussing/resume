@@ -210,10 +210,36 @@ short-courses: # Continuing Education Courses Taught
       month: 9
       day: 13
       role: Course administrator
+      lectures:
+        - Overview
+        - Threat Sensor Characteristics
+        - Sensor Signature Suppression
+        - Signature Prediction Models
+        - Predicting LO Effectiveness with Vision Models
+        - General Signature Suppression Techniques
+        - Signature Prediction Models
+        - Ground Vehicle Signature Suppression
+        - Signature Suppression Impact
+        - LO Synergism with Countermeasures
+        - Summary and Conclusions
     - year: 2019
       month: 12
       day: 10
       role: Course administrator
+      lectures:
+        - Overview
+        - Threat Sensor Characteristics
+        - Sensor Signature Suppression
+        - Signature Prediction Models
+        - Predicting LO Effectiveness with Vision Models
+        - General Signature Suppression Techniques
+        - Signature Prediction Models
+        - Ground Vehicle Signature Suppression
+        - Gas Turbine Engine Signatures and Suppression
+        - Aircraft Body Signature Suppression
+        - Signature Suppression Impact
+        - LO Synergism with Countermeasures
+        - Summary and Conclusions
 
   - name: Target Tracking in Sensor Systems
     short: TTSS-IRST
@@ -224,13 +250,13 @@ short-courses: # Continuing Education Courses Taught
       day: 28
       role: Course lecturer
       lectures:
-      - Infrared Search and Track
+        - Infrared Search and Track
     - year: 2019
       month: 8
       day: 29
       role: Course lecturer
       lectures:
-      - Infrared Search and Track
+        - Infrared Search and Track
 
 outreach-and-service:
   professional-activities:
@@ -289,3 +315,4 @@ professional-development:
     month: 12
     day: 1
 ...
+# vim: textwidth=72:
