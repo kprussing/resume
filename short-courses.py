@@ -82,9 +82,8 @@ if __name__ == "__main__":
 
     args.output.write("\\subsection{{{0}}}\n\n".format(args.title)
                       if args.title else "")
-    header = "\n".join([r"\begin{{tabularx}}"
-                        r"{{\dimexpr\textwidth-\leftskip}}"
-                         "{{lXl}}",
+    header = "\n".join([r"\begin{{longtable}}"
+                        r"{{p{{0.8in}}p{{\dimexpr\textwidth-\leftskip-1.8in}}p{{1.0in}}}}",
                         r"{0} & {1} & {2} \\",
                         r"\cmidrule(lr){{1-1}}"
                         r"\cmidrule(lr){{2-2}}"
@@ -100,5 +99,5 @@ if __name__ == "__main__":
                                              key=lambda c: c["date"],
                                              reverse=True)]
     args.output.write("\n" + "\\\\\n".join(text) + "\n")
-    args.output.write(r"\end{tabularx}")
+    args.output.write(r"\end{longtable}")
 
