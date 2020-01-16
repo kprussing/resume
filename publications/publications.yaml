@@ -556,4 +556,141 @@ references:
       measurements from observational data and began developing model
       for predicting rendered plumes for image modeling.
   irad: true
+
+- id: zacharias_positional_2019
+  type: speech
+  author:
+  - family: Zacharias
+    given: Anissa
+  - family: Prussing
+    given: Keith
+  - family: Corker
+    given: John
+  - family: Valenta
+    given: Chris
+  issued:
+  - year: 2019
+    month: 11
+    day: 17
+  title: 'Positional Thruster Detection: An image Processing Approach for Space
+    Situational Awareness'
+  title-short: Positional Thruster Detection
+  publisher-place: Atlanta, GA
+  event: Symposium on Space Innovations
+  even-place: Atlanta, GA
+  genre: Poster
+  note: >-
+      Provided guidance to first author on title and topic selection.
+      Provided image content for object extraction analysis.
+
+- id: bertrand_infrared_2019
+  type: paper
+  author:
+  - family: Bertrand
+    given: Nicholas P.
+  - family: Lee
+    given: Josh
+  - family: Prussing
+    given: Keith F.
+  - family: Shapero
+    given: Samuel
+  - family: Rozell
+    given: Christopher J.
+  title: 'Infrared Search and Track with Unbalanced Optimal Transport Dynamics
+    Regularization'
+  note: >-
+      Provided the simulated infrared imagery that was used in the
+      development of the new algorithm.  Authored simulation details on
+      methodology for simulating imagery.
+
+- id: renegar_design_2020
+  type: paper-conference
+  author:
+  - family: Renegar
+    given: Luke
+  - family: Valenta
+    given: Christopher R.
+  - family: Badura
+    given: Gregory
+  - family: Prussing
+    given: Keith F.
+  - family: Gunter
+    given: Brian C.
+  - family: Wu
+    given: Devin
+  issued:
+  - year: 2020
+    month: 1
+    day: 15
+  title: Design of experiments to verify photometric models of resident space objects
+  container-title: 2nd IAA conference on space situational awareness
+  publisher-place: Washington, D.C.
+  event: 2nd IAA conference on space situational awareness
+  abstract: One fundamental problem limiting efforts to apply machine learning to
+    optical space situational awareness applications is the lack of truth data to
+    train algorithms. If an algorithm is to estimate the size, composition, and orientation
+    of an unknown resident space object (RSO) from its light curve, it must first
+    be trained using many thousands of images of RSOs for which these parameters,
+    among others, are known. The availability of labeled truth data is a significant
+    limiting factor, as these parameters cannot be known for debris, which comprises
+    more than 70% of the North American Aerospace Defense Command (NORAD) catalog.
+    Additionally, smallsats are rarely characterized before launch, and even if this
+    data is collected for larger satellites, it is not generally available to the
+    public. One approach to this problem is to train algorithms with simulated data.
+    However, this approach merely reduces the scale of the problem, since those simulations
+    must be validated. We propose an experimental framework to address the question
+    of how to validate optical and near-infrared (IR) simulations of RSOs viewed from
+    the Earth’s surface. We explore the measurement space of both pre-launch characterizations
+    of RSOs and terrestrial observations of RSOs and identify measurements that are
+    most beneficial in terms of validating photometric models of RSOs. We present
+    specific techniques to measure a smallsat’s bidirectional reflectance distribution
+    function (BRDF) and spectral response in the laboratory, with particular attention
+    to different materials on the spacecraft. We also discuss observational techniques
+    for taking calibrated photometric measurements of orbiting RSOs. It is hoped that
+    this framework will encourage optical and near-IR characterization of smallsats
+    prior to launch, allowing for the development of a network of well-characterized
+    observation targets on-orbit.
+  note: >-
+    Provided guidance on details of the verification process for
+    software using experimental evidence.
+  refereed: false
+
+- id: cordell_dynamic_2020
+  type: conference-paper
+  - family: Cordell
+    given: Chris
+  - family: Prussing
+    given: Keith F.
+  submitted:
+  - year: 2019
+    month: 12
+    day: 14
+  title: Dynamic Integrated Simulation Architecture
+  event: '2020 Spring Simulation Conference'
+  page: 106250O
+  volume: '10625'
+  note: >-
+      Co-primary developer of the DISA software, primary developer of
+      the OpenGL rendering evaluator, and author of the performance
+      comparison with GTSIMS.
+  refereed: true
+
+- id: prussing_estimation_2020
+  type: paper-conference
+  author:
+  - family: Prussing
+    given: Keith F.
+  - family: Zacharias
+    given: Anissa
+  - family: Corker
+    given: John
+  issued:
+  - year: 2019
+    month: 5
+    day: 14
+  title: Estimation of Thruster Plumes for Resident Space Object Optical Observation
+  publisher: International Society for Optics; Photonics
+  note: Lead author and developer of the plume prediction model.
+  refereed: true
+
 ...
