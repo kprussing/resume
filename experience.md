@@ -11,11 +11,13 @@
 
     [Student Research Assistant]{.position} (2007-2009)
 
-    -   Enhancing OpenGL rendering engine to handle large scale terrains
-        for infrared search and track algorithm development.
+    -   Adapted the cloud rendering procedures to work with a third
+        party rendering engine.
     -   [Co-lead developer]{.position} on improved simulation framework
         for predicting infrared and visible signatures in complex
         environments.
+    -   Enhancing OpenGL rendering engine to handle large scale terrains
+        for infrared search and track algorithm development.
     -   Integrating physically accurate star field background into
         OpenGL simulation engine for simulating night time engagements
         and resident space objects.
