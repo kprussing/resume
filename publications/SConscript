@@ -76,7 +76,6 @@ def missed(target, source, env):
                                       env.get("section", "Unsorted"))
             tgt.write(head)
 
-
 def header(target, source, env):
     """Generate a section header"""
     key = "publication-keys"
@@ -93,7 +92,8 @@ def header(target, source, env):
         tgt.write(head)
 
 secs = []
-flags = ["--filter", File("publications.py").path,
+flags = ["--from", "markdown",
+         "--filter", File("publications.py").path,
          "--filter=pandoc-citeproc",
          "--csl", File("ieee-with-url.csl").path
          ]
