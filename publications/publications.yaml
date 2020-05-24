@@ -57,7 +57,6 @@ references:
   publisher-place: Atlanta, GA
   event-place: Atlanta, GA
   number-of-pages: '170'
-  genre: Thesis
   language: English
   genre: PhD Dissertation
   URL: https://smartech.gatech.edu/handle/1853/54321
@@ -580,7 +579,7 @@ references:
   even-place: Atlanta, GA
   genre: Poster
   note: >-
-      Provided guidance to first author on title and topic selection.
+      Provided guidance to first author on subject and content details.
       Provided image content for object extraction analysis.
 
 - id: bertrand_infrared_2019
@@ -601,7 +600,7 @@ references:
   note: >-
       Provided the simulated infrared imagery that was used in the
       development of the new algorithm.  Authored simulation details on
-      methodology for simulating imagery.
+      methodology for simulating imagery.  In review.
 
 - id: renegar_design_2020
   type: paper-conference
@@ -622,11 +621,12 @@ references:
   - year: 2020
     month: 1
     day: 15
-  title: Design of experiments to verify photometric models of resident space objects
+  title: Design of Experiments to Verify Photometric Models of Resident Space Objects
   container-title: 2nd IAA conference on space situational awareness
   publisher-place: Washington, D.C.
   event: 2nd IAA conference on space situational awareness
-  abstract: One fundamental problem limiting efforts to apply machine learning to
+  abstract: >-
+    One fundamental problem limiting efforts to apply machine learning to
     optical space situational awareness applications is the lack of truth data to
     train algorithms. If an algorithm is to estimate the size, composition, and orientation
     of an unknown resident space object (RSO) from its light curve, it must first
@@ -655,26 +655,6 @@ references:
     software using experimental evidence.
   refereed: false
 
-- id: cordell_dynamic_2020
-  type: conference-paper
-  - family: Cordell
-    given: Chris
-  - family: Prussing
-    given: Keith F.
-  submitted:
-  - year: 2019
-    month: 12
-    day: 14
-  title: Dynamic Integrated Simulation Architecture
-  event: '2020 Spring Simulation Conference'
-  page: 106250O
-  volume: '10625'
-  note: >-
-      Co-primary developer of the DISA software, primary developer of
-      the OpenGL rendering evaluator, and author of the performance
-      comparison with GTSIMS.
-  refereed: true
-
 - id: prussing_estimation_2020
   type: paper-conference
   author:
@@ -685,12 +665,74 @@ references:
   - family: Corker
     given: John
   issued:
-  - year: 2019
+  - year: 2020
+    month: 4
+    day: 27
+  accessed:
+  - year: 2020
     month: 5
-    day: 14
+    day: 24
   title: Estimation of Thruster Plumes for Resident Space Object Optical Observation
+  container-title: Sensors and systems for space applications XIII
   publisher: International Society for Optics; Photonics
+  event: Sensors and systems for space applications XIII
+  page: 114220B
+  volume: '11422'
+  abstract: With the ever-growing number of resident space objects (RSOs) surrounding
+    the Earth, it is imperative that we develop techniques for determining their current
+    and future state by leveraging a collection of radio frequency and optical observations
+    to maintain space domain awareness (SDA). The state of an RSO at a future time
+    is determined by its current state and the forces acting upon it. In theory, this
+    prediction is trivial; however, knowing all of the forces is not practical. When
+    a space object undergoes a maneuver, this simple extrapolation fails, and more
+    measurements are required before an updated state estimate would be available
+    causing tracking methods to fail. One means by which an RSO undergoes a maneuver,
+    is by firing its thruster which provides a transient component to its signature.
+    For example, many small satellites use Hall effect thrusters to perform station
+    keeping. The emission from these thrusters can be up to three times greater than
+    the rest of the satellite. This change in the signature provides information about
+    the aspect of the RSO and the amount of energy expended by the engine to produce
+    a thrust on the object. This information can be passed back to the state estimators
+    to reduce the time necessary to update the RSO’s state. In this paper, we present
+    a model for estimating the upper bound of the signature change of an RSO due to
+    thruster engagement. We then present our initial results of a rendered model both
+    with and without a plume present.
+  URL: https://doi.org/10.1117/12.2552075
+  DOI: 10.1117/12.2552075
   note: Lead author and developer of the plume prediction model.
   refereed: true
+
+- id: alston_realistic_2020
+  type: report
+  author:
+  - family: Alston
+    given: Garrett
+  - family: Davis
+    given: Dan
+  - family: DiDonna
+    given: Brian
+  - family: Reynolds
+    given: William
+  - family: Prussing
+    given: Keith F
+  issued:
+  - year: 2020
+    month: 1
+    day: 21
+  title: Realistic image and neighborhood generator (RING)
+  publisher: Air Force Research Lab Kirtland AFB
+  publisher-place: Alburquerque, NM
+  page: '69'
+  report-type: Final Report
+  number: AFRL-RD-PS-TR-20XX-XXXX
+  irad: false
+  sponsor: GA TECH RSCH INSTITUTE
+  project: W4846.02.06.01.0008
+  contract: Internal Research and Development
+  contributions: >-
+      Provided detailed description of how the cloud rendering was
+      integrated into the sponsor's rendering pipeline.  Also provided
+      an analysis on computational loading for generating rendered cloud
+      scenes along with a discussion of validity of the rendered clouds.
 
 ...
