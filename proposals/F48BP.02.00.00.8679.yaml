@@ -1,0 +1,26 @@
+---
+title: Background Modeling for RING
+sponsor: Stellar Science Ltd. Co.
+PI: Keith F. Prussing
+role: Project Director
+submitted:
+  year: 2020
+  month: 5
+  day: 15
+requested: $225,000
+result: Pending
+level: $225,000
+performance:
+  - year: 2020
+    month: 7
+    day: 15
+  - year: 2022
+    month: 7
+    day: 15
+contributions: >-
+    Provided inputs to Phase II on RING proposal to focus on continued
+    efforts on improve cloud modeling in the visible and infrared and
+    integrating GTRI's terrain rendering capabilities into the
+    customer's rendering engine.
+external: true
+...

@@ -366,7 +366,7 @@ proposal_tables = collections.OrderedDict({
                                  and not p.get("omit", False),
         },
         "internal" : {
-            "title" : "External Proposals to Sponsors",
+            "title" : "Internal Proposals (GT and/or GTRI)",
             "filter" : lambda p: not p["external"] \
                                  and not p.get("omit", False),
         },

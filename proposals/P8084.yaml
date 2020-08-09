@@ -1,0 +1,26 @@
+---
+title: Space-based Machine Automated Recognition Techniques
+sponsor: IARPA
+PI: Daniel Cooksey
+role: Task Leader
+submitted:
+  year: 2020
+  month: 5
+  day: 18
+requested: $43,632,173.00
+result: Pending
+level: 
+performance:
+  - year: 2020
+    month: 10
+    day: 1
+  - year: 2022
+    month: 10
+    day: 31
+contributions: >-
+    Provided inputs on expanding GTRI's background modeling capabilities
+    to handle geographic regions on the scale as seen from a satellite.
+    Also proposed methods to adapt GTRI's background modeling methods
+    to evolve the background as a function of time.
+external: true
+...

@@ -1,0 +1,27 @@
+---
+title: Cloud Modeling for HEL on HPC
+sponsor: Stellar Science Ltd. Co.
+PI: Keith F. Prussing
+role: Project Director
+submitted:
+  year: 2019
+  month: 2
+  day: 28
+requested: $60,000
+result: Funded
+level: $60,000
+performance:
+  - year: 2019
+    month: 7
+    day: 1
+  - year: 2020
+    month: 3
+    day: 30
+contributions: >-
+    Engaged with the customer to determine if we had compatible
+    goals to pursue this STTR.  Established that cloud modeling will
+    provide the best demonstration of background integration to the
+    customer's rendering engine.  Authored the final proposal which
+    became GTRI's contribution to the prime proposal.
+external: true
+...

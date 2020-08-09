@@ -98,6 +98,13 @@ for key, vals in activities.items():
                          )
         vals["files"].extend(pa)
 
+yaml = []
+action = "python3 ${SOURCES[0]} -o $TARGET --label $label ${SOURCES[1:]}"
+for root in ("proposals",):
+    _ = SConscript(os.path.join(root, "SConscript"))
+    yaml.extend( env.Command(root + ".yaml", ["merge-yaml.py"] + _,
+                             action=action, label=root) )
+
 srcs = ["index.md"] \
     + [fi for fi in activities["interests"]["files"]
           if re.search("[.]md$", str(fi))] \
