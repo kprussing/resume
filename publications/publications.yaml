@@ -749,13 +749,13 @@ references:
   title: Realistic image and neighborhood generator (RING)
   publisher: Air Force Research Lab Kirtland AFB
   publisher-place: Alburquerque, NM
-  page: '69'
+  pages: 69
   report-type: Final Report
   number: AFRL-RD-PS-TR-20XX-XXXX
   irad: false
   sponsor: GA TECH RSCH INSTITUTE
-  project: W4846.02.06.01.0008
-  contract: Internal Research and Development
+  project: D8902.00.00.00.0000
+  contract: 140941
   contributions: >-
       Provided detailed description of how the cloud rendering was
       integrated into the sponsor's rendering pipeline.  Also provided
@@ -774,7 +774,7 @@ references:
   title: Recent Developments in Soldier and Vehicle Signature Management Technologies
   publisher: Georgia Tech Research Institute
   publisher-place: Atlanta, GA
-  page: '21'
+  pages: 21
   genre: Technical Research Report
   abstract: DSIAC subject matter experts performed a search of the open literature
     to locate new research pertaining to visible, infrared, and thermal signature
@@ -785,6 +785,10 @@ references:
     carbon nanotubes; glass microspheres; nanofibers; electrochromatic fabric; metasurfaces;
     waveguides; and lenticular lens materials.
   number: DSIAC-2020-1242
+  contract: 085001.002.0181.2014
+  project: D7342.00.00.00.0000
+  sponsor: SURVICE ENGINEERING CO
+  report-type: Technical Report
   contributions: >-
     Summarized the current state of signature suppression of ground
     based targets from 2018 to 2020 for the visible, infrared, and
