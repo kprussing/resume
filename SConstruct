@@ -127,7 +127,7 @@ css = " ".join(["--css={0}.css".format(File(x).path)
 index = env.Pandoc(os.path.join("docs", "index.html"), srcs,
                    PANDOCFLAGS="--self-contained " + css)
 env.Pandoc(os.path.join("docs", "short.html"), "short.text",
-           PANDOCFLAGS="--self-contained --css=short.css")
+           PANDOCFLAGS=["--self-contained", "--css", File("short.css")])
 
 try:
     Export("pubs tex")
