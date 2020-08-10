@@ -115,6 +115,7 @@ key-delivered-products:
         Prussing ported the MATLAB implementation of the multihypothesis
         tracking algorithm into Fortran so it would work natively with
         Suppressor instead of running on side products.
+
   - name: GTSIMS Atmospheric Transmittance Library
     sponsor: AIR FORCE/OFFUTT/ NE
     date: # The date range for work performed by the candidate
@@ -138,6 +139,7 @@ key-delivered-products:
         of the model.  He also updated all portions of the GTSIMS suite
         that used various older versions of MODTRAN that had been
         partially updated with code from newer versions of MODTRAN.
+
   - name: LHEL MATLAB Toolbox
     sponsor: RADIANCE TECHNOLOGIES
     date: # The date range for work performed by the candidate
@@ -151,6 +153,7 @@ key-delivered-products:
         values for the materials under consideration.
     contribution: >-
         Developed all 2000 lines of the toolbox.
+
   - name: Ignition3D Beam Profile Plugin
     sponsor: RADIANCE TECHNOLOGIES
     date: # The date range for work performed by the candidate
@@ -170,7 +173,7 @@ key-delivered-products:
 
 irad-efforts:
   - name: Digital Integrated Simulation Architecture (DISA)
-    URL: https://example.com
+    #URL: https://example.com
     sponsor: GEORGIA TECH RESEARCH INST
     date: # The date range for work performed by the candidate
     - year: 2018
@@ -179,6 +182,11 @@ irad-efforts:
       month: 6
     product: >-
     contribution: >-
+        Co-developer of the base architecture providing inputs on how to
+        support multi-spectral image modeling.  Designed and implemented
+        the initial rendering prototype to demonstrate the capabilities
+        or the DISA architecture.
+
   - name: secretx
     URL: https://github.com/kprussing/secretx
     sponsor: Personal effort
@@ -200,6 +208,37 @@ irad-efforts:
         methodology for tracking the current classification level of the
         current block of text and the highest level of classification
         noted on the current page.
+
+  - name: EOSL LaTeX Package
+    #URL: https://eoslcm.???
+    sponsor: Georgia Tech Research Institute
+    date:
+    - year: 2020
+      month: 2
+      day: 1
+    - year: 2020
+      month: 4
+      day: 1
+    product: >-
+        A LaTeX package to provide a standardized format for white
+        papers, presentations, handouts, and journal style articles
+        written at EOSL.
+
+  - name: GT Promotion Formatting LaTeX Package
+    URL: https://github.gatech.edu/kprussing3/gtpromote.git
+    sponsor: Personal effort
+    date:
+    - year: 2019
+      month: 7
+      day: 1
+    - year: 2020
+      month: 8
+      day: 1
+    product: >-
+        A LaTeX package to replicate the Word formatted example
+        promotion package documents.  The ultimate goal is to provide a
+        means to manage a plain text version of the complex promotion
+        packet so that future formatting changes become trivial.
 
 short-courses: # Continuing Education Courses Taught
   - name: Infrared/Visible Signature Suppression
@@ -315,4 +354,3 @@ professional-development:
     month: 12
     day: 1
 ...
-# vim: textwidth=72:
