@@ -609,7 +609,7 @@ references:
       Provided image content for object extraction analysis.
 
 - id: bertrand_infrared_2019
-  type: paper
+  type: article-journal
   author:
   - family: Bertrand
     given: Nicholas P.
@@ -627,6 +627,7 @@ references:
       Provided the simulated infrared imagery that was used in the
       development of the new algorithm.  Authored simulation details on
       methodology for simulating imagery.  In review.
+  DOI: 10.1109/LGRS.2020.3014534
 
 - id: renegar_design_2020
   type: paper-conference
