@@ -213,15 +213,34 @@ references:
   issued:
   - year: 2011
   accessed:
-  - year: 2011
-    month: 11
-    day: 5
+  - year: 2019
+    month: 7
+    day: 3
   title: Human Motion Analysis and Modeling
-  page: 80190L-80190L-8
-  source: CrossRef
-  note: Lead author and analyst for human motion analysis.
+  container-title: Sensors, and command, control, communications, and intelligence
+    (c3i) technologies for homeland security and homeland defense x
+  publisher: International Society for Optics; Photonics
+  event: Sensors, and command, control, communications, and intelligence (c3i) technologies
+    for homeland security and homeland defense x
+  page: 80190L
+  volume: '8019'
+  abstract: Georgia Tech has investigated methods for the detection and tracking of
+    personnel in a variety of acquisition environments. This research effort focused
+    on a detailed phenomenological analysis of human physiology and signatures with
+    the subsequent identification and characterization of potential observables. As
+    a fundamental part of this research effort, Georgia Tech collected motion capture
+    data on an individual for a variety of walking speeds, carrying loads, and load
+    distributions. These data formed the basis for deriving fundamental properties
+    of the individual’s motion and supported the development of a physiologically-based
+    human motion model. Subsequently this model aided the derivation and analysis
+    of motion-based observables, particularly changes in the motion of various body
+    components resulting from load variations. This paper will describe the data acquisition
+    process, development of the human motion model, and use of the model in the observable
+    analysis. Video sequences illustrating the motion data and modeling results will
+    also be presented.
   URL: https://doi.org/10.1117/12.884480
   DOI: 10.1117/12.884480
+  note: Lead author and analyst for human motion analysis.
   refereed: true
 
 - id: cathcart_human_2011
@@ -235,17 +254,20 @@ references:
     given: Brian
   issued:
   - year: 2011
+    month: 6
+    day: 2
   accessed:
-  - year: 2011
-    month: 11
-    day: 5
+  - year: 2019
+    month: 7
+    day: 3
   title: Human Motion Analysis and Characterization
   container-title: Sensors, and command, control, communications, and intelligence
     (c3i) technologies for homeland security and homeland defense x
   publisher: International Society for Optics; Photonics
   event: Sensors, and command, control, communications, and intelligence (c3i) technologies
     for homeland security and homeland defense x
-  page: 80190M-80190M-9
+  page: 80190M
+  volume: '8019'
   source: CrossRef
   abstract: Georgia Tech has investigated methods for the detection and tracking of
     personnel in a variety of acquisition environments. This research effort focused
@@ -541,6 +563,8 @@ references:
     given: Keith F.
     suffix: ', Ph.D.'
   title: Object in Space Plume Rendering Evaluation (OSPRE)
+  publisher: Center for Space Technology and Research
+  publisher-place: Atlanta, GA
   project: W4846.02.06.01.0008
   contract: Internal Research and Development
   sponsor: GA TECH RSCH INSTITUTE
@@ -550,6 +574,8 @@ references:
     day: 30
   pages: 16
   report-type: Final Report
+  genre: CSTAR Fellowship Report
+  note: Author and model developer.
   contributions: >-
       Research current status of resident space object plume
       measurements from observational data and began developing model
@@ -734,5 +760,33 @@ references:
       integrated into the sponsor's rendering pipeline.  Also provided
       an analysis on computational loading for generating rendered cloud
       scenes along with a discussion of validity of the rendered clouds.
+
+- id: prussing_recent_2020
+  type: report
+  author:
+  - family: Prussing
+    given: Keith F
+  issued:
+  - year: 2020
+    month: 2
+    day: 21
+  title: Recent Developments in Soldier and Vehicle Signature Management Technologies
+  publisher: Georgia Tech Research Institute
+  publisher-place: Atlanta, GA
+  page: '21'
+  genre: Technical Research Report
+  abstract: DSIAC subject matter experts performed a search of the open literature
+    to locate new research pertaining to visible, infrared, and thermal signature
+    management. The search focused on developments since 2018, when a previous summary
+    was provided. Areas covered include manipulation of emissivity; reflectivity;
+    adsorption; refraction and backscatter using multispectral camouflage materials;
+    multilayered, cavity-coupled plasmonic systems; metamaterials; nanoparticles;
+    carbon nanotubes; glass microspheres; nanofibers; electrochromatic fabric; metasurfaces;
+    waveguides; and lenticular lens materials.
+  number: DSIAC-2020-1242
+  contributions: >-
+    Summarized the current state of signature suppression of ground
+    based targets from 2018 to 2020 for the visible, infrared, and
+    thermal wavelengths.
 
 ...
