@@ -628,17 +628,31 @@ if __name__ == "__main__":
         # Define the parameters for filtering the projects.  Each table
         # has a separate title, and needs a method to identify the
         # appropriate projects.
-        _leader = lambda p: any(re.match(m, e) for m in _me
-                                               for e in p["PD"].values()) \
-                            or any(re.match(r, p["role"])
-                                   for r in ("Program manager",
-                                             "Project Director",
-                                             "Principal Investigator",
-                                             "Co-Project Director",
-                                             "Co-Principal Investigator",
-                                             "Task Leader")) \
-                            or any(p.get(k, False) for k in ("leader",
-                                                             "manager"))
+        def _leader(p):
+            if any(re.match(m, e) for m in _me
+                   for e in p["PD"].values()):
+                return True
+            elif any(re.match(r, p["role"])
+                     for r in ("Program manager",
+                               "Project Director",
+                               "Principal Investigator",
+                               "Co-Project Director",
+                               "Co-Principal Investigator",
+                               "Task Leader")):
+                return True
+            elif any(p.get(k, False) for k in ("leader",
+                                               "manager")):
+                return True
+            elif p.get("budget", False) is False:
+                return False
+            elif p.get("budget", False) is True:
+                return True
+            elif any(re.match(r, p["budget"], re.I)
+                    for r in ("yes", "true")):
+                return True
+            else:
+                return False
+
         _external = lambda p: (re.match("[Dd]", p["project"]) \
                                or p.get("external", False)) \
                               and not p.get("omit", False)
