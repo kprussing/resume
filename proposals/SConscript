@@ -8,6 +8,7 @@ yamls = [File(y) for y in (
     "P8084.yaml",
     "W4846.02.06.01.0008.yaml",
     "WR-whitepaper.yaml",
+    "W912HZ-20-BAA-01_ERDC_Feb2020.yaml",
     )
 ]
 
