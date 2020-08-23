@@ -11,6 +11,10 @@ sections = (
         ("Publications",
             {"level" : 2,},
         ),
+        ("Journal articles",
+            {"level" : 3,
+             "publication-keys" : [{"type" : "article-journal"}]},
+        ),
         ("Conference papers",
             {"level" : 3,
              "publication-keys" : [{"type" : "paper-conference"}]}
