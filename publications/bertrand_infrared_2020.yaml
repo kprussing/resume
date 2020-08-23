@@ -14,10 +14,13 @@ author:
   given: Christopher J.
 issued:
 - year: 2020
+  month: 8
+  day: 17
 title: Infrared search and track with unbalanced optimal transport dynamics regularization
 container-title: IEEE Geoscience and Remote Sensing Letters
 page: 1-5
-note: 'Conference Name: IEEE Geoscience and Remote Sensing Letters'
+note: Generated simulated imagery for testing novel tracking algorithm. Described
+  methodology used to create the simulated imagery.
 abstract: Accurate detection of small and dim targets in infrared imagery is a crucial
   component in infrared search and track which has broad utility in military and
   remote sensing applications. Low-rank models have enjoyed state-of-the-art performance
@@ -31,6 +34,8 @@ abstract: Accurate detection of small and dim targets in infrared imagery is a c
 keyword: Clutter, Heuristic algorithms, Indexes, Infrared target tracking, optimal
   transport (OT), Robustness, small target detection, sparse and low-rank representation.,
   Sparse matrices, Target tracking
+URL: https://doi.org/10.1109/LGRS.2020.3014534
 DOI: 10.1109/LGRS.2020.3014534
 ISSN: 1558-0571
+complete: False
 ...
