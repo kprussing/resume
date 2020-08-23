@@ -1,0 +1,31 @@
+---
+id: stewart_gtsims_2016
+type: speech
+author:
+- family: Stewart
+  given: John
+- family: Cordell
+  given: Chris
+- family: Prussing
+  given: Keith F.
+  suffix: ', Ph.D.'
+- family: Webber
+  given: Drew
+- family: Nielson
+  given: Kevin
+- family: Price
+  given: Miles
+- family: Sheffer
+  given: Albert
+issued:
+- year: 2016
+  month: 6
+  day: 17
+title: GTSIMS Terrain Background Signature Generation
+publisher-place: Atlanta, GA
+event: 2016 IRAD Extravaganza
+event-place: Atlanta, GA
+genre: Poster
+note: Developed methodology for incorporating terrain orientation into signature prediction pipeline.
+irad: true
+...

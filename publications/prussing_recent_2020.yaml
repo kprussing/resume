@@ -1,0 +1,33 @@
+---
+id: prussing_recent_2020
+type: report
+author:
+- family: Prussing
+  given: Keith F
+issued:
+- year: 2020
+  month: 2
+  day: 21
+title: Recent Developments in Soldier and Vehicle Signature Management Technologies
+publisher: Georgia Tech Research Institute
+publisher-place: Atlanta, GA
+pages: 21
+genre: Technical Research Report
+abstract: DSIAC subject matter experts performed a search of the open literature
+  to locate new research pertaining to visible, infrared, and thermal signature
+  management. The search focused on developments since 2018, when a previous summary
+  was provided. Areas covered include manipulation of emissivity; reflectivity;
+  adsorption; refraction and backscatter using multispectral camouflage materials;
+  multilayered, cavity-coupled plasmonic systems; metamaterials; nanoparticles;
+  carbon nanotubes; glass microspheres; nanofibers; electrochromatic fabric; metasurfaces;
+  waveguides; and lenticular lens materials.
+number: DSIAC-2020-1242
+contract: 085001.002.0181.2014
+project: D7342.00.00.00.0000
+sponsor: SURVICE ENGINEERING CO
+report-type: Technical Report
+contributions: >-
+  Summarized the current state of signature suppression of ground
+  based targets from 2018 to 2020 for the visible, infrared, and
+  thermal wavelengths.
+...

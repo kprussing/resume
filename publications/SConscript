@@ -5,7 +5,7 @@ import os
 import re
 import yaml
 
-Import("env")
+Import("env merge_yaml")
 
 sections = (
         ("Publications",
@@ -35,7 +35,35 @@ sections = (
         ),
     )
 
-bib = "publications.yaml"
+pubs = [
+        "alston_realistic_2020.yaml",
+        "bertrand_infrared_2020.yaml",
+        "burdette_imaging_2013.yaml",
+        "cathcart_human_2011.yaml",
+        "cathcart_model_2011.yaml",
+        "cathcart_multimodal_2010.yaml",
+        "prussing_calibration_2017.yaml",
+        "prussing_combined_2018.yaml",
+        "prussing_enhanced_2018.yaml",
+        "prussing_estimation_2020.yaml",
+        "prussing_human_2011.yaml",
+        "prussing_investigation_2015.yaml",
+        "prussing_night_2019.yaml",
+        "prussing_numerical_2014-2.yaml",
+        "prussing_numerical_2014.yaml",
+        "prussing_object_2019.yaml",
+        "prussing_recent_2020.yaml",
+        "prussing_stellar_2019.yaml",
+        "prussing_terrain_2017.yaml",
+        "prussing_urban_2010.yaml",
+        "prussing_verification_2019.yaml",
+        "renegar_design_2020.yaml",
+        "stewart_gtsims_2016.yaml",
+        "zacharias_positional_2019.yaml",
+    ]
+
+action="python3 ${SOURCES[0]} -l references -o ${TARGET} ${SOURCES[1:]}"
+bib = env.Command("publications.yaml", [merge_yaml] + pubs, action=action)
 
 def missed(target, source, env):
     """Generate the list of missed papers
@@ -46,7 +74,7 @@ def missed(target, source, env):
 
     """
     with open(source[0].path, "r") as src:
-        doc = yaml.load(src)
+        doc = yaml.safe_load(src)
 
     try:
         bib = doc["references"]
@@ -69,7 +97,7 @@ def missed(target, source, env):
     with open(target[0].path, "w") as tgt:
         if bib:
             doc["references"] = bib
-            tgt.write("---\n")
+            tgt.write("---\nnocite: '@*'\n")
             yaml.dump(doc, stream=tgt, default_flow_style=False)
             tgt.write("...\n")
             head = "{0} {1}\n".format("#" * env.get("level", 3),
@@ -82,7 +110,7 @@ def header(target, source, env):
     block = env.get(key, {})
     with open(target[0].path, "w") as tgt:
         if block:
-            tgt.write("---\n")
+            tgt.write("---\nnocite: '@*'\n")
             yaml.dump({key : block}, stream=tgt,
                       default_flow_style=False)
             tgt.write("...\n")

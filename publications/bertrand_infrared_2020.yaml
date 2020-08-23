@@ -1,0 +1,36 @@
+---
+id: bertrand_infrared_2020
+type: article-journal
+author:
+- family: Bertrand
+  given: Nicholas P.
+- family: Lee
+  given: John
+- family: Prussing
+  given: Keith F.
+- family: Shapero
+  given: Samuel
+- family: Rozell
+  given: Christopher J.
+issued:
+- year: 2020
+title: Infrared search and track with unbalanced optimal transport dynamics regularization
+container-title: IEEE Geoscience and Remote Sensing Letters
+page: 1-5
+note: 'Conference Name: IEEE Geoscience and Remote Sensing Letters'
+abstract: Accurate detection of small and dim targets in infrared imagery is a crucial
+  component in infrared search and track which has broad utility in military and
+  remote sensing applications. Low-rank models have enjoyed state-of-the-art performance
+  in infrared tracking applications, but many approaches underutilize dynamics information
+  which has the potential to improve performance in challenging tracking scenarios.
+  We present two algorithms, robust principal components analysis with patched unbalanced
+  optimal transport (RPCA + PUOT) and robust alignment by sparse and low-rank with
+  patched unbalanced optimal transport (RASL + PUOT), which incorporate optimal
+  transport dynamics regularization and demonstrate improved performance on realistic
+  data.
+keyword: Clutter, Heuristic algorithms, Indexes, Infrared target tracking, optimal
+  transport (OT), Robustness, small target detection, sparse and low-rank representation.,
+  Sparse matrices, Target tracking
+DOI: 10.1109/LGRS.2020.3014534
+ISSN: 1558-0571
+...

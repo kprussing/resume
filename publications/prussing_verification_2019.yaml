@@ -1,0 +1,27 @@
+---
+id: prussing_verification_2019
+type: report
+author:
+- family: Prussing
+  given: Keith F.
+  suffix: ', Ph.D.'
+title: >-
+    Verification and Validation Report for the Capability of the
+    Limited Interim Missile Warning System Digital System Model,
+Version 4, to supporte Performance Assessment (U) DID: DI-MSSM-8172
+project: D8405.00.06.0L.000E
+contract: W31P4Q18D00020005
+sponsor: ARMY/AMCOM
+issued:
+- year: 2019
+  month: 9
+  day: 20
+pages: 26
+report-type: Verification and Validation Report
+contributions: >-
+    Verified the use of MODTRAN within the LIMWS DSM, validated the
+    results used by the DSM, and provided recommendations on how to
+    better utilize MODTRAN to get more accurate atmospheric
+    transmittance values for the simulation.
+irad: false
+...

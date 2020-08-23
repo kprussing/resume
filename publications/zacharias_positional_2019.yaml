@@ -1,0 +1,27 @@
+---
+id: zacharias_positional_2019
+type: speech
+author:
+- family: Zacharias
+  given: Anissa
+- family: Prussing
+  given: Keith
+- family: Corker
+  given: John
+- family: Valenta
+  given: Chris
+issued:
+- year: 2019
+  month: 11
+  day: 17
+title: 'Positional Thruster Detection: An image Processing Approach for Space
+  Situational Awareness'
+title-short: Positional Thruster Detection
+publisher-place: Atlanta, GA
+event: Symposium on Space Innovations
+even-place: Atlanta, GA
+genre: Poster
+note: >-
+    Provided guidance to first author on subject and content details.
+    Provided image content for object extraction analysis.
+...

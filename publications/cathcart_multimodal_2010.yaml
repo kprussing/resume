@@ -1,0 +1,31 @@
+---
+id: cathcart_multimodal_2010
+type: paper-conference
+author:
+- family: Cathcart
+  given: J. Michael
+- family: Kocher
+  given: Brian
+- family: Prussing
+  given: Keith
+- family: Lane
+  given: Sarah
+- family: Thomas
+  given: Alan
+issued:
+- year: 2010
+accessed:
+- year: 2011
+  month: 1
+  day: 30
+title: Multimodal Signature Modeling of Humans
+publisher-place: Orlando, Florida, USA
+event: Active and Passive Signatures
+event-place: Orlando, Florida, USA
+page: 76870D-76870D-7
+source: COinS
+note: Performed data reduction and analysis.
+URL: https://doi.org/10.1117/12.850688
+DOI: 10.1117/12.850688
+refereed: true
+...

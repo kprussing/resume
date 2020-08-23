@@ -9,7 +9,8 @@ try:
 except:
     env = Environment(ENV=os.environ, tools=["default", "pandoc"])
 
-Export("env")
+merge_yaml = File("merge-yaml.py")
+Export("env merge_yaml")
 pubs = SConscript(os.path.join("publications", "SConscript"))
 
 # Define how to generate the table of short courses
@@ -102,7 +103,7 @@ yaml = []
 action = "python3 ${SOURCES[0]} -o $TARGET --label $label ${SOURCES[1:]}"
 for root in ("proposals",):
     _ = SConscript(os.path.join(root, "SConscript"))
-    yaml.extend( env.Command(root + ".yaml", ["merge-yaml.py"] + _,
+    yaml.extend( env.Command(root + ".yaml", [merge_yaml] + _,
                              action=action, label=root) )
 
 srcs = ["index.md"] \

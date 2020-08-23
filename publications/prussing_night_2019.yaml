@@ -1,0 +1,25 @@
+---
+id: prussing_night_2019
+type: paper-conference
+author:
+- family: Prussing
+  given: Keith F.
+  suffix: ', Ph.D.'
+- family: Valenta
+  given: Christopher R.
+- family: Cordell
+  given: Christopher E.
+  suffix: Jr.
+- family: Churchill
+  given: Layne R.
+issued:
+- year: 2019
+  month: 2
+  day: 25
+title: Night sky rendering for satellite tracking simulation
+container-title: 2019 MSS parallel conference
+publisher-place: Orlando, Florida, USA
+event: Passive
+note: Lead author and primary developer of star rendering.
+refereed: true
+...

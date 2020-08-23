@@ -1,0 +1,26 @@
+---
+id: prussing_calibration_2017
+type: report
+author:
+- family: Prussing
+  given: Keith F.
+  suffix: ', Ph.D.'
+title: Calibration Procedure for High Temperature Measurement
+sponsor: RADIANCE TECHNOLOGIES
+project: D7919.00.00.00.000L
+contract: 16S-3074
+issued:
+- year: 2017
+  month: 1
+  day: 31
+pages: 14
+report-type: Final Report
+contributions: >-
+    Provided detailed description of how to perform high temperature
+    measurement using multiple infrared cameras including theoretical
+    background on radiative transfer with regard to heat transfer.
+    Included 2,000 lines of MATLAB code to generate calibration files
+    for use with customer's processing software and process
+    measurements to determine temperature during measurements.
+irad: false
+...

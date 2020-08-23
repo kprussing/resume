@@ -1,0 +1,23 @@
+---
+id: cathcart_model_2011
+type: speech
+author:
+- family: Cathcart
+  given: J. Michael
+- family: Otolorin
+  given: S.
+- family: Kocher
+  given: B.
+- family: Prussing
+  given: K.
+- family: Garrett
+  given: A.
+issued:
+- year: 2011
+  month: 2
+title: Model Based Approach for Thermal Target Sharpening
+publisher-place: Berkley
+event-place: Berkley
+genre: Poster
+note: Performed data reduction and analysis.
+...

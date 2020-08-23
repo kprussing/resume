@@ -1,0 +1,27 @@
+---
+id: prussing_object_2019
+type: report
+author:
+- family: Prussing
+  given: Keith F.
+  suffix: ', Ph.D.'
+title: Object in Space Plume Rendering Evaluation (OSPRE)
+publisher: Center for Space Technology and Research
+publisher-place: Atlanta, GA
+project: W4846.02.06.01.0008
+contract: Internal Research and Development
+sponsor: GA TECH RSCH INSTITUTE
+issued:
+- year: 2019
+  month: 6
+  day: 30
+pages: 16
+report-type: Final Report
+genre: CSTAR Fellowship Report
+note: Author and model developer.
+contributions: >-
+    Research current status of resident space object plume
+    measurements from observational data and began developing model
+    for predicting rendered plumes for image modeling.
+irad: true
+...

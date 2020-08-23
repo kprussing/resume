@@ -1,0 +1,48 @@
+---
+id: prussing_estimation_2020
+type: paper-conference
+author:
+- family: Prussing
+  given: Keith F.
+- family: Zacharias
+  given: Anissa
+- family: Corker
+  given: John
+issued:
+- year: 2020
+  month: 4
+  day: 27
+accessed:
+- year: 2020
+  month: 5
+  day: 24
+title: Estimation of Thruster Plumes for Resident Space Object Optical Observation
+container-title: Sensors and systems for space applications XIII
+publisher: International Society for Optics; Photonics
+event: Sensors and systems for space applications XIII
+page: 114220B
+volume: '11422'
+abstract: With the ever-growing number of resident space objects (RSOs) surrounding
+  the Earth, it is imperative that we develop techniques for determining their current
+  and future state by leveraging a collection of radio frequency and optical observations
+  to maintain space domain awareness (SDA). The state of an RSO at a future time
+  is determined by its current state and the forces acting upon it. In theory, this
+  prediction is trivial; however, knowing all of the forces is not practical. When
+  a space object undergoes a maneuver, this simple extrapolation fails, and more
+  measurements are required before an updated state estimate would be available
+  causing tracking methods to fail. One means by which an RSO undergoes a maneuver,
+  is by firing its thruster which provides a transient component to its signature.
+  For example, many small satellites use Hall effect thrusters to perform station
+  keeping. The emission from these thrusters can be up to three times greater than
+  the rest of the satellite. This change in the signature provides information about
+  the aspect of the RSO and the amount of energy expended by the engine to produce
+  a thrust on the object. This information can be passed back to the state estimators
+  to reduce the time necessary to update the RSO’s state. In this paper, we present
+  a model for estimating the upper bound of the signature change of an RSO due to
+  thruster engagement. We then present our initial results of a rendered model both
+  with and without a plume present.
+URL: https://doi.org/10.1117/12.2552075
+DOI: 10.1117/12.2552075
+note: Lead author and developer of the plume prediction model.
+refereed: true
+...

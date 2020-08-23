@@ -1,0 +1,21 @@
+---
+id: prussing_urban_2010
+type: speech
+author:
+- family: Cathcart
+  given: J. Michael
+- family: Prussing
+  given: K.
+- family: Lane
+  given: Sarah
+- family: Otolorin
+  given: Shayla
+- family: Kocher
+  given: Brian R.
+issued:
+- year: 2010
+  month: 4
+title: Urban Scene Simulation for Multimodal Sensing Applications
+event: SPIE Defense and Security Symposium
+note: Developed untracked vehicle dynamics model and contributed section on model development.
+...

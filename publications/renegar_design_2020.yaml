@@ -1,0 +1,54 @@
+---
+id: renegar_design_2020
+type: paper-conference
+author:
+- family: Renegar
+  given: Luke
+- family: Valenta
+  given: Christopher R.
+- family: Badura
+  given: Gregory
+- family: Prussing
+  given: Keith F.
+- family: Gunter
+  given: Brian C.
+- family: Wu
+  given: Devin
+issued:
+- year: 2020
+  month: 1
+  day: 15
+title: Design of Experiments to Verify Photometric Models of Resident Space Objects
+container-title: 2nd IAA conference on space situational awareness
+publisher-place: Washington, D.C.
+event: 2nd IAA conference on space situational awareness
+abstract: >-
+  One fundamental problem limiting efforts to apply machine learning to
+  optical space situational awareness applications is the lack of truth data to
+  train algorithms. If an algorithm is to estimate the size, composition, and orientation
+  of an unknown resident space object (RSO) from its light curve, it must first
+  be trained using many thousands of images of RSOs for which these parameters,
+  among others, are known. The availability of labeled truth data is a significant
+  limiting factor, as these parameters cannot be known for debris, which comprises
+  more than 70% of the North American Aerospace Defense Command (NORAD) catalog.
+  Additionally, smallsats are rarely characterized before launch, and even if this
+  data is collected for larger satellites, it is not generally available to the
+  public. One approach to this problem is to train algorithms with simulated data.
+  However, this approach merely reduces the scale of the problem, since those simulations
+  must be validated. We propose an experimental framework to address the question
+  of how to validate optical and near-infrared (IR) simulations of RSOs viewed from
+  the Earth’s surface. We explore the measurement space of both pre-launch characterizations
+  of RSOs and terrestrial observations of RSOs and identify measurements that are
+  most beneficial in terms of validating photometric models of RSOs. We present
+  specific techniques to measure a smallsat’s bidirectional reflectance distribution
+  function (BRDF) and spectral response in the laboratory, with particular attention
+  to different materials on the spacecraft. We also discuss observational techniques
+  for taking calibrated photometric measurements of orbiting RSOs. It is hoped that
+  this framework will encourage optical and near-IR characterization of smallsats
+  prior to launch, allowing for the development of a network of well-characterized
+  observation targets on-orbit.
+note: >-
+  Provided guidance on details of the verification process for
+  software using experimental evidence.
+refereed: false
+...

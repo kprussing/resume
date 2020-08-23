@@ -1,0 +1,51 @@
+---
+id: burdette_imaging_2013
+type: paper-conference
+author:
+- family: Burdette
+  given: Edward M.
+- family: Nichols
+  given: C. Spencer
+- family: Lane
+  given: Sarah E.
+- family: Prussing
+  given: Keith F.
+- family: Cathcart
+  given: J. Michael
+issued:
+- year: 2013
+accessed:
+- year: 2014
+  month: 3
+  day: 18
+title: Imaging FTIR Emissivity Measurement Method
+page: 88700B-88700B-7
+volume: '8870'
+source: Silverchair
+note: Performed data reduction and analysis.
+abstract: Though many materials behave approximately as greybodies across the long-wave
+  infrared (LWIR) waveband, certain important infrared (IR) scene modeling materials
+  such as brick and galvanized steel exhibit more complex optical properties1. Accurately
+  describing how non-greybody materials interact relies critically on the accurate
+  incorporation of the emissive and reflective properties of the in-scene materials.
+  Typically, measured values are obtained and used. When measured using a non-imaging
+  spectrometer, a given material’s spectral emissivity requires more than one collection
+  episode, as both the sample under test and a standard must be measured separately.
+  In the interval between episodes changes in environment degrade emissivity measurement
+  accuracy. While repeating and averaging measurements of the standard and sample
+  helps mitigate such effects, a simultaneous measurement of both can ensure identical
+  environmental conditions during the measurement process, thus reducing inaccuracies
+  and delivering a temporally accurate determination of background or ‘down-welling’
+  radiation. We report on a method for minimizing temporal inaccuracies in sample
+  emissivity measurements. Using a LWIR hyperspectral imager, a Telops Hyper-Cam2,
+  an approach permitting hundreds of simultaneous, calibrated spectral radiance
+  measurements of the sample under test as well as a diffuse gold standard is described.
+  In addition, we describe the data reduction technique to exploit these measurements.
+  Following development of the reported method, spectral reflectance data from 10
+  samples of various materials of interest were collected. These data are presented
+  along with comments on how such data will enhance the fidelity of computer models
+  of IR scenes.
+URL: http://dx.doi.org/10.1117/12.2023415
+DOI: 10.1117/12.2023415
+refereed: true
+...

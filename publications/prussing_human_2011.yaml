@@ -1,0 +1,43 @@
+---
+id: prussing_human_2011
+type: paper-conference
+author:
+- family: Prussing
+  given: Keith
+- family: Cathcart
+  given: J. Michael
+- family: Kocher
+  given: Brian
+issued:
+- year: 2011
+accessed:
+- year: 2019
+  month: 7
+  day: 3
+title: Human Motion Analysis and Modeling
+container-title: Sensors, and command, control, communications, and intelligence
+  (c3i) technologies for homeland security and homeland defense x
+publisher: International Society for Optics; Photonics
+event: Sensors, and command, control, communications, and intelligence (c3i) technologies
+  for homeland security and homeland defense x
+page: 80190L
+volume: '8019'
+abstract: Georgia Tech has investigated methods for the detection and tracking of
+  personnel in a variety of acquisition environments. This research effort focused
+  on a detailed phenomenological analysis of human physiology and signatures with
+  the subsequent identification and characterization of potential observables. As
+  a fundamental part of this research effort, Georgia Tech collected motion capture
+  data on an individual for a variety of walking speeds, carrying loads, and load
+  distributions. These data formed the basis for deriving fundamental properties
+  of the individual’s motion and supported the development of a physiologically-based
+  human motion model. Subsequently this model aided the derivation and analysis
+  of motion-based observables, particularly changes in the motion of various body
+  components resulting from load variations. This paper will describe the data acquisition
+  process, development of the human motion model, and use of the model in the observable
+  analysis. Video sequences illustrating the motion data and modeling results will
+  also be presented.
+URL: https://doi.org/10.1117/12.884480
+DOI: 10.1117/12.884480
+note: Lead author and analyst for human motion analysis.
+refereed: true
+...

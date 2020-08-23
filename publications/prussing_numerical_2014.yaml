@@ -1,0 +1,36 @@
+---
+id: prussing_numerical_2014
+type: speech
+author:
+- family: Prussing
+  given: Keith F.
+- family: Cathcart
+  given: J. Michael
+issued:
+- year: 2014
+  month: 3
+  day: 11
+title: Numerical Investigation of Particle Shape Effects on Near-field Electromagnetic
+  Flux
+publisher-place: Hutsville, AL
+event: Sixteenth Anual Directed Energy Symposium
+event-place: Hutsville, AL
+genre: Poster
+abstract: It is well known that the radiative transport between particles, particularly
+  the case of nano-sized particles, can exceed the black body limit when the separation
+  between the particles less than the thermal wavelength λ\_T∼hc\\/(k\_B T). This
+  energy exchange can drastically affect the temperature profile of a system. The
+  ability to influence the temperature profile of a system has applications in microprocessor
+  design and thermophotovoltaic cell efficiency. Recent work has shown that the
+  temperature dependence of a system of dipoles is influenced by the configuration.
+  Other work has demonstrated a methodology to investigate the total flux into closely
+  separated bodies using the boundary element method. This computational method
+  permits the insertion of test surfaces into the two-body system to readily assess
+  the directionality of the electromagnetic flux at additional points in space.
+  By studying the effect of particle shape and orientation of the flux through such
+  a test surface, it will be possible to establish geometric configurations to directionally
+  channel the electromagnetic flux through a system of particles. In this poster,
+  we outline the methodology to compute the flux distribution and consider the flux
+  in the initial case between a sphere and a spheroid as a function of eccentricity.
+note: Lead author and presenter.
+...

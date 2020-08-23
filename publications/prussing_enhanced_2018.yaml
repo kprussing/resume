@@ -1,0 +1,53 @@
+---
+id: prussing_enhanced_2018
+type: paper-conference
+author:
+- family: Prussing
+  given: Keith F.
+  suffix: ', Ph.D.'
+- family: Pierson
+  given: Oliver
+- family: Cordell
+  given: Chris
+- family: Stewart
+  given: John
+- family: Nielson
+  given: Kevin
+issued:
+- year: 2018
+  month: 5
+  day: 14
+accessed:
+- year: 2019
+  month: 1
+  day: 19
+title: Enhanced Backgrounds in Scene Rendering with GTSIMS
+container-title: 'Infrared Imaging Systems: Design, Analysis, Modeling, and Testing
+  XXIX'
+publisher: International Society for Optics and Photonics
+event: 'Infrared Imaging Systems: Design, Analysis, Modeling, and Testing XXIX'
+page: 106250O
+volume: '10625'
+source: www.spiedigitallibrary.org
+abstract: A core component to modeling visible and infrared sensor responses is
+  the ability to faithfully recreate background noise and clutter in a synthetic
+  image. Most tracking and detection algorithms use a combination of signal to noise
+  or clutter to noise ratios to determine if a signature is of interest. A primary
+  source of clutter is the background that defines the environment in which a target
+  is placed. Over the past few years, the Electro-Optical Systems Laboratory (EOSL)
+  at the Georgia Tech Research Institute has made significant improvements to its
+  in house simulation framework GTSIMS. First, we have expanded our terrain models
+  to include the effects of terrain orientation on emission and reflection. Second,
+  we have included the ability to model dynamic reflections with full BRDF support.
+  Third, we have added the ability to render physically accurate cirrus clouds.
+  And finally, we have updated the overall rendering procedure to reduce the time
+  necessary to generate a single frame by taking advantage of hardware acceleration.
+  Here, we present the updates to GTSIMS to better predict clutter and noise doe
+  to non-uniform backgrounds. Specifically, we show how the addition of clouds,
+  terrain, and improved non-uniform sky rendering improve our ability to represent
+  clutter during scene generation.
+note: Lead author and developer for enhancements to GTSIMS.
+URL: https://doi.org/10.1117/12.2304864
+DOI: 10.1117/12.2304864
+refereed: true
+...

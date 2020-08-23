@@ -1,0 +1,47 @@
+---
+id: cathcart_human_2011
+type: paper-conference
+author:
+- family: Cathcart
+  given: J. Michael
+- family: Prussing
+  given: Keith
+- family: Kocher
+  given: Brian
+issued:
+- year: 2011
+  month: 6
+  day: 2
+accessed:
+- year: 2019
+  month: 7
+  day: 3
+title: Human Motion Analysis and Characterization
+container-title: Sensors, and command, control, communications, and intelligence
+  (c3i) technologies for homeland security and homeland defense x
+publisher: International Society for Optics; Photonics
+event: Sensors, and command, control, communications, and intelligence (c3i) technologies
+  for homeland security and homeland defense x
+page: 80190M
+volume: '8019'
+source: CrossRef
+abstract: Georgia Tech has investigated methods for the detection and tracking of
+  personnel in a variety of acquisition environments. This research effort focused
+  on a detailed phenomenological analysis of human physiology and signatures with
+  the subsequent identification and characterization of potential observables. Both
+  aspects are needed to support the development of personnel detection and tracking
+  algorithms. As a fundamental part of this research effort, Georgia Tech collected
+  motion capture data on an individual for a variety of walking speeds, carrying
+  loads, and load distributions. These data formed the basis for deriving fundamental
+  properties of the individual’s motion and the derivation of motionbased observables,
+  and changes in these fundamental properties arising from load variations. Analyses
+  were conducted to characterize the motion properties of various body components
+  such as leg swing, arm swing, head motion, and full body motion. This paper will
+  describe the data acquisition process, extraction of motion characteristics, and
+  analysis of these data. Video sequences illustrating the motion data and analysis
+  results will also be presented.
+note: Aided in signature model for human body and performed data reduction and analysis.
+URL: https://doi.org/10.1117/12.884481
+DOI: 10.1117/12.884481
+refereed: true
+...

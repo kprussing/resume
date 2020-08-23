@@ -1,0 +1,34 @@
+---
+id: alston_realistic_2020
+type: report
+author:
+- family: Alston
+  given: Garrett
+- family: Davis
+  given: Dan
+- family: DiDonna
+  given: Brian
+- family: Reynolds
+  given: William
+- family: Prussing
+  given: Keith F
+issued:
+- year: 2020
+  month: 1
+  day: 21
+title: Realistic image and neighborhood generator (RING)
+publisher: Air Force Research Lab Kirtland AFB
+publisher-place: Alburquerque, NM
+pages: 69
+report-type: Final Report
+number: AFRL-RD-PS-TR-20XX-XXXX
+irad: false
+sponsor: GA TECH RSCH INSTITUTE
+project: D8902.00.00.00.0000
+contract: 140941
+contributions: >-
+    Provided detailed description of how the cloud rendering was
+    integrated into the sponsor's rendering pipeline.  Also provided
+    an analysis on computational loading for generating rendered cloud
+    scenes along with a discussion of validity of the rendered clouds.
+...

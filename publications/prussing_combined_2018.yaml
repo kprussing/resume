@@ -1,0 +1,28 @@
+---
+id: prussing_combined_2018
+type: report
+author:
+- family: Prussing
+  given: Keith F.
+  suffix: ', Ph.D.'
+title: >-
+    Combined Software Requirements Specification and Software Design
+    Document for Task 3: MODTRAN 5 Atmospheric Modeling
+sponsor: AIR FORCE/OFFUTT/ NE
+project: D8016.03.02.0B.0000
+contract: FA807514D0018-0023
+issued:
+- year: 2018
+  month: 6
+  day: 21
+pages: 42
+report-type: >-
+    Software Requirement Specification/Software Design Document
+contributions: >-
+    Upgraded and unified the usage of MODTRAN within GTSIMS from
+    various version 5.2 and below to 5.3 and unified the interface to
+    the atmospheric correction library.  Defined the software
+    requirements and authored the entire Software Requirement
+    Specification and Software Design Document.
+irad: false
+...

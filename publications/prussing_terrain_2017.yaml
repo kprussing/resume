@@ -1,0 +1,32 @@
+---
+id: prussing_terrain_2017
+type: report
+author:
+- family: Prussing
+  given: Keith F
+  suffix: ', Ph.D.'
+- family: Stewart
+  given: John
+- family: Pierson
+  given: Oliver
+- family: Sheffer
+  given: Albert
+issued:
+- year: 2017
+  month: 6
+  day: 23
+title: Terrain Signature Generation with Full BRDF Support
+publisher: Georgia Tech Research Institute
+publisher-place: Atlanta, GA
+event-place: Atlanta, GA
+genre: IRAD 2017 Journal Paper
+contributions: >-
+    Developed methodology for computing reflections off terrains and
+    lead author of the final report
+irad: true
+contract: Internal Research and Development
+sponsor: Georgia Tech Research Institute
+project: I484L.00.00.03.0001
+pages: 5
+report-type: Final Report
+...
