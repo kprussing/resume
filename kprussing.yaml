@@ -68,9 +68,9 @@ key-delivered-products:
         The Fortran implementation of GTRI's multihypothesis tracking
         algorithm.
     contribution: >-
-        Prussing ported the MATLAB implementation of the multihypothesis
-        tracking algorithm into Fortran so it would work natively with
-        Suppressor instead of running on side products.
+        Ported the MATLAB implementation of the multihypothesis tracking
+        algorithm into Fortran so it would work natively with Suppressor
+        instead of running on side products.
 
   - name: GTSIMS Atmospheric Transmittance Library
     sponsor: AIR FORCE/OFFUTT/ NE
@@ -87,14 +87,14 @@ key-delivered-products:
         corrections, to perform the calculations and extract the
         relevant results.
     contribution: >-
-        Prussing upgraded the MODTRAN version used by the GTSIMS
-        atmospheric library and unified all usage by the components of
-        GTSIMS.  This included updating the internals to call the
-        MODTRAN executable using the standard Fortran 2008 methods
-        instead of modifying the provided source increasing the fidelity
-        of the model.  He also updated all portions of the GTSIMS suite
-        that used various older versions of MODTRAN that had been
-        partially updated with code from newer versions of MODTRAN.
+        Upgraded the MODTRAN version used by the GTSIMS atmospheric
+        library and unified all usage by the components of GTSIMS.  This
+        included updating the internals to call the MODTRAN executable
+        using the standard Fortran 2008 methods instead of modifying the
+        provided source increasing the fidelity of the model.  He also
+        updated all portions of the GTSIMS suite that used various older
+        versions of MODTRAN that had been partially updated with code
+        from newer versions of MODTRAN.
 
   - name: LHEL MATLAB Toolbox
     sponsor: RADIANCE TECHNOLOGIES
@@ -125,7 +125,7 @@ key-delivered-products:
         correctly simulate the heat transfer during high energy laser
         lethality testing.
     contribution: >-
-        Prussing developed the full module and defined the interface.
+        Developed the module and defined the interface.
 
 irad-efforts:
   - name: Digital Integrated Simulation Architecture (DISA)
@@ -159,11 +159,11 @@ irad-efforts:
         determine the correct markings for each page and the overall
         classification of the document.
     contribution: >-
-        Prussing devised and implemented the entire package and is the
-        current maintainer of the package.  This includes devising the
-        methodology for tracking the current classification level of the
-        current block of text and the highest level of classification
-        noted on the current page.
+        Devised and implemented the entire package and is the current
+        maintainer.  This includes devising the methodology for tracking
+        the current classification level of the current block of text
+        and the highest level of classification noted on the current
+        page.
 
   - name: EOSL LaTeX Package
     #URL: https://eoslcm.???
