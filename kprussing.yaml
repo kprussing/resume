@@ -127,6 +127,82 @@ key-delivered-products:
     contribution: >-
         Developed the module and defined the interface.
 
+  - name: OpenGL Rendering Regression Tests
+    sponsor: AIR FORCE/OFFUTT/ NE
+    date:
+    - year: 2018
+      month: 1
+    - year: 2018
+      month: 3
+    product: >-
+        Regression tests to work within the GTSIMS test framework to
+        ensure changes to the multi-spectral image modeling components
+        yield correct results
+    contribution: >-
+        Designed and implemented the regression tests for exercising the
+        OpenGL rendering pipeline in GTSIMS.
+
+  - name: Terrain Modeling Regression Tests
+    sponsor: AIR FORCE/OFFUTT/ NE
+    date:
+    - year: 2018
+      month: 1
+    - year: 2018
+      month: 3
+    product: >-
+        Regression tests to work within the GTSIMS test framework to
+        ensure changes to the multi-spectral image modeling components
+        yield correct results
+    contribution: >-
+        Designed and implemented the regression tests for exercising the
+        terrain creating and rendering components of GTSIMS.
+
+  - name: Infrared Search and Track Player
+    sponsor: AIR FORCE/OFFUTT/ NE
+    date:
+    - year: 2017
+      month: 3
+    - year: 2017
+      month: 9
+    product: >-
+        GTSIMS executable model to simulate scanning infrared search and
+        track models.  The model interacts with the native GTSIMS
+        image generation process to share a common environment with the
+        rest of the simulation.
+    contribution: >-
+        Implemented the scanning protocol to to allow user specified
+        patterns.  Adapted the image generation process to use newly
+        implemented terrain and cloud models.
+
+  - name: Non-uniform sky model
+    sponsor: AIR FORCE/OFFUTT/ NE
+    date:
+    - year: 2017
+      month: 3
+    - year: 2017
+      month: 9
+    product: >-
+        Spectral rendering model for the non-uniform sky to represent
+        the radiance as a function of solar position and viewer
+        direction.
+    contribution: >-
+        Developed the model and integrated it as a native model into the
+        GTSIMS framework.
+
+  - name: Cloud model
+    sponsor: AIR FORCE/OFFUTT/ NE
+    date:
+    - year: 2017
+      month: 3
+    - year: 2017
+      month: 9
+    product: >-
+        Spectral model for rendering clouds in a scene as a function of
+        viewer position and look direction.
+    contribution: >-
+        Developed the methodology to adapt the input cloud products into
+        a form renderable by GTSIMS.
+
 irad-efforts:
   - name: Digital Integrated Simulation Architecture (DISA)
     #URL: https://example.com
@@ -137,11 +213,44 @@ irad-efforts:
     - year: 2020
       month: 6
     product: >-
+        A novel simulation architecture to allow dynamic plug-and-play
+        capabilities for composing simulations from disparate models.
     contribution: >-
         Co-developer of the base architecture providing inputs on how to
         support multi-spectral image modeling.  Designed and implemented
         the initial rendering prototype to demonstrate the capabilities
         or the DISA architecture.
+
+  - name: GTSIMS Terrain Reflection Model
+    sponsor: GEORGIA TECH RESEARCH INST
+    date:
+    - year: 2018
+      month: 7
+    - year: 2019
+      month: 6
+    product: >-
+        Enhanced terrain model for GTSIMS to include local orientation,
+        dynamic reflections, and larger terrains containing more
+        features and large extents.
+    contribution: >-
+        Developed the methodology to integration terrain orientation
+        into the emitted signature and the dynamic reflections.
+        Supervised the effort to integrate new methods for managing
+        large terrains into with the enhanced reflections.
+
+  - name: Star Rendering
+    sponsor: GEORGIA TECH RESEARCH INST
+    date:
+    - year: 2018
+      month: 4
+    - year: 2019
+      month: 6
+    product: >-
+        Stellar GTSIMS background rendering model for use in space
+        domain awareness simulations.
+    contribution: >-
+        Developed the model for representing stellar radiance and
+        implemented the rendering methods with the GTSIMS pipeline.
 
   - name: secretx
     URL: https://github.com/kprussing/secretx
