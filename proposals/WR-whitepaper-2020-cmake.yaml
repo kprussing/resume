@@ -1,0 +1,25 @@
+---
+title: Cmake Modernization
+sponsor: Warner Robins ALC
+PI: Greg Rohlling
+role: Task Leader
+submitted:
+  year: 2020
+  month: 6
+  day: 15
+requested: $75,000
+result: Not Funded
+level:
+performance:
+  - year: 2020
+    month: 7
+    day: 1
+  - year: 2021
+    month: 6
+    day: 30
+contributions: >-
+    Proposed updating the Cmake configuration for GTSIMS to future
+    proof the build and configuration of GTSIMS by using modern idioms
+    and removing platform specific hard coding.
+external: true
+...

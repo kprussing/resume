@@ -7,7 +7,10 @@ yamls = [File(y) for y in (
     "I48RD.00.01.06.0000.yaml",
     "P8084.yaml",
     "W4846.02.06.01.0008.yaml",
-    "WR-whitepaper.yaml",
+    "WR-whitepaper-2019-atmos.yaml",
+    "WR-whitepaper-2020-atmos.yaml",
+    "WR-whitepaper-2020-cmake.yaml",
+    "WR-whitepaper-2020-cmake-tutorial.yaml",
     "W912HZ-20-BAA-01_ERDC_Feb2020.yaml",
     )
 ]

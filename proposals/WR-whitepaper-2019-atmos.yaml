@@ -1,0 +1,25 @@
+---
+title: Improved Atmospheric Corrections for GTSMS
+sponsor: Warner Robins ALC
+PI: Greg Rohlling
+role: Task Leader
+submitted:
+  year: 2019
+  month: 6
+  day: 15
+requested: $75,000
+result: Not Funded
+level:
+performance:
+  - year: 2019
+    month: 7
+    day: 1
+  - year: 2020
+    month: 6
+    day: 30
+contributions: >-
+    Proposed a new method to better represent atmospheric corrections
+    within GTSIMS by allowing a broader range of viewing geometries
+    instead of the limited set currently in use.
+external: true
+...

@@ -1,0 +1,25 @@
+---
+title: Modern Cmake Tutorial
+sponsor: Warner Robins ALC
+PI: Greg Rohlling
+role: Task Leader
+submitted:
+  year: 2020
+  month: 6
+  day: 15
+requested: $25,000
+result: Not Funded
+level:
+performance:
+  - year: 2020
+    month: 7
+    day: 1
+  - year: 2021
+    month: 6
+    day: 30
+contributions: >-
+    Create educational material on how to use and maintain a build
+    system using modern Cmake.  Provide a tutorial session with the
+    course material.
+external: true
+...
