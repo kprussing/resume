@@ -15,7 +15,14 @@ if __name__ == "__main__":
                         help="Output file", type=argparse.FileType("w"))
     args = parser.parse_args()
 
-    data = [yaml.safe_load(y.read()) for y in args.yaml]
+    data = []
+    for file_ in args.yaml:
+        content = yaml.safe_load(file_.read())
+        if isinstance(content, list):
+            data.extend(content)
+        else:
+            data.append(content)
+
     if args.label:
         data = {args.label : data}
 
