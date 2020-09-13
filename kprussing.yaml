@@ -211,7 +211,7 @@ irad-efforts:
     - year: 2018
       month: 7
     - year: 2020
-      month: 6
+      month: 10
     product: >-
         A novel simulation architecture to allow dynamic plug-and-play
         capabilities for composing simulations from disparate models.
@@ -288,6 +288,8 @@ irad-efforts:
         A LaTeX package to provide a standardized format for white
         papers, presentations, handouts, and journal style articles
         written at EOSL.
+    contribution: >-
+        Developer and maintainer
 
   - name: GT Promotion Formatting LaTeX Package
     URL: https://github.gatech.edu/kprussing3/gtpromote.git
@@ -304,6 +306,8 @@ irad-efforts:
         promotion package documents.  The ultimate goal is to provide a
         means to manage a plain text version of the complex promotion
         packet so that future formatting changes become trivial.
+    contribution: >-
+        Developer and maintainer
 
 short-courses: # Continuing Education Courses Taught
   - name: Infrared/Visible Signature Suppression
@@ -385,6 +389,13 @@ outreach-and-service:
     - status: Member
       years:
       - 2019
+  - name: Electronic-Warfare Community of Interest
+    short: EW-COI
+    positions:
+    - status: Member
+      years:
+      - 2017
+      - present
 
 professional-development:
   - name: Introduction to GTRI Project Director Core Training
