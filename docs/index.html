@@ -116,17 +116,15 @@ font-style: oblique;
 </div>
 <h3 id="fields-of-interest">Fields of Interest</h3>
 <ul>
-<li>Keith F Prussing is, at heart, a computational physicist. Generally speaking, he is interested in using computers to solve complex physical problems.</li>
-<li>Dr. Prussing’s current primary field of research is simulating rendered images in the visible and infrared regions of the electromagnetic spectrum.</li>
+<li>Teaching computers to solve complex physical problems.</li>
+<li>Rendering images in the visible and infrared regions of the electromagnetic spectrum.</li>
 <li>Large scale simulations of dynamic systems including simulating untracked land vehicle, aircraft, and sea vessel motion.</li>
-<li>Dr. Prussing also has a pet interest in radiative exchange in open environments. This is relevant for predicting the temperature of a surface in the wider world. Closed form solutions are possible in closed systems where all energy is conserved, but open systems add a complexity because energy is allowed to escape the system.</li>
-<li>Dr. Prussing is also interested in methods to solve sparse, symmetric, block systems of equations. His interest stems from solving heat equation where the energy flow is predominantly local but the radiative exchange couples disparate objects. However, these types of systems arise from many physical systems where the dominant interaction is local but long range interactions influence the evolution of the system.</li>
-<li>A side effect of his interest in complex simulations, Dr. Prussing has developed an interest in integrating Open Source development practices with traditional academic pursuits. This includes an interest in building and distributing software with tools such as autotools, CMake, SCons, latexmk, and Python’s setuptools.</li>
-<li>Dr. Prussing takes a strong interest in teaching any and all who will listen about the practices of Open Source development, including reproducible builds and execution, version control, and documentation, and how to implement them in computation science and engineering.</li>
-<li>Dr. Prussing really enjoys figuring out how to make computers “do the right thing.” He really enjoys writing code or documentation, running a “compile” command, watching text scroll across his terminal, and then reveling in final product.</li>
-<li>Dr. Prussing really enjoys exploring document typesetting using LaTeX and its affiliated tools like TikZ.</li>
-<li>Dr. Prussing is a strong supporter of Open Source practices and actively participates in discussions on a number of different Open Source tools and tries to contribute changes to the projects when able.</li>
-<li>Dr. Prussing is an educator who likes to promulgate how and why infrared is a viable band in which to do detection. As such he administers the Infrared and Visible Signature Suppression short course and teaches the Infrared Search and Track session of the Target Tracking Systems short course for the Georgia Tech Professional Education division.</li>
+<li>Radiative exchange in open environments to understand energy balance in complex environments.</li>
+<li>Methods to solve sparse, symmetric, block systems of non-linear equations like those associated with heat transfer.</li>
+<li>Integrating Open Source development practices with traditional academic pursuits.</li>
+<li>Applying Open Sources methods to develop methods for creating reproducible results and teaching these methods to other researchers.</li>
+<li>Methods to transform “simple,” easy to write plain text documentation to formally typeset documentation.</li>
+<li>Teaching all and sundry how and why infrared and visible detection are are critical bands in to model and simulate.</li>
 </ul>
 <h2 id="work-experience">Work experience</h2>
 <dl>
@@ -249,7 +247,7 @@ Reports
 </div>
 <div id="ref-prussing_verification_2019">
 <p>
-[3] K. F. Prussing, Ph.D., “Verification and Validation Report for the Capability of the Limited Interim Missile Warning System Digital System Model, Version 4, to supporte Performance Assessment (U) DID: DI-MSSM-8172,” Sep. 2019.
+[3] K. F. Prussing, Ph.D., “Verification and Validation Report for the Capability of the Limited Interim Missile Warning System Digital System Model, Version 4, to support Performance Assessment (U) DID: DI-MSSM-8172,” Sep. 2019.
 </p>
 </div>
 <div id="ref-prussing_object_2019">
@@ -338,7 +336,87 @@ Posters
 <dd>A library for computing atmospheric transmittance and path radiance for use within the Georgia Tech Simulation Integrated Modeling System. The core methods in the library wrap calls to MODTRAN, the DoD standard utility for calculating atmospheric corrections, to perform the calculations and extract the relevant results.
 </dd>
 <dt>Candidate’s specific technical contributions</dt>
-<dd>Prussing upgraded the MODTRAN version used by the GTSIMS atmospheric library and unified all usage by the components of GTSIMS. This included updating the internals to call the MODTRAN executable using the standard Fortran 2008 methods instead of modifying the provided source increasing the fidelity of the model. He also updated all portions of the GTSIMS suite that used various older versions of MODTRAN that had been partially updated with code from newer versions of MODTRAN.
+<dd>Upgraded the MODTRAN version used by the GTSIMS atmospheric library and unified all usage by the components of GTSIMS. This included updating the internals to call the MODTRAN executable using the standard Fortran 2008 methods instead of modifying the provided source increasing the fidelity of the model. He also updated all portions of the GTSIMS suite that used various older versions of MODTRAN that had been partially updated with code from newer versions of MODTRAN.
+</dd>
+</dl></li>
+<li><pre><code> Name/Title for Key Delivered Product</code></pre>
+<p>: OpenGL Rendering Regression Tests</p>
+<dl>
+<dt>Sponsor/To Whom Delivered</dt>
+<dd>AIR FORCE/OFFUTT/ NE
+</dd>
+<dt>Date range for work performed by the candidate</dt>
+<dd>Jan 2018–Mar 2018
+</dd>
+<dt>Describe Product</dt>
+<dd>Regression tests to work within the GTSIMS test framework to ensure changes to the multi-spectral image modeling components yield correct results
+</dd>
+<dt>Candidate’s specific technical contributions</dt>
+<dd>Designed and implemented the regression tests for exercising the OpenGL rendering pipeline in GTSIMS.
+</dd>
+</dl></li>
+<li><pre><code> Name/Title for Key Delivered Product</code></pre>
+<p>: Terrain Modeling Regression Tests</p>
+<dl>
+<dt>Sponsor/To Whom Delivered</dt>
+<dd>AIR FORCE/OFFUTT/ NE
+</dd>
+<dt>Date range for work performed by the candidate</dt>
+<dd>Jan 2018–Mar 2018
+</dd>
+<dt>Describe Product</dt>
+<dd>Regression tests to work within the GTSIMS test framework to ensure changes to the multi-spectral image modeling components yield correct results
+</dd>
+<dt>Candidate’s specific technical contributions</dt>
+<dd>Designed and implemented the regression tests for exercising the terrain creating and rendering components of GTSIMS.
+</dd>
+</dl></li>
+<li><pre><code> Name/Title for Key Delivered Product</code></pre>
+<p>: Infrared Search and Track Player</p>
+<dl>
+<dt>Sponsor/To Whom Delivered</dt>
+<dd>AIR FORCE/OFFUTT/ NE
+</dd>
+<dt>Date range for work performed by the candidate</dt>
+<dd>Mar 2017–Sep 2017
+</dd>
+<dt>Describe Product</dt>
+<dd>GTSIMS executable model to simulate scanning infrared search and track models. The model interacts with the native GTSIMS image generation process to share a common environment with the rest of the simulation.
+</dd>
+<dt>Candidate’s specific technical contributions</dt>
+<dd>Implemented the scanning protocol to to allow user specified patterns. Adapted the image generation process to use newly implemented terrain and cloud models.
+</dd>
+</dl></li>
+<li><pre><code> Name/Title for Key Delivered Product</code></pre>
+<p>: Non-uniform sky model</p>
+<dl>
+<dt>Sponsor/To Whom Delivered</dt>
+<dd>AIR FORCE/OFFUTT/ NE
+</dd>
+<dt>Date range for work performed by the candidate</dt>
+<dd>Mar 2017–Sep 2017
+</dd>
+<dt>Describe Product</dt>
+<dd>Spectral rendering model for the non-uniform sky to represent the radiance as a function of solar position and viewer direction.
+</dd>
+<dt>Candidate’s specific technical contributions</dt>
+<dd>Developed the model and integrated it as a native model into the GTSIMS framework.
+</dd>
+</dl></li>
+<li><pre><code> Name/Title for Key Delivered Product</code></pre>
+<p>: Cloud model</p>
+<dl>
+<dt>Sponsor/To Whom Delivered</dt>
+<dd>AIR FORCE/OFFUTT/ NE
+</dd>
+<dt>Date range for work performed by the candidate</dt>
+<dd>Mar 2017–Sep 2017
+</dd>
+<dt>Describe Product</dt>
+<dd>Spectral model for rendering clouds in a scene as a function of viewer position and look direction.
+</dd>
+<dt>Candidate’s specific technical contributions</dt>
+<dd>Developed the methodology to adapt the input cloud products into a form renderable by GTSIMS.
 </dd>
 </dl></li>
 <li><pre><code> Name/Title for Key Delivered Product</code></pre>
@@ -370,7 +448,7 @@ Posters
 <dd>A Fortran module to load an arbitrary beam profile into Ignition3D, a custom 3D heat transfer program for high energy laser lethality modeling. The module provides a means to model an arbitrary beam profile derived from measured data to correctly simulate the heat transfer during high energy laser lethality testing.
 </dd>
 <dt>Candidate’s specific technical contributions</dt>
-<dd>Prussing developed the full module and defined the interface.
+<dd>Developed the module and defined the interface.
 </dd>
 </dl></li>
 <li><pre><code> Name/Title for Key Delivered Product</code></pre>
@@ -386,7 +464,7 @@ Posters
 <dd>The Fortran implementation of GTRI’s multihypothesis tracking algorithm.
 </dd>
 <dt>Candidate’s specific technical contributions</dt>
-<dd>Prussing ported the MATLAB implementation of the multihypothesis tracking algorithm into Fortran so it would work natively with Suppressor instead of running on side products.
+<dd>Ported the MATLAB implementation of the multihypothesis tracking algorithm into Fortran so it would work natively with Suppressor instead of running on side products.
 </dd>
 </dl></li>
 </ol>
@@ -562,6 +640,7 @@ Posters
 <ol type="1">
 <li>Member, <a href="http://cstar.gatech.edu">Center for Space Technology and Research</a>, 2019–present.</li>
 <li>Fellow, <a href="http://cstar.gatech.edu">Center for Space Technology and Research</a>, 2019–2020, Title: Object in Space Plume Rendering (OSPRE).</li>
+<li>Member, Electronic-Warfare Community of Interest, 2017–present.</li>
 </ol>
 <h2 id="old-work-history">Old work history</h2>
 <p>The following is primarily here so I do not forget relevant information from my past. I highly doubt anything below will be a make or break, but you may find something of interest to talk about.</p>
