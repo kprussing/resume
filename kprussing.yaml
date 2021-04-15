@@ -348,6 +348,25 @@ short-courses: # Continuing Education Courses Taught
         - Signature Suppression Impact
         - LO Synergism with Countermeasures
         - Summary and Conclusions
+    - year: 2021
+      month: 3
+      day: 24
+      role: Course administrator
+      lectures:
+        - Overview
+        - Threat Sensor Characteristics
+        - Sensor Signature Suppression
+        - Signature Prediction Models
+        - Predicting LO Effectiveness with Vision Models
+        - General Signature Suppression Techniques
+        - Signature Prediction Models
+        - Ground Vehicle Signature Suppression
+        - Gas Turbine Engine Signatures and Suppression
+        - Aircraft Body Signature Suppression
+        - Ship Signature Suppression
+        - Signature Suppression Impact
+        - LO Synergism with Countermeasures
+        - Summary and Conclusions
 
   - name: Target Tracking in Sensor Systems
     short: TTSS-IRST
