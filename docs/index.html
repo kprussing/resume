@@ -12,97 +12,29 @@
     div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
   </style>
-  <style type="text/css">
-:root {
---background: #dcdccc; 
---foreground: #3f3f3f; 
---title: #7f9f7f; 
---delimiter: #8f8f8f; 
---section-head: #82a282; 
-}
-</style>
-  <style type="text/css">
-
-body {
-font-family: "Source Sans Pro",
-"DejaVu Sans",
-"Helvetica Neue",
-Helvetica,
-Arial,
-sans-serif;
-color: var(--foreground);
-background: var(--background);
-text-align: justify;
-text-justify: inter-word;
-width: 40em;
-line-height: 1.25;
-margin: auto;
-padding: 1em 1em 1em 1em;
-
-
-
-}
-
-h1 {
-color: var(--title);
-text-align: center;
-}
-
-h2 {
-color: var(--section-head);
-}
-
-h2:before {
-content: "";
-display: inline-block;
-margin-right: 0.75ex;
-width: 17%;
-height: 0.9ex;
-background-color: var(--section-head);
-}
-
-dt {
-float: left;
-clear: left;
-width: 18%;
-font-weight: bolder;
-font-style: oblique;
-}
-dd {
-margin-left: 20%;
-}
-
-a {
-text-decoration: underline;
-color: var(--foreground);
-}
-a:hover, a:active {
-color: var(--title);
-text-decoration: none;
-}
-
-hr {
-color: var(--delimiter);
-}
-
-div.contact {
-text-align: center;
-}
-div.summary {
-font-size: large;
-text-align: center;
-}
-span.position {
-font-style: oblique;
-}
-span.institute {
-font-weight: bolder;
-}
-span.location {
-font-style: oblique;
-}
-</style>
+  <link rel="stylesheet" href="data:text/css,%0A%3Aroot%20%7B%0A%2D%2Dbackground%3A%20%23dcdccc%3B%20%0A%2D%2Dforeground%3A%20%233f3f3f%3B%20%0A%2D%2Dtitle%3A%20%237f9f7f%3B%20%0A%2D%2Ddelimiter%3A%20%238f8f8f%3B%20%0A%2D%2Dsection%2Dhead%3A%20%2382a282%3B%20%0A%7D%0A" />
+  <link rel="stylesheet" href="data:text/css,%0A%0Abody%20%7B%0Afont%2Dfamily%3A%20%22Source%20Sans%20Pro%22%2C%0A%22DejaVu%20Sans%22%2C%0A%22Helvetica%20Neue%22%2C%0AHelvetica%2C%0AArial%2C%0Asans%2Dserif%3B%0Acolor%3A%20var%28%2D%2Dforeground%29%3B%0Abackground%3A%20var%28%2D%2Dbackground%29%3B%0Atext%2Dalign%3A%20justify%3B%0Atext%2Djustify%3A%20inter%2Dword%3B%0Awidth%3A%2040em%3B%0Aline%2Dheight%3A%201%2E25%3B%0Amargin%3A%20auto%3B%0Apadding%3A%201em%201em%201em%201em%3B%0A%0A%0A%0A%7D%0A%0Ah1%20%7B%0Acolor%3A%20var%28%2D%2Dtitle%29%3B%0Atext%2Dalign%3A%20center%3B%0A%7D%0A%0Ah2%20%7B%0Acolor%3A%20var%28%2D%2Dsection%2Dhead%29%3B%0A%7D%0A%0Ah2%3Abefore%20%7B%0Acontent%3A%20%22%22%3B%0Adisplay%3A%20inline%2Dblock%3B%0Amargin%2Dright%3A%200%2E75ex%3B%0Awidth%3A%2017%25%3B%0Aheight%3A%200%2E9ex%3B%0Abackground%2Dcolor%3A%20var%28%2D%2Dsection%2Dhead%29%3B%0A%7D%0A%0Adt%20%7B%0Afloat%3A%20left%3B%0Aclear%3A%20left%3B%0Awidth%3A%2018%25%3B%0Afont%2Dweight%3A%20bolder%3B%0Afont%2Dstyle%3A%20oblique%3B%0A%7D%0Add%20%7B%0Amargin%2Dleft%3A%2020%25%3B%0A%7D%0A%0Aa%20%7B%0Atext%2Ddecoration%3A%20underline%3B%0Acolor%3A%20var%28%2D%2Dforeground%29%3B%0A%7D%0Aa%3Ahover%2C%20a%3Aactive%20%7B%0Acolor%3A%20var%28%2D%2Dtitle%29%3B%0Atext%2Ddecoration%3A%20none%3B%0A%7D%0A%0Ahr%20%7B%0Acolor%3A%20var%28%2D%2Ddelimiter%29%3B%0A%7D%0A%0Adiv%2Econtact%20%7B%0Atext%2Dalign%3A%20center%3B%0A%7D%0Adiv%2Esummary%20%7B%0Afont%2Dsize%3A%20large%3B%0Atext%2Dalign%3A%20center%3B%0A%7D%0Aspan%2Eposition%20%7B%0Afont%2Dstyle%3A%20oblique%3B%0A%7D%0Aspan%2Einstitute%20%7B%0Afont%2Dweight%3A%20bolder%3B%0A%7D%0Aspan%2Elocation%20%7B%0Afont%2Dstyle%3A%20oblique%3B%0A%7D%0A" />
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -174,151 +106,223 @@ Publications
 <h3 class="unnumbered" id="journal-articles">
 Journal articles
 </h3>
-<div id="refs" class="references" role="doc-bibliography" role="doc-bibliography" role="doc-bibliography">
-<div id="ref-bertrand_infrared_2020">
-<p>
-[1] N. P. Bertrand, J. Lee, K. F. Prussing, S. Shapero, and C. J. Rozell, “Infrared search and track with unbalanced optimal transport dynamics regularization,” <em>IEEE Geoscience and Remote Sensing Letters</em>, pp. 1–5, Aug. 2020 [Online]. Available: <a href="https://doi.org/10.1109/LGRS.2020.3014534">https://doi.org/10.1109/LGRS.2020.3014534</a>
-</p>
+<div id="refs" class="references csl-bib-body" role="doc-bibliography" role="doc-bibliography" role="doc-bibliography">
+<div id="ref-bertrand_infrared_2020" class="csl-entry" role="doc-biblioentry" role="doc-biblioentry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[1]
+</div>
+<div class="csl-right-inline">
+N. P. Bertrand, J. Lee, K. F. Prussing, S. Shapero, and C. J. Rozell, <span>“Infrared search and track with unbalanced optimal transport dynamics regularization,”</span> <em>IEEE Geoscience and Remote Sensing Letters</em>, pp. 1–5, Aug. 2020 [Online]. Available: <a href="https://doi.org/10.1109/LGRS.2020.3014534">https://doi.org/10.1109/LGRS.2020.3014534</a>
+</div>
 </div>
 </div>
 <h3 class="unnumbered" id="conference-papers">
 Conference papers
 </h3>
-<div id="refs" class="references" role="doc-bibliography" role="doc-bibliography" role="doc-bibliography">
-<div id="ref-prussing_estimation_2020">
-<p>
-[1] K. F. Prussing, A. Zacharias, and J. Corker, “Estimation of Thruster Plumes for Resident Space Object Optical Observation,” in <em>Sensors and systems for space applications XIII</em>, 2020, vol. 11422, p. 114220B [Online]. Available: <a href="https://doi.org/10.1117/12.2552075">https://doi.org/10.1117/12.2552075</a>. [Accessed: 24-May-2020]
-</p>
+<div id="refs" class="references csl-bib-body" role="doc-bibliography" role="doc-bibliography" role="doc-bibliography">
+<div id="ref-prussing_estimation_2020" class="csl-entry" role="doc-biblioentry" role="doc-biblioentry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[1]
 </div>
-<div id="ref-renegar_design_2020">
-<p>
-[2] L. Renegar, C. R. Valenta, G. Badura, K. F. Prussing, B. C. Gunter, and D. Wu, “Design of Experiments to Verify Photometric Models of Resident Space Objects,” in <em>2nd IAA conference on space situational awareness</em>, 2020.
-</p>
+<div class="csl-right-inline">
+K. F. Prussing, A. Zacharias, and J. Corker, <span>“Estimation of Thruster Plumes for Resident Space Object Optical Observation,”</span> in <em>Sensors and systems for space applications XIII</em>, 2020, vol. 11422, p. 114220B [Online]. Available: <a href="https://doi.org/10.1117/12.2552075">https://doi.org/10.1117/12.2552075</a>. [Accessed: 24-May-2020]
 </div>
-<div id="ref-prussing_stellar_2019">
-<p>
-[3] K. F. Prussing, Ph.D., C. R. Valenta, C. E. Cordell, A. Zacharias, and L. R. Churchill, “Stellar Background Rendering for Space Situational Awareness Algorithm Development,” in <em>Algorithms, technologies, and applications for multispectral and hyperspectral imagery XXV</em>, 2019, vol. 10986, p. 109860Z [Online]. Available: <a href="http://dx.doi.org/10.1117/12.2519009">http://dx.doi.org/10.1117/12.2519009</a>. [Accessed: 29-May-2019]
-</p>
 </div>
-<div id="ref-prussing_night_2019">
-<p>
-[4] K. F. Prussing, Ph.D., C. R. Valenta, C. E. Cordell Jr., and L. R. Churchill, “Night sky rendering for satellite tracking simulation,” in <em>2019 MSS parallel conference</em>, 2019.
-</p>
+<div id="ref-renegar_design_2020" class="csl-entry" role="doc-biblioentry" role="doc-biblioentry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[2]
 </div>
-<div id="ref-prussing_enhanced_2018">
-<p>
-[5] K. F. Prussing, Ph.D., O. Pierson, C. Cordell, J. Stewart, and K. Nielson, “Enhanced Backgrounds in Scene Rendering with GTSIMS,” in <em>Infrared Imaging Systems: Design, Analysis, Modeling, and Testing XXIX</em>, 2018, vol. 10625, p. 106250O [Online]. Available: <a href="https://doi.org/10.1117/12.2304864">https://doi.org/10.1117/12.2304864</a>. [Accessed: 19-Jan-2019]
-</p>
+<div class="csl-right-inline">
+L. Renegar, C. R. Valenta, G. Badura, K. F. Prussing, B. C. Gunter, and D. Wu, <span>“Design of Experiments to Verify Photometric Models of Resident Space Objects,”</span> in <em>2nd IAA conference on space situational awareness</em>, 2020.
 </div>
-<div id="ref-burdette_imaging_2013">
-<p>
-[6] E. M. Burdette, C. S. Nichols, S. E. Lane, K. F. Prussing, and J. M. Cathcart, “Imaging FTIR Emissivity Measurement Method,” 2013, vol. 8870, pp. 88700B–88700B–7 [Online]. Available: <a href="http://dx.doi.org/10.1117/12.2023415">http://dx.doi.org/10.1117/12.2023415</a>. [Accessed: 18-Mar-2014]
-</p>
 </div>
-<div id="ref-cathcart_human_2011">
-<p>
-[7] J. M. Cathcart, K. Prussing, and B. Kocher, “Human Motion Analysis and Characterization,” in <em>Sensors, and command, control, communications, and intelligence (c3i) technologies for homeland security and homeland defense x</em>, 2011, vol. 8019, p. 80190M [Online]. Available: <a href="https://doi.org/10.1117/12.884481">https://doi.org/10.1117/12.884481</a>. [Accessed: 03-Jul-2019]
-</p>
+<div id="ref-prussing_stellar_2019" class="csl-entry" role="doc-biblioentry" role="doc-biblioentry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[3]
 </div>
-<div id="ref-prussing_human_2011">
-<p>
-[8] K. Prussing, J. M. Cathcart, and B. Kocher, “Human Motion Analysis and Modeling,” in <em>Sensors, and command, control, communications, and intelligence (c3i) technologies for homeland security and homeland defense x</em>, 2011, vol. 8019, p. 80190L [Online]. Available: <a href="https://doi.org/10.1117/12.884480">https://doi.org/10.1117/12.884480</a>. [Accessed: 03-Jul-2019]
-</p>
+<div class="csl-right-inline">
+K. F. Prussing, Ph.D., C. R. Valenta, C. E. Cordell, A. Zacharias, and L. R. Churchill, <span>“Stellar Background Rendering for Space Situational Awareness Algorithm Development,”</span> in <em>Algorithms, technologies, and applications for multispectral and hyperspectral imagery XXV</em>, 2019, vol. 10986, p. 109860Z [Online]. Available: <a href="http://dx.doi.org/10.1117/12.2519009">http://dx.doi.org/10.1117/12.2519009</a>. [Accessed: 29-May-2019]
 </div>
-<div id="ref-cathcart_multimodal_2010">
-<p>
-[9] J. M. Cathcart, B. Kocher, K. Prussing, S. Lane, and A. Thomas, “Multimodal Signature Modeling of Humans,” presented at the Active and Passive Signatures, Orlando, Florida, USA, 2010, pp. 76870D–76870D–7 [Online]. Available: <a href="https://doi.org/10.1117/12.850688">https://doi.org/10.1117/12.850688</a>. [Accessed: 30-Jan-2011]
-</p>
+</div>
+<div id="ref-prussing_night_2019" class="csl-entry" role="doc-biblioentry" role="doc-biblioentry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[4]
+</div>
+<div class="csl-right-inline">
+K. F. Prussing, Ph.D., C. R. Valenta, C. E. Cordell Jr., and L. R. Churchill, <span>“Night sky rendering for satellite tracking simulation,”</span> in <em>2019 MSS parallel conference</em>, 2019.
+</div>
+</div>
+<div id="ref-prussing_enhanced_2018" class="csl-entry" role="doc-biblioentry" role="doc-biblioentry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[5]
+</div>
+<div class="csl-right-inline">
+K. F. Prussing, Ph.D., O. Pierson, C. Cordell, J. Stewart, and K. Nielson, <span>“Enhanced Backgrounds in Scene Rendering with GTSIMS,”</span> in <em>Infrared Imaging Systems: Design, Analysis, Modeling, and Testing XXIX</em>, 2018, vol. 10625, p. 106250O [Online]. Available: <a href="https://doi.org/10.1117/12.2304864">https://doi.org/10.1117/12.2304864</a>. [Accessed: 19-Jan-2019]
+</div>
+</div>
+<div id="ref-burdette_imaging_2013" class="csl-entry" role="doc-biblioentry" role="doc-biblioentry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[6]
+</div>
+<div class="csl-right-inline">
+E. M. Burdette, C. S. Nichols, S. E. Lane, K. F. Prussing, and J. M. Cathcart, <span>“Imaging FTIR Emissivity Measurement Method,”</span> 2013, vol. 8870, pp. 88700B-88700B-7 [Online]. Available: <a href="http://dx.doi.org/10.1117/12.2023415">http://dx.doi.org/10.1117/12.2023415</a>. [Accessed: 18-Mar-2014]
+</div>
+</div>
+<div id="ref-cathcart_human_2011" class="csl-entry" role="doc-biblioentry" role="doc-biblioentry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[7]
+</div>
+<div class="csl-right-inline">
+J. M. Cathcart, K. Prussing, and B. Kocher, <span>“Human Motion Analysis and Characterization,”</span> in <em>Sensors, and command, control, communications, and intelligence (c3i) technologies for homeland security and homeland defense x</em>, 2011, vol. 8019, p. 80190M [Online]. Available: <a href="https://doi.org/10.1117/12.884481">https://doi.org/10.1117/12.884481</a>. [Accessed: 03-Jul-2019]
+</div>
+</div>
+<div id="ref-prussing_human_2011" class="csl-entry" role="doc-biblioentry" role="doc-biblioentry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[8]
+</div>
+<div class="csl-right-inline">
+K. Prussing, J. M. Cathcart, and B. Kocher, <span>“Human Motion Analysis and Modeling,”</span> in <em>Sensors, and command, control, communications, and intelligence (c3i) technologies for homeland security and homeland defense x</em>, 2011, vol. 8019, p. 80190L [Online]. Available: <a href="https://doi.org/10.1117/12.884480">https://doi.org/10.1117/12.884480</a>. [Accessed: 03-Jul-2019]
+</div>
+</div>
+<div id="ref-cathcart_multimodal_2010" class="csl-entry" role="doc-biblioentry" role="doc-biblioentry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[9]
+</div>
+<div class="csl-right-inline">
+J. M. Cathcart, B. Kocher, K. Prussing, S. Lane, and A. Thomas, <span>“Multimodal Signature Modeling of Humans,”</span> presented at the Active and Passive Signatures, Orlando, Florida, USA, 2010, pp. 76870D-76870D-7 [Online]. Available: <a href="https://doi.org/10.1117/12.850688">https://doi.org/10.1117/12.850688</a>. [Accessed: 30-Jan-2011]
+</div>
 </div>
 </div>
 <h3 class="unnumbered" id="reports">
 Reports
 </h3>
-<div id="refs" class="references" role="doc-bibliography" role="doc-bibliography" role="doc-bibliography">
-<div id="ref-prussing_recent_2020">
-<p>
-[1] K. F. Prussing, “Recent Developments in Soldier and Vehicle Signature Management Technologies,” Georgia Tech Research Institute, Atlanta, GA, Technical Research Report DSIAC-2020-1242, Feb. 2020.
-</p>
+<div id="refs" class="references csl-bib-body" role="doc-bibliography" role="doc-bibliography" role="doc-bibliography">
+<div id="ref-prussing_recent_2020" class="csl-entry" role="doc-biblioentry" role="doc-biblioentry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[1]
 </div>
-<div id="ref-alston_realistic_2020">
-<p>
-[2] G. Alston, D. Davis, B. DiDonna, W. Reynolds, and K. F. Prussing, “Realistic image and neighborhood generator (RING),” Air Force Research Lab Kirtland AFB, Alburquerque, NM, AFRL-RD-PS-TR-20XX-XXXX, Jan. 2020.
-</p>
+<div class="csl-right-inline">
+K. F. Prussing, <span>“Recent Developments in Soldier and Vehicle Signature Management Technologies,”</span> Georgia Tech Research Institute, Atlanta, GA, Technical Research Report DSIAC-2020-1242, Feb. 2020.
 </div>
-<div id="ref-prussing_verification_2019">
-<p>
-[3] K. F. Prussing, Ph.D., “Verification and Validation Report for the Capability of the Limited Interim Missile Warning System Digital System Model, Version 4, to support Performance Assessment (U) DID: DI-MSSM-8172,” Sep. 2019.
-</p>
 </div>
-<div id="ref-prussing_object_2019">
-<p>
-[4] K. F. Prussing, Ph.D., “Object in Space Plume Rendering Evaluation (OSPRE),” Center for Space Technology and Research, Atlanta, GA, CSTAR Fellowship Report, Jun. 2019.
-</p>
+<div id="ref-alston_realistic_2020" class="csl-entry" role="doc-biblioentry" role="doc-biblioentry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[2]
 </div>
-<div id="ref-prussing_combined_2018">
-<p>
-[5] K. F. Prussing, Ph.D., “Combined Software Requirements Specification and Software Design Document for Task 3: MODTRAN 5 Atmospheric Modeling,” Jun. 2018.
-</p>
+<div class="csl-right-inline">
+G. Alston, D. Davis, B. DiDonna, W. Reynolds, and K. F. Prussing, <span>“Realistic image and neighborhood generator (RING),”</span> Air Force Research Lab Kirtland AFB, Alburquerque, NM, AFRL-RD-PS-TR-20XX-XXXX, Jan. 2020.
 </div>
-<div id="ref-prussing_terrain_2017">
-<p>
-[6] K. F. Prussing, Ph.D., J. Stewart, O. Pierson, and A. Sheffer, “Terrain Signature Generation with Full BRDF Support,” Georgia Tech Research Institute, Atlanta, GA, IRAD 2017 Journal Paper, Jun. 2017.
-</p>
 </div>
-<div id="ref-prussing_calibration_2017">
-<p>
-[7] K. F. Prussing, Ph.D., “Calibration Procedure for High Temperature Measurement,” Jan. 2017.
-</p>
+<div id="ref-prussing_verification_2019" class="csl-entry" role="doc-biblioentry" role="doc-biblioentry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[3]
+</div>
+<div class="csl-right-inline">
+K. F. Prussing, Ph.D., <span>“Verification and Validation Report for the Capability of the Limited Interim Missile Warning System Digital System Model, Version 4, to support Performance Assessment (U) DID: DI-MSSM-8172,”</span> Sep. 2019.
+</div>
+</div>
+<div id="ref-prussing_object_2019" class="csl-entry" role="doc-biblioentry" role="doc-biblioentry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[4]
+</div>
+<div class="csl-right-inline">
+K. F. Prussing, Ph.D., <span>“Object in Space Plume Rendering Evaluation (OSPRE),”</span> Center for Space Technology and Research, Atlanta, GA, CSTAR Fellowship Report, Jun. 2019.
+</div>
+</div>
+<div id="ref-prussing_combined_2018" class="csl-entry" role="doc-biblioentry" role="doc-biblioentry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[5]
+</div>
+<div class="csl-right-inline">
+K. F. Prussing, Ph.D., <span>“Combined Software Requirements Specification and Software Design Document for Task 3: MODTRAN 5 Atmospheric Modeling,”</span> Jun. 2018.
+</div>
+</div>
+<div id="ref-prussing_terrain_2017" class="csl-entry" role="doc-biblioentry" role="doc-biblioentry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[6]
+</div>
+<div class="csl-right-inline">
+K. F. Prussing, Ph.D., J. Stewart, O. Pierson, and A. Sheffer, <span>“Terrain Signature Generation with Full BRDF Support,”</span> Georgia Tech Research Institute, Atlanta, GA, IRAD 2017 Journal Paper, Jun. 2017.
+</div>
+</div>
+<div id="ref-prussing_calibration_2017" class="csl-entry" role="doc-biblioentry" role="doc-biblioentry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[7]
+</div>
+<div class="csl-right-inline">
+K. F. Prussing, Ph.D., <span>“Calibration Procedure for High Temperature Measurement,”</span> Jan. 2017.
+</div>
 </div>
 </div>
 <h3 class="unnumbered" id="thesis">
 Thesis
 </h3>
-<div id="refs" class="references" role="doc-bibliography" role="doc-bibliography" role="doc-bibliography">
-<div id="ref-prussing_investigation_2015">
-<p>
-[1] K. F. Prussing, “An Investigation of Surface Shape Effects on Near-field Radiative Transfer,” PhD Dissertation, Georgia Institute of Technology, Atlanta, GA, 2015 [Online]. Available: <a href="https://smartech.gatech.edu/handle/1853/54321">https://smartech.gatech.edu/handle/1853/54321</a>. [Accessed: 21-Jan-2019]
-</p>
+<div id="refs" class="references csl-bib-body" role="doc-bibliography" role="doc-bibliography" role="doc-bibliography">
+<div id="ref-prussing_investigation_2015" class="csl-entry" role="doc-biblioentry" role="doc-biblioentry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[1]
+</div>
+<div class="csl-right-inline">
+K. F. Prussing, <span>“An Investigation of Surface Shape Effects on Near-field Radiative Transfer,”</span> PhD Dissertation, Georgia Institute of Technology, Atlanta, GA, 2015 [Online]. Available: <a href="https://smartech.gatech.edu/handle/1853/54321">https://smartech.gatech.edu/handle/1853/54321</a>. [Accessed: 21-Jan-2019]
+</div>
 </div>
 </div>
 <h3 class="unnumbered" id="presentations">
 Presentations
 </h3>
-<div id="refs" class="references" role="doc-bibliography" role="doc-bibliography" role="doc-bibliography">
-<div id="ref-prussing_numerical_2013">
-<p>
-[1] K. Prussing and M. Cathcart, “Numerical Investigation of Particle Shape Effects on the Spatial Distribution of Near-field Electromagnetic Flux,” <em>Bulletin of the American Physical Society</em>, vols. Volume 58, Number 17, American Physical Society, 23-Nov-2013 [Online]. Available: <a href="http://meetings.aps.org/link/BAPS.2013.SES.HA.6">http://meetings.aps.org/link/BAPS.2013.SES.HA.6</a>. [Accessed: 18-Mar-2014]
-</p>
+<div id="refs" class="references csl-bib-body" role="doc-bibliography" role="doc-bibliography" role="doc-bibliography">
+<div id="ref-prussing_numerical_2013" class="csl-entry" role="doc-biblioentry" role="doc-biblioentry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[1]
 </div>
-<div id="ref-prussing_urban_2010">
-<p>
-[2] J. M. Cathcart, K. Prussing, S. Lane, S. Otolorin, and B. R. Kocher, “Urban Scene Simulation for Multimodal Sensing Applications,” Apr-2010.
-</p>
+<div class="csl-right-inline">
+K. Prussing and M. Cathcart, <span>“Numerical Investigation of Particle Shape Effects on the Spatial Distribution of Near-field Electromagnetic Flux,”</span> <em>Bulletin of the American Physical Society</em>, vol. Volume 58, Number 17, American Physical Society, 23-Nov-2013 [Online]. Available: <a href="http://meetings.aps.org/link/BAPS.2013.SES.HA.6">http://meetings.aps.org/link/BAPS.2013.SES.HA.6</a>. [Accessed: 18-Mar-2014]
+</div>
+</div>
+<div id="ref-prussing_urban_2010" class="csl-entry" role="doc-biblioentry" role="doc-biblioentry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[2]
+</div>
+<div class="csl-right-inline">
+J. M. Cathcart, K. Prussing, S. Lane, S. Otolorin, and B. R. Kocher, <span>“Urban Scene Simulation for Multimodal Sensing Applications,”</span> Apr-2010.
+</div>
 </div>
 </div>
 <h3 class="unnumbered" id="posters">
 Posters
 </h3>
-<div id="refs" class="references" role="doc-bibliography" role="doc-bibliography" role="doc-bibliography">
-<div id="ref-zacharias_positional_2019">
-<p>
-[1] A. Zacharias, K. Prussing, J. Corker, and C. Valenta, “Positional Thruster Detection: An image Processing Approach for Space Situational Awareness,” Atlanta, GA, 17-Nov-2019.
-</p>
+<div id="refs" class="references csl-bib-body" role="doc-bibliography" role="doc-bibliography" role="doc-bibliography">
+<div id="ref-zacharias_positional_2019" class="csl-entry" role="doc-biblioentry" role="doc-biblioentry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[1]
 </div>
-<div id="ref-stewart_gtsims_2016">
-<p>
-[2] J. Stewart <em>et al.</em>, “GTSIMS Terrain Background Signature Generation,” Atlanta, GA, 17-Jun-2016.
-</p>
+<div class="csl-right-inline">
+A. Zacharias, K. Prussing, J. Corker, and C. Valenta, <span>“Positional Thruster Detection: An image Processing Approach for Space Situational Awareness,”</span> Atlanta, GA, 17-Nov-2019.
 </div>
-<div id="ref-prussing_numerical_2014">
-<p>
-[3] K. F. Prussing and J. M. Cathcart, “Numerical Investigation of Particle Shape Effects on Near-field Electromagnetic Flux,” Hutsville, AL, 11-Mar-2014.
-</p>
 </div>
-<div id="ref-cathcart_model_2011">
-<p>
-[4] J. M. Cathcart, S. Otolorin, B. Kocher, K. Prussing, and A. Garrett, “Model Based Approach for Thermal Target Sharpening,” Berkley, Feb-2011.
-</p>
+<div id="ref-stewart_gtsims_2016" class="csl-entry" role="doc-biblioentry" role="doc-biblioentry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[2]
+</div>
+<div class="csl-right-inline">
+J. Stewart <em>et al.</em>, <span>“GTSIMS Terrain Background Signature Generation,”</span> Atlanta, GA, 17-Jun-2016.
+</div>
+</div>
+<div id="ref-prussing_numerical_2014" class="csl-entry" role="doc-biblioentry" role="doc-biblioentry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[3]
+</div>
+<div class="csl-right-inline">
+K. F. Prussing and J. M. Cathcart, <span>“Numerical Investigation of Particle Shape Effects on Near-field Electromagnetic Flux,”</span> Hutsville, AL, 11-Mar-2014.
+</div>
+</div>
+<div id="ref-cathcart_model_2011" class="csl-entry" role="doc-biblioentry" role="doc-biblioentry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[4]
+</div>
+<div class="csl-right-inline">
+J. M. Cathcart, S. Otolorin, B. Kocher, K. Prussing, and A. Garrett, <span>“Model Based Approach for Thermal Target Sharpening,”</span> Berkley, Feb-2011.
+</div>
 </div>
 </div>
 <h2 id="key-delivered-products">Key Delivered Products</h2>
@@ -481,6 +485,9 @@ Posters
 <p>Most of my personal repositories are on <a href="https://github.com/kprussing">GitHub</a>, but I also have a few still on <a href="https://bitbucket.org/kprussing">Bitbucket</a>. I have not finished converting all of my projects from Mercurial to Git.</p>
 <ul>
 <li><a href="https://github.com/kprussing/cloudgen">cloudgen-cmake</a>: The CMake build system for the <a href="http://www.met.reading.ac.uk/clouds/cloudgen/">Cloudgen</a></li>
+<li><a href="https://github.com/kprussing/FindLatexmk">FindLatexmk</a>: CMake module to locate Latexmk and add documents to a build as targets.</li>
+<li><a href="https://kprussing.github.io/kpruss">kpruss</a>: The <a href="https://www.sphinx-doc.org/">Sphinx</a> theme for my websites.</li>
+<li><a href="https://kprussing.github.io/pandoc-acro">pandoc-acro</a>: A <a href="https://pandoc.org">Pandoc</a> filter to manage and convert acronyms.</li>
 <li><a href="https://github.com/kprussing/pandoc-div2env">pandoc-div2env</a>: A <a href="https://pandoc.org">Pandoc</a> filter to convert marked Divs to LaTeX environments with possible arguments.</li>
 <li><a href="https://github.com/kprussing/scons-dtxtools">scons-dtxtools</a>: A <a href="https://scons.org">SCons</a> Tool for working with LaTeX Doc and Docstrip files.</li>
 <li><a href="https://github.com/kprussing/scons-inkscape">scons-inkscape</a>: A <a href="https://scons.org">SCons</a> Tool for converting images using <a href="https://inkscape.org">Inkscape</a>.</li>
@@ -502,9 +509,9 @@ Posters
 <h2 id="continuing-education-courses-taught">Continuing Education Courses Taught</h2>
 <table style="width:89%;">
 <colgroup>
-<col style="width: 19%"></col>
-<col style="width: 37%"></col>
-<col style="width: 31%"></col>
+<col style="width: 19%" />
+<col style="width: 37%" />
+<col style="width: 31%" />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -513,6 +520,27 @@ Posters
 <td style="text-align: left;"><strong>Contribution</strong></td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">24 Mar 2021</td>
+<td style="text-align: left;"><p><a href="https://pe.gatech.ed%20u/courses/infraredvisibl%20e-signature-suppression">Infrared/Visible Signature Suppressi on</a></p>
+<ul>
+<li><p>Overview</p></li>
+<li><p>Threat Sensor Characteristics</p></li>
+<li><p>Sensor Signature Suppression</p></li>
+<li><p>Signature Prediction Models</p></li>
+<li><p>Predicting LO Effectiveness with Vision Models</p></li>
+<li><p>General Signature Suppression Techniques</p></li>
+<li><p>Signature Prediction Models</p></li>
+<li><p>Ground Vehicle Signature Suppression</p></li>
+<li><p>Gas Turbine Engine Signatures and Suppression</p></li>
+<li><p>Aircraft Body Signature Suppression</p></li>
+<li><p>Ship Signature Suppression</p></li>
+<li><p>Signature Suppression Impact</p></li>
+<li><p>LO Synergism with Countermeasures</p></li>
+<li><p>Summary and Conclusions</p></li>
+</ul></td>
+<td style="text-align: left;">Course administrator</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">10 Dec 2019</td>
 <td style="text-align: left;"><p><a href="https://pe.gatech.ed%20u/courses/infraredvisibl%20e-signature-suppression">Infrared/Visible Signature Suppressi on</a></p>
 <ul>
@@ -532,7 +560,7 @@ Posters
 </ul></td>
 <td style="text-align: left;">Course administrator</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">29 Aug 2019</td>
 <td style="text-align: left;"><p><a href="https://pe.ga%20tech.edu/courses/target-%20tracking-sensor-systems">Target Tracking in Sensor Systems</a></p>
 <ul>
@@ -540,7 +568,7 @@ Posters
 </ul></td>
 <td style="text-align: left;">Course lecturer</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">28 Aug 2018</td>
 <td style="text-align: left;"><p><a href="https://pe.ga%20tech.edu/courses/target-%20tracking-sensor-systems">Target Tracking in Sensor Systems</a></p>
 <ul>
@@ -548,7 +576,7 @@ Posters
 </ul></td>
 <td style="text-align: left;">Course lecturer</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">13 Sep 2017</td>
 <td style="text-align: left;"><p><a href="https://pe.gatech.ed%20u/courses/infraredvisibl%20e-signature-suppression">Infrared/Visible Signature Suppressi on</a></p>
 <ul>
