@@ -126,7 +126,7 @@ def header(target, source, env):
 secs = []
 flags = ["--from", "markdown",
          "--filter", File("publications.py").path,
-         "--filter=pandoc-citeproc",
+         "--citeproc",
          "--csl", File("ieee-with-url.csl").path
          ]
 for section, kwargs in sections:
