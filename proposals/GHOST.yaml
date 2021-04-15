@@ -1,0 +1,25 @@
+---
+title: General High-Fidelity Omni-Spectrum Toolbox (GHOST) Model Integration 
+sponsor: Georgia Tech Research Institute
+PI: Keith F. Prussing
+role: Co-Principal Investigator
+submitted:
+  year: 2021
+  month: 6
+  day: 15
+requested: $300,000
+result: Pending
+level: $300,000
+performance:
+  - year: 2021
+    month: 7
+    day: 1
+  - year: 2022
+    month: 6
+    day: 30
+contributions: >-
+    Proposed extending the utility of DMISE by adding a radar and sensor
+    queueing model to the architecture to demonstrate interoperability
+    of simulated sensors across the full electromagnetic spectrum.
+external: false
+...

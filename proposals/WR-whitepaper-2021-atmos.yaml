@@ -1,0 +1,25 @@
+---
+title: Improved Atmospheric Corrections for GTSMS
+sponsor: Warner Robins ALC
+PI: Landon Bailie
+role: Task Leader
+submitted:
+  year: 2021
+  month: 6
+  day: 15
+requested: $100,000
+result: Pending
+level: 
+performance:
+  - year: 2021
+    month: 7
+    day: 1
+  - year: 2022
+    month: 6
+    day: 30
+contributions: >-
+    Proposed a new method to better represent atmospheric corrections
+    within GTSIMS by allowing a broader range of viewing geometries
+    instead of the limited set currently in use.
+external: true
+...

@@ -1,0 +1,25 @@
+---
+title: Enhanced Non-Uniform Sky Rendering
+sponsor: Warner Robins ALC
+PI: Landon Bailie
+role: Task Leader
+submitted:
+  year: 2021
+  month: 6
+  day: 15
+requested: $25,000
+result: Pending
+level: 
+performance:
+  - year: 2021
+    month: 7
+    day: 1
+  - year: 2022
+    month: 6
+    day: 30
+contributions: >-
+    Proposed an improved method to render the non-uniform sky within
+    GTSIMS by refactoring the code to remove artifacts caused by coarse
+    sky models.
+external: true
+...

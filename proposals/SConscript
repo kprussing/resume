@@ -4,6 +4,7 @@ yamls = [File(y) for y in (
     "F4800.01.06.08.0003.yaml",
     "F48BP.02.00.00.7236.yaml",
     "F48BP.02.00.00.8679.yaml",
+    "GHOST.yaml",
     "I48RD.00.01.06.0000.yaml",
     "P8084.yaml",
     "W4846.02.06.01.0008.yaml",
@@ -11,6 +12,9 @@ yamls = [File(y) for y in (
     "WR-whitepaper-2020-atmos.yaml",
     "WR-whitepaper-2020-cmake.yaml",
     "WR-whitepaper-2020-cmake-tutorial.yaml",
+    "WR-whitepaper-2021-atmos.yaml",
+    "WR-whitepaper-2021-nusky.yaml",
+    "WR-whitepaper-2021-egl.yaml",
     "W912HZ-20-BAA-01_ERDC_Feb2020.yaml",
     )
 ]

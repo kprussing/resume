@@ -1,0 +1,26 @@
+---
+title: Update OpenGL Usage to EGL
+sponsor: Warner Robins ALC
+PI: Landon Bailie
+role: Task Leader
+submitted:
+  year: 2021
+  month: 6
+  day: 15
+requested: $100,000
+result: Pending
+level: 
+performance:
+  - year: 2021
+    month: 7
+    day: 1
+  - year: 2022
+    month: 6
+    day: 30
+contributions: >-
+    Proposed an update to the OpenGL initialization and usage within
+    GTSIMS to enable better rendering in a headless environment.  This
+    would also alleviate the need for dedicated graphics cards to use
+    the enhanced rendering techniques developed by GTRI.
+external: true
+...
