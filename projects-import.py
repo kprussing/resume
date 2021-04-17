@@ -123,10 +123,20 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     keys = [k.strip() for k in args.table.readline().split("\t")]
+
+    # Sanitize the bad lines that start with a tab.  This is most likely
+    # due to the poor formatting or bad copy/paste.
+    lines = []
+    for line in args.table.readlines():
+        if line.startswith("\t") and len(lines) > 0:
+            lines[-1] = lines[-1][:-len(os.linesep)] + line
+        else:
+            lines.append(line)
+
     func = lambda k, x: datetime.datetime.strptime(x, "%m/%d/%Y") \
             if k in keys[-4:] else x
     args.output.write("projects:\n")
-    for line in args.table:
+    for line in lines:
         row = {k:func(k, e.strip())
                for k, e in zip(keys, line.split("\t"))}
         args.output.write(_reference_format.format(**row))
