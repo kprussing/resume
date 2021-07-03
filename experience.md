@@ -3,7 +3,9 @@
 2007-Present
 :   [Georgia Tech Research Institute]{.institute}, [Atlanta, GA]{.location}
 
-    [Research Engineer II]{.position} (2016-Present)
+    [Senior Research Scientist]{.position} (2021-Present)
+
+    [Research Engineer II]{.position} (2016-2021)
 
     [Tech Temp]{.position} (2015-2016)
 
