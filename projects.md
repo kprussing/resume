@@ -33,7 +33,8 @@ from Mercurial to Git.
     Docstrip files.
 -   [scons-inkscape][]: A [SCons][] Tool for converting images using
     [Inkscape][].
--   [scons-pandoc][]: A [SCons][] Tool for working with [Pandoc][].
+-   [scons-pandoc][]: A [SCons][] Tool for working with [Pandoc][]
+    (contributed to the SCons Foundation).
 -   [secretx][]: A LaTeX package for aiding in properly marking
     the importance of document sections.
 -   [vitables_console][]: A plugin for [ViTables][] to launch a Jupyter
@@ -50,6 +51,8 @@ from Mercurial to Git.
 -   [netcdf-c][]: The Unidata network Common Data Form (netCDF) C
     interface.
 -   [panflute][]: A Python module for writing [Pandoc][] filters.
+-   [scons-contrib]: A repo for user contributed SCons Builders and
+    other tools.  Specifically, the [Pandoc] Tool.
 -   [ViTables][]: A graphical tool for browsing and editing files in
     both PyTables and HDF5 format.
 -   [zotero-cli][]: Command line interface to the Zotero API.
