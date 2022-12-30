@@ -4,9 +4,11 @@
 Software
 :   Apache Subversion,
     Apple OS X,
+    Bison,
     Bourne Shell,
     C/C++,
     CMake,
+    Flex,
     Fortran,
     Git,
     GNU Compiler Collection,
@@ -80,7 +82,8 @@ Interests
     Radiative transfer,
     Rendering,
     Rock climbing,
-    Simulation
+    Simulation,
+    Typesetting
 
 Communication
 :   Email,
