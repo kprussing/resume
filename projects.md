@@ -2,6 +2,19 @@
 
 ### Professional projects
 
+-   Dynamic Model Integration and Simulation Engine (DMISE): [Primary
+    maintainer]{.position}
+
+    Modeling and simulation framework for composing complex scenarios
+    from generic model.
+
+-   General High-fidelity Omni-Spectral Toolbox (GHOST): [Primary
+    maintainer]{.position}
+
+    First principle tools set for modeling engagements of visibile,
+    infrared, and radio frequency scenarios.  Specifically focused on
+    the visible and infrared image prediction.
+
 -   Georgia Tech Signature Model (GTSIG): [Primary
     maintainer]{.position}
 
@@ -22,7 +35,8 @@ Most of my personal repositories are on [GitHub], but I also have a few
 still on [Bitbucket].  I have not finished converting all of my projects
 from Mercurial to Git.
 
--   [cloudgen-cmake][]: The CMake build system for the [Cloudgen]
+-   [cloudgen-cmake][]: The CMake build system for [Cloudgen] along with
+    Python bindings and other maintenance details.
 -   [FindLatexmk][]: CMake module to locate Latexmk and add documents to
     a build as targets.
 -   [kpruss][]: The [Sphinx][] theme for my websites.
@@ -51,7 +65,7 @@ from Mercurial to Git.
 -   [netcdf-c][]: The Unidata network Common Data Form (netCDF) C
     interface.
 -   [panflute][]: A Python module for writing [Pandoc][] filters.
--   [scons-contrib]: A repo for user contributed SCons Builders and
+-   [scons-contrib][]: A repo for user contributed SCons Builders and
     other tools.  Specifically, the [Pandoc] Tool.
 -   [ViTables][]: A graphical tool for browsing and editing files in
     both PyTables and HDF5 format.
@@ -76,7 +90,8 @@ from Mercurial to Git.
 [scons-dtxtools]: https://github.com/kprussing/scons-dtxtools
 [scons-inkscape]: https://github.com/kprussing/scons-inkscape
 [scons-pandoc]: https://github.com/kprussing/scons-pandoc
-[secretex]: https://github.com/kprussing/secretx
+[scons-contrib]: https://github.com/SCons/scons-contrib
+[secretx]: https://github.com/kprussing/secretx
 [Sphinx]: https://www.sphinx-doc.org/
 [ViTables]: https://github.com/uvemas/ViTables
 [vitables_console]:
