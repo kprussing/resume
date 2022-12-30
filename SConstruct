@@ -22,27 +22,13 @@ short_courses = env.Command("short-courses.tex",
                             FLAGS="--lectures "
                                   "--title 'Continuing Education Courses Taught'")
 
-def short_courses_tex2md(target, source, env):
-    """Screen out the rule lines from the table
-
-    This will write an optional subsection title before the table if the
-    'section' keyword in found in `env`.
-    """
-    import re, subprocess
-    with open(str(source[0]), "r") as src:
-        lines = [l for l in src.readlines()
-                 if not re.search("cmidrule", l)]
-
-    with open(str(target[0]), "w") as tgt:
-        tgt.write(subprocess.run([env["PANDOC"], "-f", "latex",
-                                                 "-t", "markdown"],
-                                 universal_newlines=True,
-                                 input="".join(lines),
-                                 check=True,
-                                 stdout=subprocess.PIPE).stdout)
-
-short_courses.extend(env.Command("short-courses.md", short_courses,
-                                 action=short_courses_tex2md))
+short_courses.extend(env.Command("short-courses.md",
+                                 ["short-courses.py", data],
+                                 action="python3 ${SOURCES[0]} $FLAGS "
+                                        "-o ${TARGET} ${SOURCES[1]}",
+                                 FLAGS="--lectures --to markdown "
+                                       "--title 'Continuing Education Courses Taught'")
+                     )
 
 activities = {
         "interests" : {
