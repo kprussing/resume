@@ -1,0 +1,56 @@
+---
+abstract: One major struggle for modeling and simulation (M and S) over the past decades
+  has been the development of individual models in isolation. Typically, models are
+  developed for a single application area where they tend to become domain specific
+  as the complexity of a single model grows. When a future application requires interaction
+  of multiple M and S approaches that have developed independently, it is difficult,
+  if not impossible, for the models to integrate into a common environment. Furthering
+  this difficulty is that the models have likely developed disparate concepts of the
+  world in which they operate. A prime example of this effect is the development of
+  infrared (IR) and radio frequency (RF) models, which have different large scale
+  phenomenology and have, therefore, developed as separate M and S domains. Attempting
+  to combine the two modalities through integration of existing M and S tools specific
+  to each application domain has historically proven nigh impossible. These factors
+  led to the development of the Dynamic Model Integration and Simulation Engine (DMISE)
+  which provides a flexible and extensible framework for integration of different
+  models into a common simulation by defining the interfaces for the simulation components.
+  For multi-spectral IR and RF simulations, the General High-Fidelity Omni-Spectral
+  Toolbox (GHOST) has been built on the DMISE framework to allow for integration of
+  models across the electromagnetic spectrum. This paper presents GHOST and the status
+  of the current effort to provide a true multi-spectral, multi-sensor, and multi-actor
+  M and S environment through simulation of scenarios with combined IR and RF sensors
+  operating in a common environment.
+accessed: 2022-06-02
+author:
+- family: Prussing
+  given: Keith F.
+- family: Cordell
+  given: Christopher E.
+  suffix: Jr.
+- family: Pierson
+  given: Oliver
+- family: Walker
+  given: Benjamin
+- family: Moore
+  given: James
+- family: Beck
+  given: Yokhanan Z.
+container-title: 'Infrared imaging systems: Design, analysis, modeling, and testing
+  XXXIII'
+doi: 10.1117/12.2618771
+event: 'Infrared imaging systems: Design, analysis, modeling, and testing XXXIII'
+id: prussing_general_2022
+issued:
+- year: 2022
+  month: 5
+  day: 27
+page: 52-57
+publisher: SPIE
+title: General high-fidelity omni-spectral toolbox
+type: paper-conference
+url: https://doi.org/10.1117/12.2618771
+volume: 12106
+refereed: true
+note: Lead author and principal developer of the rendering procedures in
+  GHOST.
+...

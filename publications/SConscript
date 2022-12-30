@@ -41,15 +41,18 @@ sections = (
 
 pubs = [
         "alston_realistic_2020.yaml",
+        "alston_realistic_2022.yaml",
         "bertrand_infrared_2020.yaml",
         "burdette_imaging_2013.yaml",
         "cathcart_human_2011.yaml",
         "cathcart_model_2011.yaml",
         "cathcart_multimodal_2010.yaml",
+        "hope_dynamic_2021.yaml",
         "prussing_calibration_2017.yaml",
         "prussing_combined_2018.yaml",
         "prussing_enhanced_2018.yaml",
         "prussing_estimation_2020.yaml",
+        "prussing_general_2022.yaml",
         "prussing_human_2011.yaml",
         "prussing_investigation_2015.yaml",
         "prussing_night_2019.yaml",

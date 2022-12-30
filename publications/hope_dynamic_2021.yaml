@@ -1,0 +1,29 @@
+---
+author:
+- family: Hope
+  given: Doug A.
+- family: Birch
+  given: Megan
+- family: Cordell
+  given: Christopher E.
+  suffix: Jr.
+- family: Prussing
+  given: Keith F.
+- family: Valenta
+  given: Christopher R.
+container-title: Advanced maui optical and space surveillance technologies conference
+  (AMOS)
+event: Advanced maui optical and space surveillance technologies conference (AMOS)
+id: hope_dynamic_2021
+issued:
+- year: 2021
+  month: 9
+  day: 14
+publisher-place: Maui, HI
+title: Dynamic model integration and simulation engine (DMISE) assisted design of
+  future sensor networks in support of space traffic management
+type: paper-conference
+url: https://amostech.com/TechnicalPapers/2021/Poster/Hope.pdf
+refereed: true
+note: Detailed the structure and data flow systems for DMISE.
+...
