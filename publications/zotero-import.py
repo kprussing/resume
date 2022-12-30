@@ -17,6 +17,8 @@ import re
 import subprocess
 import sys
 
+import yaml
+
 _default = os.path.join(os.environ["HOME"],
                         "Downloads",
                         "Exported Items.bib")
@@ -33,53 +35,28 @@ args = parser.parse_args()
 if not os.path.exists(args.bibliography):
     sys.exit(f"BibLaTeX file '{args.bibliography}' does not exist")
 
-cmd = [os.environ.get("PANDOC_CITEPROC", "pandoc-citeproc"),
-       "--bib2yaml", args.bibliography]
-proc = subprocess.run(cmd, universal_newlines=True,
-                      stdout=subprocess.PIPE,
-                      stderr=subprocess.PIPE)
+cmd = ["pandoc", "--from=biblatex", "--to=markdown", "--standalone",
+        args.bibliography]
+proc = subprocess.run(cmd, capture_output=True, text=True, check=True)
 if proc.returncode != 0:
     sys.exit(f"Error running '{cmd}'\n" + proc.stderr)
 
-output = None
-start = 0
-for line in proc.stdout.split("\n"):
-    if line.strip() == "":
-        continue
+inputs = yaml.safe_load(re.sub("---\n+$", "...",
+                               re.sub("{(.+)}", r"\1", proc.stdout),
+                               re.MULTILINE))
 
-    if re.match("^[.]{3}$", line):
-        break
+for item in inputs["references"]:
+    fname = os.path.join(args.dir, item["id"] + ".yaml")
+    overwrite = True
+    if args.interactive and os.path.exists(fname):
+        while True:
+            inp = input(f"File '{fname}' exists. Overwrite? [Y/n] ")
+            if inp == "" or inp.lower() == "y":
+                break
+            elif inp.lower() == "n":
+                overwrite = False
+                break
 
-    match = re.match(r"(.*)id:\s*([\w-]+)", line)
-    if match:
-        if output:
-            output.write("...")
-            output.close()
-
-        start = len(match.group(1))
-        fname = os.path.join(args.dir, match.group(2) + ".yaml")
-
-        overwrite = True
-        if args.interactive and os.path.exists(fname):
-            while True:
-                inp = input(f"File '{fname}' exists. Overwrite? [Y/n] ")
-                if inp == "" or inp.lower() == "y":
-                    overwrite = True
-                    break
-                if inp.lower() == "n":
-                    overwrite = False
-                    break
-
-        if overwrite:
-            output = open(fname, "w")
-            output.write("---\n")
-        else:
-            output = None
-
-    if output:
-        output.write(line[start:] + "\n")
-
-if output:
-    output.write("...")
-    output.close()
-
+    if overwrite:
+        with open(fname, "w") as fid:
+            yaml.safe_dump(item, fid, explicit_start=True, explicit_end=True)
