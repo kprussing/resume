@@ -160,9 +160,9 @@ formats = {
                 "opener" : "",
                 "name" : lambda c, url: r"[{name}]({URL})" \
                                         if url and "URL" in c else "{name}",
-                "item" : "1.  ",
-                "start" : "",
-                "leader" : "    {label}\n:   {text}\n\n",
+                "item" : "#.  ",
+                "start" : "\n",
+                "leader" : "    -   **{label}**:   {text}\n",
                 "end" : "",
                 "closer" : "",
             },
