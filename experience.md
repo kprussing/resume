@@ -18,9 +18,9 @@
     -   [Co-lead developer]{.position} on improved simulation framework
         for predicting infrared and visible signatures in complex
         environments.
-    -   Enhancing OpenGL rendering engine to handle large scale terrains
+    -   Enhanced OpenGL rendering engine to handle large scale terrains
         for infrared search and track algorithm development.
-    -   Integrating physically accurate star field background into
+    -   Integrated physically accurate star field background into
         OpenGL simulation engine for simulating night time engagements
         and resident space objects.
     -   [Course administrator]{.position} for the [Infrared and Visible
