@@ -64,6 +64,7 @@ pubs = [
         "prussing_terrain_2017.yaml",
         "prussing_urban_2010.yaml",
         "prussing_verification_2019.yaml",
+        "prussing_lazy_2023.yaml",
         "renegar_design_2020.yaml",
         "stewart_gtsims_2016.yaml",
         "zacharias_positional_2019.yaml",

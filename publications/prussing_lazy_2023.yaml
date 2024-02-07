@@ -1,0 +1,38 @@
+---
+abstract: A common constraint in synthetic data generation is the need to evaluate
+  time and resource intensive equations to model physical systems of interest. In
+  fact, many times one needs to evaluate many such models to build up to the real
+  system of interest. In some cases, it is possible to identify a key set of independent
+  variables that govern the equations of interest, and one can build a look up table
+  for interpolation. However, the down side to this strategy is that many computational
+  resources will be spent computing values that may not be used during a simulation.
+  In this paper, we present a new strategy to lazily evaluate complex calculations
+  to build these multi-dimensional look up tables as needed. The technique relies
+  on identifying the fact that some models are able to reuse partial calculations
+  to generate multiple results in a single invocation. This allows generating a base
+  table in the neighborhood of the initial point of interest. After which, the table
+  is grown as the parameter space expands. This reduces the initial computational
+  cost, and the resultant table can be saved for reuse if desired. In a multiprocessing
+  environment, it would also be possible to generate additional table entries in parallel
+  if those points of interest are known in advance. As a specific example, we apply
+  this technique to computing atmospheric corrections for synthetic image generation.
+accessed: 2023-06-22
+author:
+- family: Prussing
+  given: Keith F.
+- family: Jr
+  given: Christopher E. Cordell
+container-title: 'Synthetic Data for Artificial Intelligence and Machine Learning:
+  Tools, Techniques, and Applications'
+doi: 10.1117/12.2662738
+id: prussing_lazy_2023
+issued:
+- year: 2023
+  month: 6
+page: 99-102
+publisher: SPIE
+title: Lazy table building for high-dimensional look up table generation
+type: paper-conference
+url: https://doi.org/10.1117/12.2662738
+volume: 12529
+...
