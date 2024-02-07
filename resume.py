@@ -133,7 +133,7 @@ formats = {
                 "nl" : r"\newline",
                 "eol" : r"\\",
                 "rowsep" : "\\hiderowcolors\n&&\\\\\n\\showrowcolors",
-                "end" : "\end{program table}",
+                "end" : "\\end{program table}",
             },
             "name-date" : {
                 "start" : "\\begin{itemize}[nosep]\n",
