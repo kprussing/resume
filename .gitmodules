@@ -1,0 +1,3 @@
+[submodule "site_scons/site_tools/sconscontrib"]
+	path = site_scons/site_tools/sconscontrib
+	url = git@github.com:kprussing/scons-contrib.git

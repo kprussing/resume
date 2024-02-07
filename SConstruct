@@ -7,7 +7,8 @@ import re
 try:
     Import("env")
 except:
-    env = Environment(ENV=os.environ, tools=["default", "pandoc"])
+    env = Environment(ENV=os.environ, tools=["default",
+                                             "sconscontrib.sconscontrib.SCons.Tool.pandoc"])
 
 merge_yaml = File("merge-yaml.py")
 Export("env merge_yaml")
