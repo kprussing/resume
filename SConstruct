@@ -10,6 +10,9 @@ except:
     env = Environment(ENV=os.environ, tools=["default",
                                              "sconscontrib.sconscontrib.SCons.Tool.pandoc"])
 
+AddOption("--no-old-work", action="store_true",
+          help="omit the old work section")
+
 merge_yaml = File("merge-yaml.py")
 Export("env merge_yaml")
 pubs = SConscript(os.path.join("publications", "SConscript"))
@@ -108,6 +111,9 @@ srcs = ["index.md"] \
     + [pa for pa in activities["on-campus-committees"]["files"]
           if re.search("[.]md$", str(pa))] \
     + [x + ".md" for x in ("old-work", "footer")]
+
+if GetOption("no_old_work"):
+    srcs.remove("old-work.md")
 
 css = " ".join(["--css={0}.css".format(File(x).path)
                 for x in ("website-colors", "style")])
