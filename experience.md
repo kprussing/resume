@@ -13,8 +13,13 @@
 
     [Student Research Assistant]{.position} (2007-2009)
 
-    -   Adapted the cloud rendering procedures to work with a third
-        party rendering engine.
+    -   Contributed to capabilities analysis report for
+        hardware-in-the-loop testing as a synthetic scene generation
+        subject matter expert.
+    -   Revised MODTRAN calcuation routine to reduce atmospheric
+        geneartion time from weeks to ours.
+    -   Adapted the cloud and terrain rendering procedures to work with
+        a third party rendering engine.
     -   [Co-lead developer]{.position} on improved simulation framework
         for predicting infrared and visible signatures in complex
         environments.
