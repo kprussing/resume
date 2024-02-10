@@ -210,6 +210,67 @@ key-delivered-products:
         Developed the methodology to adapt the input cloud products into
         a form renderable by GTSIMS.
 
+  - name: Cloud Model Adaptation
+    sponsor: Stellar Science Ltd
+    date:
+    - year: 2019
+      month: 7
+    - year: 2020
+      month: 3
+    product: >-
+      Adaptation of GTRI's cloud modeling procedures to work with
+      customer's rendering engine.
+    contribution: >-
+      Performed the primary technical interface to ensure clouds were
+      accessible from the rendering engine.
+
+  - name: Enhance Background Modeling
+    sponsor: Stellar Science Ltd
+    date:
+      - year: 2020
+        month: 10
+      - year: 2022
+        month: 10
+    product: >-
+      Enhance terrain and cloud modeling to enhance background modeling
+      withing customers rendering engine.
+    contributions: >-
+      Adapted GTRI's background signature models to be able to generate
+      new terrain and cloud signatures and be able to integrate with the
+      customer's rendering engine.
+
+  - name: Enhanced MODTRAN Processing Tools
+    sponsor: NAVAIR
+    date:
+    - year: 2023
+      month: 2
+    - year: 2023
+      month: 11
+    product: >-
+      Suite of tools to generate a 3D MODTRAN environment for ingestion
+      into a simulation environment.
+    contribution: >-
+      Developed the processing architecture and created a GUI to aid in
+      generating full MODTRAN atmospheric tables.
+
+  - name: OpenGL to EGL
+    sponsor: USAF/WR-ALC
+    date:
+      - year: 2020
+        month: 6
+      - year: 2024
+        month: 6
+    product: >-
+      Convert the GTSINS OpenGL implementation to use the vendor-neutral
+      dispatch library instead of a windowing system to reduce operating
+      system dependence.
+    contribution: >-
+      Led the effort to refactor the GTSIMS OpenGL rendering to use EGL
+      instead of a native windowing system to reduce platform
+      dependence.  Developed regression tests to demonstrate correct
+      performance of the rendering system.
+
+
 irad-efforts:
   - name: Dynamic Model Integration and Simulation Engine (DMISE)
     #URL: https://example.com
