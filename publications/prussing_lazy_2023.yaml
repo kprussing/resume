@@ -20,8 +20,9 @@ accessed: 2023-06-22
 author:
 - family: Prussing
   given: Keith F.
-- family: Jr
-  given: Christopher E. Cordell
+- family: Cordell
+  suffix: Jr
+  given: Christopher E.
 container-title: 'Synthetic Data for Artificial Intelligence and Machine Learning:
   Tools, Techniques, and Applications'
 doi: 10.1117/12.2662738

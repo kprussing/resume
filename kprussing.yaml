@@ -1,3 +1,4 @@
+# Update skills to list current operating systems (Windows 7?)
 ---
 position:
   senior-research-scientist:
@@ -269,6 +270,22 @@ key-delivered-products:
       instead of a native windowing system to reduce platform
       dependence.  Developed regression tests to demonstrate correct
       performance of the rendering system.
+
+  - name: gtri-cloud
+    sponsor: Stellar Science Ltd, Co.
+    date:
+      - year: 2023
+        month: 10
+      - year: 2025
+        month: 9
+    product: >-
+      The fluence based cloud rendering (translating Oliver's Julia to
+      C++). Also include vdb2hdf to convert the Disney cloud to HDF5 and
+      a script to convert WRF outputs to HDF5.
+    contributions: >-
+      Led development.  Did the initial direct illumination baking and
+      rendering.  Wrote the OpenVDB to HDF5 conversion.
+    project: DA056
 
 
 irad-efforts:

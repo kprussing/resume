@@ -46,7 +46,7 @@ from Mercurial to Git.
 -   [scons-dtxtools][]: A [SCons][] Tool for working with LaTeX Doc and
     Docstrip files.
 -   [scons-inkscape][]: A [SCons][] Tool for converting images using
-    [Inkscape][].
+    [Inkscape][] (contributed to the SCons Foundation).
 -   [scons-pandoc][]: A [SCons][] Tool for working with [Pandoc][]
     (contributed to the SCons Foundation).
 -   [secretx][]: A LaTeX package for aiding in properly marking
