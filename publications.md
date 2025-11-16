@@ -5,11 +5,14 @@
 #.  K. F. Prussing, “An Investigation of Surface Shape Effects on
     Near-field Radiative Transfer,” PhD Dissertation, Georgia Institute
     of Technology, Atlanta, GA, 2015. Accessed: Jan. 21, 2019. [Online].
-    Available: http://hdl.handle.net/1853/54321
+    Available: <http://hdl.handle.net/1853/54321>
 
 ## Published Journal Papers
 
-#.  N. P. Bertrand, J. Lee, K. F. Prussing, S. Shapero, and C. J. Rozell, “Infrared Search and Track With Unbalanced Optimal Transport Dynamics Regularization,” IEEE Geoscience and Remote Sensing Letters, pp. 1–5, 2020, doi: 10.1109/LGRS.2020.3014534.
+#.  N. P. Bertrand, J. Lee, K. F. Prussing, S. Shapero, and C. J.
+    Rozell, “Infrared Search and Track With Unbalanced Optimal Transport
+    Dynamics Regularization,” IEEE Geoscience and Remote Sensing
+    Letters, pp. 1–5, 2020, doi: 10.1109/LGRS.2020.3014534.
 
 ## Conference Presentations with Proceedings (refereed)
 
@@ -35,7 +38,7 @@
     Assisted Design of Future Sensor Networks in Support of Space
     Traffic Management,” in Advanced Maui Optical and Space Surveillance
     Technologies Conference (AMOS), Maui, HI, Sept. 2021. [Online].
-    Available: https://amostech.com/TechnicalPapers/2021/Poster/Hope.pdf
+    Available: <https://amostech.com/TechnicalPapers/2021/Poster/Hope.pdf>
 #.  K. F. Prussing, A. Zacharias, and J. Corker, “Estimation of Thruster
     Plumes for Resident Space Object Optical Observation,” in Sensors
     and Systems for Space Applications XIII, International Society for
@@ -92,7 +95,7 @@
     Shape Effects on the Spatial Distribution of Near-field
     Electromagnetic Flux,” in Bulletin of the American Physical Society,
     American Physical Society, Nov. 2013. Accessed: Mar. 17, 2014.
-    [Online]. Available: http://meetings.aps.org/link/BAPS.2013.SES.HA.6
+    [Online]. Available: <http://meetings.aps.org/link/BAPS.2013.SES.HA.6>
 
 ## Technical Reports
 
