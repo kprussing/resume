@@ -16,4 +16,7 @@ acronyms:
   GTSIG:
     short: GTSIG
     long: Georgia Tech Signature
+  EWSMS:
+    short: EWSMS
+    long: Electronic Warfare & Survivability Modeling & Simulation
 ...
