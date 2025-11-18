@@ -37,13 +37,13 @@ body {
 
 /* Title of the resume */
 h1 {
-    color: var(--forground);
+    color: var(--title);
     text-align: center;
 }
 
 /* Titles of categories */
 h2 {
-    color: var(--foreground);
+    color: var(--section-head);
 }
 
 /* There is a bar just before each category */
@@ -53,7 +53,7 @@ h2:before {
     margin-right: 0.75ex;
     width: 17%;
     height: 0.9ex;
-    background-color: var(--foreground);
+    background-color: var(--section-head);
 }
 
 /* Definitions */
