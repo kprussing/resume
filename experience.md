@@ -1,4 +1,4 @@
-## Work experience
+## Work Experience
 
 [2007-Present]{.date}
 [Georgia Tech Research Institute]{.institute},
@@ -33,7 +33,7 @@
 -   Integrated physically accurate star field background into OpenGL
     simulation engine for simulating night time engagements and resident
     space objects.
--   [Course administrator]{.position} for the [Infrared/isible Signature
+-   [Course administrator]{.position} for the [Infrared/Visible Signature
     Suppression][IRVSS] course through Georgia Tech Professional
     Education.
 -   Unified and updated atmospheric model in engagement simulation

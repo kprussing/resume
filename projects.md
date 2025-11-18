@@ -1,6 +1,6 @@
-# Software development
+# Software Development
 
-## Professional projects
+## Professional Projects
 
 -   General High-fidelity Omni-Spectral Toolbox (GHOST):
     First principle tools set for modeling engagements of visibile,
@@ -16,9 +16,9 @@
     Engagement simulation framework for visible and infrared image
     prediction written in C, C++, Fortran, and Ada.
 
-## Open source projects
+## Open Source Projects
 
-### Personal projects
+### Personal
 
 -   [FindLatexmk](https://github.com/kprussing/FindLatexmk):
     CMake module to locate Latexmk and add documents to a build as
@@ -48,7 +48,7 @@
 -   [zenburn-latex](https://github.com/kprussing/zenburn-latex):
     Translation of the Zenburn color scheme for Vim for use in LaTeX.
 
-## Contributor
+### Contributor
 
 -   [SCons][Scons]:
     An Open Source software construction tool.  Specifically
