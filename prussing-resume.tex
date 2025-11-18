@@ -1,0 +1,96 @@
+\documentclass{article}
+
+% Font configuration
+\usepackage{etoolbox}
+\usepackage{iftex}
+\ifboolexpr{bool {LuaTeX} or bool {XeTeX}}{
+    \usepackage{fontspec}
+    \setmainfont{Source Serif Pro}
+    \setsansfont{Source Sans Pro}
+    \setmonofont{Source Code Pro}
+}{
+    \usepackage{sourceserifpro}
+    \usepackage{sourcesanspro}
+    \usepackage{sourcecodepro}
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+}
+
+\usepackage{acro}
+\usepackage{booktabs}
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable}
+
+\DeclareAcronym{me}{
+    short=Dr. Prussing,
+    long={Keith F. Prussing, Ph.D.}
+}
+\DeclareAcronym{EOSL}{
+    short=EOSL,
+    long=Electro-Optical Systems Laboratory,
+}
+\DeclareAcronym{GTRI}{
+    short=GTRI,
+    long=Georgia Tech Research Institute,
+}
+\DeclareAcronym{GTSIMS}{
+    short=GTSIMS,
+    long=Georgia Tech Simulation Integrated Modeling System,
+}
+\DeclareAcronym{GTSIG}{
+    short=GTSIG,
+    long=Georgia Tech Signature,
+}
+\DeclareAcronym{EWSMS}{
+    short=EWSMS,
+    long=Electronic Warfare \& Survivability Modeling \& Simulation,
+}
+
+% My customizations
+\NewDocumentCommand{\mydate}{m}{#1}
+\NewDocumentCommand{\myinstitute}{m}{\textbf{#1}}
+\NewDocumentCommand{\mylocation}{m}{\textit{#1}}
+\NewDocumentCommand{\myposition}{m}{\textit{#1}}
+
+\title{Keith F. Prussing, Ph.D.}
+\NewDocumentCommand{\tagline}{}{%
+    Exploring how to teach computers about properly handling physics%
+} % Update with contact info for real resume
+
+% Pandoc's cruft
+\let\tightlist=\relax
+\newcounter{none}
+
+\makeatletter
+\renewcommand\maketitle[0]{%
+    \thispagestyle{empty}
+    \begin{center}%
+        {\LARGE\@title\par}%
+        \vskip 1.5em%
+        {\large
+         \lineskip 0.5em%
+         \begin{tabular}[t]{c}%
+             \tagline
+         \end{tabular}\par
+         }%
+    \end{center}%
+    \par\vskip 1.5em%
+}
+\makeatother
+
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\Large\bfseries\filcenter}{}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\rule{5em}{1ex}}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{}{1em}{}
+
+\usepackage{enumitem}
+\setlist{noitemsep}
+
+\pagestyle{empty}  % No page numbers
+
+% Todo: Tweak the hyperref settings for neatness
+\usepackage{hyperref}
+\begin{document}
+\maketitle
+\input{prussing-resume-body}
+\end{document}
