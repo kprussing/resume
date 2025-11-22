@@ -100,8 +100,7 @@
 ## Technical Reports
 
 #.  K. F. Prussing, “Refraction of Light Through the Atmosphere,”
-    Georgia Tech Research Institute, Atlanta, GA, Technical Note, Sept.
-    2025.
+    Georgia Tech Research Institute, Atlanta, GA, Technical Note, Sept.  2025.
 #.  G. Alston, D. Davis, B. DiDonna, W. Reynolds, and K. F. Prussing,
     “Realistic Image and Neighborhood Generator (RING),” Air Force
     Research Lab Kirtland AFB, Alburquerque, NM, Final Report
